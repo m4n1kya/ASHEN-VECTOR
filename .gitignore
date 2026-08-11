@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+.venv/
+venv/
+
+# Qlib market data
+qlib_bin/
+*.tar.gz
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# Environment variables
+.env
+.env.*
+
+# Logs
+*.log
+
+# Generated research output
+outputs/
+results/
+artifacts/
+
+# Trained models
+*.pkl
+*.pickle
+*.joblib
+*.pt
+*.pth
+
+# OS
+.DS_Store
+Thumbs.db
