@@ -68,44 +68,44 @@ export default function BacktestClient({ defaultSymbol }: { defaultSymbol: strin
 
   return (
     <div className="space-y-6">
-      <form onSubmit={handleSubmit} className="glass-panel p-6 rounded-xl grid grid-cols-1 md:grid-cols-5 gap-4 items-end">
+      <form onSubmit={handleSubmit} className="matte-panel p-4 grid grid-cols-1 md:grid-cols-5 gap-4 items-end">
         <div>
-          <label className="block text-xs uppercase text-ashen-ash-light mb-1">Symbol</label>
+          <label className="block text-[10px] tracking-widest uppercase text-quant-text-muted mb-1.5">Symbol</label>
           <input 
             type="text" 
             value={symbol} 
             onChange={e => setSymbol(e.target.value.toUpperCase())}
-            className="w-full bg-ashen-charcoal-light border border-ashen-ash rounded p-2 text-ashen-bone focus:outline-none focus:border-ashen-up"
+            className="w-full bg-quant-bg border border-quant-border rounded-sm p-1.5 text-xs font-mono tabular-nums text-quant-text-primary focus:outline-none focus:border-quant-text-muted transition-colors"
             required
           />
         </div>
         <div>
-          <label className="block text-xs uppercase text-ashen-ash-light mb-1">Start Date</label>
+          <label className="block text-[10px] tracking-widest uppercase text-quant-text-muted mb-1.5">Start Date</label>
           <input 
             type="date" 
             value={startDate} 
             onChange={e => setStartDate(e.target.value)}
-            className="w-full bg-ashen-charcoal-light border border-ashen-ash rounded p-2 text-ashen-bone focus:outline-none focus:border-ashen-up"
+            className="w-full bg-quant-bg border border-quant-border rounded-sm p-1.5 text-xs font-mono tabular-nums text-quant-text-primary focus:outline-none focus:border-quant-text-muted transition-colors"
             required
           />
         </div>
         <div>
-          <label className="block text-xs uppercase text-ashen-ash-light mb-1">End Date</label>
+          <label className="block text-[10px] tracking-widest uppercase text-quant-text-muted mb-1.5">End Date</label>
           <input 
             type="date" 
             value={endDate} 
             onChange={e => setEndDate(e.target.value)}
-            className="w-full bg-ashen-charcoal-light border border-ashen-ash rounded p-2 text-ashen-bone focus:outline-none focus:border-ashen-up"
+            className="w-full bg-quant-bg border border-quant-border rounded-sm p-1.5 text-xs font-mono tabular-nums text-quant-text-primary focus:outline-none focus:border-quant-text-muted transition-colors"
             required
           />
         </div>
         <div>
-          <label className="block text-xs uppercase text-ashen-ash-light mb-1">Horizon (Days)</label>
+          <label className="block text-[10px] tracking-widest uppercase text-quant-text-muted mb-1.5">Horizon (Days)</label>
           <input 
             type="number" 
             value={horizon} 
             onChange={e => setHorizon(parseInt(e.target.value))}
-            className="w-full bg-ashen-charcoal-light border border-ashen-ash rounded p-2 text-ashen-bone focus:outline-none focus:border-ashen-up"
+            className="w-full bg-quant-bg border border-quant-border rounded-sm p-1.5 text-xs font-mono tabular-nums text-quant-text-primary focus:outline-none focus:border-quant-text-muted transition-colors"
             min={1}
             required
           />
@@ -114,20 +114,20 @@ export default function BacktestClient({ defaultSymbol }: { defaultSymbol: strin
           <button 
             type="submit" 
             disabled={status === "RUNNING" || status === "QUEUED"}
-            className="w-full bg-ashen-bone text-ashen-black font-bold rounded p-2 hover:bg-white transition-colors disabled:opacity-50 flex items-center justify-center gap-2"
+            className="w-full bg-quant-border text-quant-text-primary text-xs tracking-widest font-bold rounded-sm p-1.5 border border-transparent hover:border-quant-text-muted transition-colors disabled:opacity-50 flex items-center justify-center gap-2"
           >
             {status === "RUNNING" || status === "QUEUED" ? (
-              <><Activity className="w-4 h-4 animate-spin" /> {status}</>
+              <><Activity className="w-3.5 h-3.5 animate-spin" /> {status}</>
             ) : (
-              <><Play className="w-4 h-4" /> Run Backtest</>
+              <><Play className="w-3.5 h-3.5" /> EXECUTE</>
             )}
           </button>
         </div>
       </form>
 
       {error && (
-        <div className="bg-ashen-down/10 border border-ashen-down text-ashen-down p-4 rounded flex items-center gap-3">
-          <AlertTriangle className="w-5 h-5" />
+        <div className="bg-quant-down/10 border border-quant-down/30 text-quant-down-text p-3 rounded-sm flex items-center gap-3 text-xs">
+          <AlertTriangle className="w-4 h-4" />
           <p>{error}</p>
         </div>
       )}
