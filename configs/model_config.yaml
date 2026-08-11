@@ -1,0 +1,86 @@
+# ASHEN-VECTOR Model Configuration
+# Phase 1: Configuration templates for future model training.
+# No models are trained during Phase 1.
+
+defaults:
+  prediction_horizons: [1, 5, 20]  # days
+  default_horizon: 5
+  min_training_days: 252  # Minimum 1 year of training data
+  validation_ratio: 0.15
+
+features:
+  version: "v1"
+  price:
+    - open
+    - high
+    - low
+    - close
+    - volume
+  technical:
+    sma_windows: [5, 10, 20, 50, 100, 200]
+    ema_spans: [12, 26]
+    rsi_period: 14
+    macd:
+      fast: 12
+      slow: 26
+      signal: 9
+    bollinger:
+      window: 20
+      num_std: 2.0
+    atr_period: 14
+  momentum:
+    periods: [5, 10, 20, 60]
+  volatility:
+    windows: [5, 20, 60]
+
+models:
+  lightgbm_classifier:
+    type: "classification"
+    target: "direction"
+    params:
+      n_estimators: 500
+      max_depth: 6
+      learning_rate: 0.05
+      num_leaves: 31
+      min_child_samples: 20
+      subsample: 0.8
+      colsample_bytree: 0.8
+      reg_alpha: 0.1
+      reg_lambda: 0.1
+      random_state: 42
+
+  lightgbm_regressor:
+    type: "regression"
+    target: "return"
+    params:
+      n_estimators: 500
+      max_depth: 6
+      learning_rate: 0.05
+      num_leaves: 31
+      min_child_samples: 20
+      subsample: 0.8
+      colsample_bytree: 0.8
+      reg_alpha: 0.1
+      reg_lambda: 0.1
+      random_state: 42
+
+calibration:
+  method: "isotonic"  # or "platt"
+  min_samples: 100
+
+risk:
+  volatility_window: 20
+  drawdown_window: 252
+  thresholds:
+    low: 25
+    moderate: 50
+    high: 75
+    very_high: 90
+
+scoring:
+  factor_weights:
+    momentum: 0.25
+    trend: 0.25
+    volatility: 0.20
+    liquidity: 0.15
+    mean_reversion: 0.15

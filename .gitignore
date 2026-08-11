@@ -1,40 +1,74 @@
+# =============================================================================
+# ASHEN-VECTOR .gitignore
+# =============================================================================
+
 # Python
 __pycache__/
 *.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+dist/
+build/
 
 # Virtual environment
 .venv/
 venv/
+ENV/
 
-# Qlib market data
+# Qlib market data (5GB+ binary dataset — never commit)
 qlib_bin/
 *.tar.gz
 
-# Jupyter
-.ipynb_checkpoints/
-
-# VS Code
-.vscode/
-
-# Environment variables
+# Environment variables (local secrets/config)
 .env
-.env.*
+.env.local
+.env.production
 
-# Logs
-*.log
-
-# Generated research output
-outputs/
-results/
+# Model artifacts and generated data
 artifacts/
-
-# Trained models
 *.pkl
 *.pickle
 *.joblib
 *.pt
 *.pth
+*.onnx
+*.h5
+
+# Generated research output
+outputs/
+results/
+
+# Cache
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+logs/
+*.log
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
 
 # OS
 .DS_Store
 Thumbs.db
+desktop.ini
+
+# Node / Frontend (future)
+node_modules/
+.next/
+out/
+.turbo/
+
+# Database
+*.db
+*.sqlite3
