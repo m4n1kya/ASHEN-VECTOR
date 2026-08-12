@@ -62,3 +62,30 @@
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-quant-text-muted);
 }
+
+/* Splash Animations */
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes netflix {
+  0% {
+    transform: scale(3) translateZ(0);
+    opacity: 0;
+    filter: blur(10px);
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) translateZ(0);
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+@keyframes fadein {
+  to {
+    opacity: 1;
+  }
+}

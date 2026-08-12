@@ -35,7 +35,7 @@ export default function SplashAnimation() {
 
   return (
     <div 
-      className={`fixed inset-0 z-50 flex items-center justify-center bg-black transition-opacity duration-700 ease-in-out ${fade ? 'opacity-0' : 'opacity-100'}`}
+      className={`fixed inset-0 z-50 flex items-center justify-center bg-black transition-opacity duration-700 ease-in-out ${fade ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
     >
       {/* Background Animated Stock Line Chart */}
       <div className="absolute inset-0 overflow-hidden opacity-30 pointer-events-none flex items-center justify-center">
@@ -64,7 +64,7 @@ export default function SplashAnimation() {
       </div>
 
       {/* Netflix-style Logo Animation */}
-      <div className="relative z-10 flex flex-col items-center justify-center">
+      <div className="relative z-10 flex flex-col items-center justify-center pointer-events-none">
         <img 
           src="/logo.png" 
           alt="ASHEN-VECTOR" 
@@ -74,34 +74,6 @@ export default function SplashAnimation() {
           ASHEN<span className="text-[#10B981]">VECTOR</span>
         </div>
       </div>
-      
-      <style jsx global>{`
-        @keyframes dash {
-          to {
-            stroke-dashoffset: 0;
-          }
-        }
-        @keyframes netflix {
-          0% {
-            transform: scale(3) translateZ(0);
-            opacity: 0;
-            filter: blur(10px);
-          }
-          40% {
-            opacity: 1;
-          }
-          100% {
-            transform: scale(1) translateZ(0);
-            opacity: 1;
-            filter: blur(0px);
-          }
-        }
-        @keyframes fadein {
-          to {
-            opacity: 1;
-          }
-        }
-      `}</style>
     </div>
   );
 }
