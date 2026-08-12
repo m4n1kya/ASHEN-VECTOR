@@ -12,6 +12,8 @@ export const metadata: Metadata = {
   description: "Quantitative Market Intelligence",
 };
 
+import SplashAnimation from "@/components/SplashAnimation";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -20,6 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className={`${inter.variable} ${jetbrains.variable} font-sans bg-quant-bg text-quant-text-primary h-screen flex flex-col overflow-hidden`}>
+        <SplashAnimation />
         
         {/* TOPBAR */}
         <header className="h-14 border-b border-quant-border bg-quant-sidebar flex items-center justify-between px-6 shrink-0">
