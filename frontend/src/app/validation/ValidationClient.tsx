@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Activity, Play, AlertTriangle, CheckCircle, ArrowLeft } from "lucide-react";
+import { Activity, Play, AlertTriangle, CheckCircle, ArrowLeft, Loader2 } from "lucide-react";
 import { useRouter } from "next/navigation";
 import MethodologyPanel from "@/components/validation/MethodologyPanel";
 import PredictiveMetrics from "@/components/validation/PredictiveMetrics";
@@ -134,7 +134,7 @@ export default function ValidationClient() {
               className="w-full bg-quant-border text-quant-text-primary text-[10px] tracking-widest font-bold rounded-sm p-2 border border-transparent hover:border-quant-text-muted transition-colors disabled:opacity-50 flex items-center justify-center gap-2 h-[38px] uppercase"
             >
               {status === "QUEUED" || status === "RUNNING" ? (
-                <><img src="/logo.png" alt="Loading" className="w-3.5 h-3.5 animate-[spin_4s_linear_infinite]" /> {status}</>
+                <><Loader2 className="w-3.5 h-3.5 animate-spin text-quant-text-muted" /> {status}</>
               ) : (
                 <><Play className="w-3.5 h-3.5" /> RUN OOS VALIDATION</>
               )}

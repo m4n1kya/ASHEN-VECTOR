@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Activity, Play, AlertTriangle, HeartPulse, Info, BarChart2, Shield, TrendingUp, Layers, Wind, Activity as ActivityIcon } from "lucide-react";
+import { Activity, Play, AlertTriangle, HeartPulse, Info, BarChart2, Shield, TrendingUp, Layers, Wind, Activity as ActivityIcon, Loader2 } from "lucide-react";
 import Link from "next/link";
 
 export default function ModelsClient() {
@@ -61,7 +61,7 @@ export default function ModelsClient() {
             className="bg-gray-800 text-gray-200 text-xs tracking-widest font-bold rounded-sm px-6 py-2 border border-transparent hover:border-gray-500 transition-colors disabled:opacity-50 flex items-center justify-center gap-2 h-[38px]"
           >
             {loading ? (
-              <><img src="/logo.png" alt="Loading" className="w-3.5 h-3.5 animate-[spin_4s_linear_infinite]" /> ANALYZING...</>
+              <><Loader2 className="w-3.5 h-3.5 animate-spin text-gray-400" /> ANALYZING...</>
             ) : (
               <><Play className="w-3.5 h-3.5" /> INFER</>
             )}
