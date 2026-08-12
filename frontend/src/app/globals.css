@@ -1,22 +1,22 @@
 @import "tailwindcss";
 
 @theme {
-  --color-quant-bg: #080808;
-  --color-quant-sidebar: #0D0D0D;
-  --color-quant-panel: #111111;
-  --color-quant-elevated: #151515;
-  --color-quant-border: #242424;
-  --color-quant-active: #2A2A2A;
+  --color-quant-bg: #000000;
+  --color-quant-sidebar: #050505;
+  --color-quant-panel: #0A0A0A;
+  --color-quant-elevated: #111111;
+  --color-quant-border: #1a1a1a;
+  --color-quant-active: #151515;
   
   --color-quant-text-primary: #E8E5DE;
   --color-quant-text-secondary: #858585;
-  --color-quant-text-muted: #555555;
+  --color-quant-text-muted: #444444;
   
-  --color-quant-up: #435b52;
-  --color-quant-up-text: #60907d;
-  --color-quant-down: #5b4345;
-  --color-quant-down-text: #906065;
-  --color-quant-warn-text: #a88b5e;
+  --color-quant-up: #1b5e20;
+  --color-quant-up-text: #4caf50;
+  --color-quant-down: #b71c1c;
+  --color-quant-down-text: #f44336;
+  --color-quant-warn-text: #ffb300;
 
   --color-background: var(--color-quant-bg);
   --color-foreground: var(--color-quant-text-primary);
@@ -35,20 +35,19 @@
 .matte-panel {
   background-color: var(--color-quant-panel);
   border: 1px solid var(--color-quant-border);
-  border-radius: 6px;
+  border-radius: 4px;
 }
 
 .matte-elevated {
   background-color: var(--color-quant-elevated);
   border: 1px solid var(--color-quant-border);
-  border-radius: 6px;
+  border-radius: 4px;
 }
 
 .tabular-nums {
   font-variant-numeric: tabular-nums;
 }
 
-/* Custom Scrollbar for dark minimal theme */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;

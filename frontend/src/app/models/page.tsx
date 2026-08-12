@@ -1,6 +1,6 @@
-import ModelsClient from "./models/ModelsClient";
+import ModelsClient from "./ModelsClient";
 
-export default function Home() {
+export default function ModelsPage() {
   return (
     <div className="space-y-6 h-full flex flex-col">
       <header className="pb-4 border-b border-quant-border shrink-0">

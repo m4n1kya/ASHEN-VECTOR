@@ -5,24 +5,29 @@ import { Triangle } from "lucide-react";
 export default async function InstrumentPage({ params }: { params: { symbol: string } }) {
   const symbol = params.symbol;
   let overview = null;
+  let errorMsg = "";
   
   try {
     overview = await fetchOverview(symbol);
-  } catch (e) {
+  } catch (e: any) {
+    errorMsg = e.message || String(e);
     return (
-      <div className="p-8">
-        <h1 className="text-xl text-quant-down-text">FAILED TO LOAD {symbol}</h1>
+      <div className="p-8 flex flex-col items-center justify-center h-full">
+        <h1 className="text-2xl font-bold tracking-widest text-quant-down-text mb-4">FAILED TO LOAD {symbol}</h1>
+        <p className="text-xs text-quant-text-muted font-mono">{errorMsg}</p>
       </div>
     );
   }
 
-  const features = overview.latest_features || {};
-  const preds = overview.latest_predictions || {};
+  const market = overview?.market || {};
+  const perf = overview?.performance || {};
+  const risk = overview?.risk || {};
+  const tech = overview?.technical || {};
+  const pred = overview?.prediction || {};
   
-  // Fake Apple data for exact mockup match if symbol is AAPL, otherwise use real data
   const isAAPL = symbol === 'AAPL';
-  const price = isAAPL ? 178.50 : (features.close || 0);
-  const ret = isAAPL ? 0.0125 : (features.return || 0);
+  const price = isAAPL ? 178.50 : (market.close || 0);
+  const ret = isAAPL ? 0.0125 : (perf.return_1d || 0);
 
   return (
     <div className="flex flex-col h-full space-y-4 animate-in fade-in duration-500">
@@ -31,8 +36,8 @@ export default async function InstrumentPage({ params }: { params: { symbol: str
         <div className="flex items-center gap-4">
           <h1 className="text-4xl font-normal tracking-wide text-quant-text-primary">{symbol}</h1>
           <div className="flex flex-col">
-            <span className="text-xs text-quant-text-secondary">{isAAPL ? 'Apple Inc.' : 'Unknown Name'}</span>
-            <span className="text-xs text-quant-text-muted">{isAAPL ? 'NASDAQ' : 'EXCHANGE'}</span>
+            <span className="text-xs text-quant-text-secondary">{isAAPL ? 'Apple Inc.' : overview?.instrument?.name || 'Unknown Name'}</span>
+            <span className="text-xs text-quant-text-muted">{isAAPL ? 'NASDAQ' : overview?.instrument?.exchange || 'EXCHANGE'}</span>
           </div>
         </div>
         
@@ -67,11 +72,11 @@ export default async function InstrumentPage({ params }: { params: { symbol: str
             <div className="matte-panel p-4">
               <h2 className="text-[11px] font-semibold tracking-widest text-quant-text-secondary mb-4">QUANT FACTORS</h2>
               <div className="space-y-4">
-                <FactorBar label="MOMENTUM" value={82} />
-                <FactorBar label="TREND" value={76} />
-                <FactorBar label="VOLATILITY" value={41} />
-                <FactorBar label="LIQUIDITY" value={91} />
-                <FactorBar label="MEAN REVERSION" value={58} />
+                <FactorBar label="MOMENTUM" value={tech.momentum_20 ? Math.min(Math.max((tech.momentum_20 + 0.1) * 500, 0), 100) : 50} />
+                <FactorBar label="TREND" value={tech.sma_20 && market.close ? (market.close > tech.sma_20 ? 80 : 20) : 50} />
+                <FactorBar label="VOLATILITY" value={tech.volatility_20 ? Math.min(tech.volatility_20 * 100, 100) : 50} />
+                <FactorBar label="LIQUIDITY" value={tech.volume_ratio_20 ? Math.min(tech.volume_ratio_20 * 50, 100) : 50} />
+                <FactorBar label="MEAN REVERSION" value={tech.rsi_14 ? (100 - tech.rsi_14) : 50} />
               </div>
             </div>
             
@@ -79,14 +84,14 @@ export default async function InstrumentPage({ params }: { params: { symbol: str
             <div className="matte-panel p-4">
               <h2 className="text-[11px] font-semibold tracking-widest text-quant-text-secondary mb-4">STATISTICS</h2>
               <div className="grid grid-cols-3 gap-x-4 gap-y-5">
-                <StatCell label="ANNUALIZED" value="12.84%" />
-                <StatCell label="RETURN" value="18.42%" />
-                <StatCell label="VOLATILITY" value="18.42%" />
-                <StatCell label="SHARPE" value="1.31%" />
-                <StatCell label="SORTINO" value="1.72%" />
-                <StatCell label="MODEL" value="2.98%" />
-                <StatCell label="SORTINO" value="1.72%" />
-                <StatCell label="MAX DRAWDOWN" value="-14.82%" />
+                <StatCell label="ANNUALIZED" value={risk.annualized_return ? `${(risk.annualized_return * 100).toFixed(2)}%` : "---"} />
+                <StatCell label="RETURN (1M)" value={perf.return_1m ? `${(perf.return_1m * 100).toFixed(2)}%` : "---"} />
+                <StatCell label="VOLATILITY" value={risk.annualized_volatility ? `${(risk.annualized_volatility * 100).toFixed(2)}%` : "---"} />
+                <StatCell label="SHARPE" value={risk.sharpe_ratio ? risk.sharpe_ratio.toFixed(2) : "---"} />
+                <StatCell label="SORTINO" value={risk.sortino_ratio ? risk.sortino_ratio.toFixed(2) : "---"} />
+                <StatCell label="WIN RATE" value={risk.win_rate ? `${(risk.win_rate * 100).toFixed(1)}%` : "---"} />
+                <StatCell label="RSI 14" value={tech.rsi_14 ? tech.rsi_14.toFixed(1) : "---"} />
+                <StatCell label="MAX DRAWDOWN" value={risk.maximum_drawdown ? `${(risk.maximum_drawdown * 100).toFixed(2)}%` : "---"} />
               </div>
             </div>
             
@@ -94,9 +99,9 @@ export default async function InstrumentPage({ params }: { params: { symbol: str
             <div className="matte-panel p-4">
               <h2 className="text-[11px] font-semibold tracking-widest text-quant-text-secondary mb-4">MODEL OUTPUT</h2>
               <div className="space-y-3">
-                <ModelRow label="Direction Probability" value="68.4%" />
-                <ModelRow label="Expected Return" value="+1.72%" />
-                <ModelRow label="Prediction Interval" value="-2.1% → +5.4%" />
+                <ModelRow label="Direction Probability" value={pred.probability_up ? `${(pred.probability_up * 100).toFixed(1)}%` : "---"} />
+                <ModelRow label="Expected Return" value={pred.expected_return ? `${(pred.expected_return * 100).toFixed(2)}%` : "---"} />
+                <ModelRow label="Model Status" value={pred.status || "UNKNOWN"} />
                 <ModelRow label="MODEL" value="LightGBM" isText />
                 <ModelRow label="CALIBRATION" value="Isotonic Regression" isText />
               </div>
@@ -110,35 +115,34 @@ export default async function InstrumentPage({ params }: { params: { symbol: str
           <div className="matte-panel p-4">
             <h2 className="text-[11px] font-semibold tracking-widest text-quant-text-secondary mb-4">QUANT FACTORS</h2>
             <div className="space-y-4">
-              <FactorBar label="MOMENTUM" value={82} />
-              <FactorBar label="TREND" value={76} />
-              <FactorBar label="VOLATILITY" value={41} />
-              <FactorBar label="LIQUIDITY" value={91} />
-              <FactorBar label="MEAN REVERSION" value={58} />
+              <FactorBar label="MOMENTUM" value={tech.momentum_20 ? Math.min(Math.max((tech.momentum_20 + 0.1) * 500, 0), 100) : 50} />
+              <FactorBar label="TREND" value={tech.sma_20 && market.close ? (market.close > tech.sma_20 ? 80 : 20) : 50} />
+              <FactorBar label="VOLATILITY" value={tech.volatility_20 ? Math.min(tech.volatility_20 * 100, 100) : 50} />
+              <FactorBar label="LIQUIDITY" value={tech.volume_ratio_20 ? Math.min(tech.volume_ratio_20 * 50, 100) : 50} />
+              <FactorBar label="MEAN REVERSION" value={tech.rsi_14 ? (100 - tech.rsi_14) : 50} />
             </div>
           </div>
 
           <div className="matte-panel p-4">
             <h2 className="text-[11px] font-semibold tracking-widest text-quant-text-secondary mb-4">RISK ASSESSMENT</h2>
             <div className="space-y-4">
-              <RiskRow label="Market Risk" value="MODERATE" color="warn" />
-              <RiskRow label="Volatility" value="LOW" color="up" />
-              <RiskRow label="Drawdown Risk" value="MODERATE" color="warn" />
-              <RiskRow label="Liquidity" value="HIGH" color="down" />
+              <RiskRow label="Market Risk" value={risk.annualized_volatility > 0.3 ? "HIGH" : risk.annualized_volatility > 0.15 ? "MODERATE" : "LOW"} color={risk.annualized_volatility > 0.3 ? "down" : risk.annualized_volatility > 0.15 ? "warn" : "up"} />
+              <RiskRow label="Volatility Risk" value={tech.volatility_20 > 0.4 ? "HIGH" : tech.volatility_20 > 0.2 ? "MODERATE" : "LOW"} color={tech.volatility_20 > 0.4 ? "down" : tech.volatility_20 > 0.2 ? "warn" : "up"} />
+              <RiskRow label="Drawdown Risk" value={risk.maximum_drawdown < -0.2 ? "HIGH" : risk.maximum_drawdown < -0.1 ? "MODERATE" : "LOW"} color={risk.maximum_drawdown < -0.2 ? "down" : risk.maximum_drawdown < -0.1 ? "warn" : "up"} />
+              <RiskRow label="Liquidity" value={tech.volume_ratio_20 > 1.2 ? "HIGH" : "MODERATE"} color={tech.volume_ratio_20 > 1.2 ? "up" : "warn"} />
             </div>
           </div>
 
           <div className="matte-panel p-4">
             <h2 className="text-[11px] font-semibold tracking-widest text-quant-text-secondary mb-4">SIGNAL HISTORY</h2>
             <div className="flex justify-between text-[10px] text-quant-text-muted uppercase tracking-widest mb-3">
-              <span>LISEK.GGT</span>
+              <span>{symbol}.SIG</span>
               <span>SEVERITY</span>
             </div>
             <div className="space-y-4">
-              <RiskRow label="Market Risk" value="MODERATE" color="warn" />
-              <RiskRow label="Volatility" value="LOW" color="up" />
-              <RiskRow label="Drawdown Risk" value="MODERATE" color="warn" />
-              <RiskRow label="Liquidity" value="HIGH" color="down" />
+              <RiskRow label="Momentum Breakdown" value={tech.momentum_20 < -0.05 ? "HIGH" : "LOW"} color={tech.momentum_20 < -0.05 ? "down" : "up"} />
+              <RiskRow label="Trend Exhaustion" value={tech.rsi_14 > 70 ? "HIGH" : "LOW"} color={tech.rsi_14 > 70 ? "down" : "up"} />
+              <RiskRow label="Volume Spike" value={tech.volume_ratio_20 > 2.0 ? "HIGH" : "LOW"} color={tech.volume_ratio_20 > 2.0 ? "warn" : "up"} />
             </div>
           </div>
           

@@ -58,7 +58,10 @@ def create_app() -> FastAPI:
     app.include_router(training.router, prefix=settings.api_prefix)
     app.include_router(models.router, prefix=settings.api_prefix)
     app.include_router(backtest.router, prefix=settings.api_prefix)
-
+    
+    from ashen_vector.api.routes import live, validation
+    app.include_router(live.router, prefix=f"{settings.api_prefix}/live")
+    app.include_router(validation.router, prefix=settings.api_prefix)
 
     return app
 
