@@ -14,16 +14,16 @@ export default function SplashAnimation() {
       return;
     }
 
-    // Trigger the fade-out after 2.5 seconds
+    // Trigger the fade-out after 1.2 seconds
     const fadeTimer = setTimeout(() => {
       setFade(true);
-    }, 2500);
+    }, 1200);
 
-    // Completely unmount after 3.2 seconds
+    // Completely unmount after 1.8 seconds
     const hideTimer = setTimeout(() => {
       setShow(false);
       sessionStorage.setItem("hasSeenSplash", "true");
-    }, 3200);
+    }, 1800);
 
     return () => {
       clearTimeout(fadeTimer);
@@ -68,9 +68,9 @@ export default function SplashAnimation() {
         <img 
           src="/logo.png" 
           alt="ASHEN-VECTOR" 
-          className="w-48 h-48 animate-[netflix_1.5s_cubic-bezier(0.19,1,0.22,1)_forwards] opacity-0 drop-shadow-[0_0_30px_rgba(16,185,129,0.5)]"
+          className="w-48 h-48 animate-[netflix_0.8s_cubic-bezier(0.19,1,0.22,1)_forwards] opacity-0 drop-shadow-[0_0_30px_rgba(16,185,129,0.5)]"
         />
-        <div className="mt-8 text-2xl font-mono font-bold tracking-[0.5em] text-white opacity-0 animate-[fadein_1s_ease-out_0.5s_forwards]">
+        <div className="mt-8 text-2xl font-mono font-bold tracking-[0.5em] text-white opacity-0 animate-[fadein_0.6s_ease-out_0.3s_forwards]">
           ASHEN<span className="text-[#10B981]">VECTOR</span>
         </div>
       </div>
