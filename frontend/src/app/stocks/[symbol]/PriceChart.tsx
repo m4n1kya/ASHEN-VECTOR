@@ -33,15 +33,14 @@ const generateData = () => {
     });
   }
   
-  // Force the last price to 178.50 to match the mockup
-  data[data.length - 1].price = 178.50;
-  
   return data;
 };
 
 const data = generateData();
 
-export default function PriceChart() {
+export default function PriceChart({ symbol }: { symbol: string }) {
+  const currentPrice = data[data.length - 1].price;
+  
   return (
     <ResponsiveContainer width="100%" height="100%">
       <ComposedChart data={data} margin={{ top: 20, right: 0, left: 10, bottom: 5 }}>
@@ -93,16 +92,16 @@ export default function PriceChart() {
         {/* Reference Line for current price */}
         <ReferenceLine 
           yAxisId="price" 
-          y={178.50} 
+          y={currentPrice} 
           stroke="#555555" 
           strokeDasharray="2 2" 
           strokeWidth={1} 
         />
         <ReferenceLine 
           yAxisId="price" 
-          y={178.50} 
+          y={currentPrice} 
           stroke="#none" 
-          label={{ position: 'right', value: '178.50', fill: '#E8E5DE', fontSize: 10, fontWeight: 'bold' }} 
+          label={{ position: 'right', value: currentPrice.toFixed(2), fill: '#E8E5DE', fontSize: 10, fontWeight: 'bold' }} 
         />
 
         {/* Volume Bars */}

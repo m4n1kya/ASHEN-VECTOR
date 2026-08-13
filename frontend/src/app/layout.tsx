@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
-import { Cpu, Layers, Triangle } from "lucide-react";
-
+import { Cpu, Layers, Triangle, Home, BookOpen, Activity, ShieldAlert, BarChart2 } from "lucide-react";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const jetbrains = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" });
 
@@ -13,6 +12,7 @@ export const metadata: Metadata = {
 };
 
 import SplashAnimation from "@/components/SplashAnimation";
+import Navigation from "@/components/Navigation";
 
 export default function RootLayout({
   children,
@@ -27,15 +27,12 @@ export default function RootLayout({
         {/* TOPBAR */}
         <header className="h-14 border-b border-quant-border bg-quant-sidebar flex items-center justify-between px-6 shrink-0">
           <div className="flex items-center gap-8">
-            <div className="flex items-center gap-3 border-r border-quant-border pr-8 h-14">
+            <Link href="/dashboard" className="flex items-center gap-3 border-r border-quant-border pr-8 h-14 hover:opacity-80 transition-opacity cursor-pointer">
               <img src="/logo.png" alt="Logo" className="w-5 h-5 object-contain" />
               <span className="font-semibold text-xs tracking-widest text-quant-text-primary">ASHEN-VECTOR</span>
-            </div>
+            </Link>
             
-            <nav className="flex items-center gap-2">
-              <TopbarItem href="/" icon={<Cpu className="w-4 h-4" />} label="MODELS" active={true} />
-              <TopbarItem href="/backtest" icon={<Layers className="w-4 h-4" />} label="BACKTESTING" />
-            </nav>
+            <Navigation />
           </div>
           
           <div className="flex items-center gap-2 text-xs text-quant-text-secondary tracking-widest">
@@ -56,11 +53,4 @@ export default function RootLayout({
   );
 }
 
-function TopbarItem({ href, icon, label, active = false }: { href: string, icon: React.ReactNode, label: string, active?: boolean }) {
-  return (
-    <Link href={href} className={`flex items-center gap-2 px-4 py-1.5 text-[11px] font-semibold tracking-widest transition-colors rounded-sm border ${active ? 'bg-quant-active text-quant-text-primary border-quant-border' : 'text-quant-text-secondary border-transparent hover:text-quant-text-primary hover:bg-quant-elevated'}`}>
-      {icon}
-      {label}
-    </Link>
-  );
-}
+
