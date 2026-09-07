@@ -54,3 +54,7 @@ Reusable components are structured under `src/components/`, including unified st
 
 The UI adapts to various screen sizes while maintaining the dense, terminal-style data presentation required for finance.
 
+## Authentication
+
+(Reserved for future implementation of JWT-based stateless authentication flows).
+
