@@ -10,3 +10,7 @@ ASHEN-VECTOR is a quantitative finance platform combining mathematical models wi
 
 The data pipeline relies on Qlib for robust financial dataset management and efficient retrieval.
 
+### Feature Engineering
+
+Features include technical indicators (RSI, MACD) and statistical metrics generated securely without look-ahead bias.
+
