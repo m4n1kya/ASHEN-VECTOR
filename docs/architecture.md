@@ -70,3 +70,7 @@ Data fetching is optimized using Next.js caching where applicable, and heavy pro
 
 Includes unit testing for analytical functions and backend route validation using Pytest.
 
+### CI/CD Pipeline
+
+Designed to be deployed via standard Docker containers or serverless edge environments.
+
