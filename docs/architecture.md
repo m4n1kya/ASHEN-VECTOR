@@ -50,3 +50,7 @@ React state is used alongside Server Components to manage real-time UI updates s
 
 Reusable components are structured under `src/components/`, including unified stock detail views and metric grids.
 
+## Responsive Design
+
+The UI adapts to various screen sizes while maintaining the dense, terminal-style data presentation required for finance.
+
