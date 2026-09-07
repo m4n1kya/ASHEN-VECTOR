@@ -30,3 +30,7 @@ The FastAPI backend exposes REST endpoints categorized by stocks, predictions, l
 
 Real-time inference is supported by fetching current market snapshots via yfinance and custom integrations.
 
+## Risk Management
+
+Calculates historical Value at Risk (VaR), Conditional VaR (CVaR), and maximum drawdowns for risk assessment.
+
