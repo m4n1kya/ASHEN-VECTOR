@@ -66,3 +66,7 @@ Backend exceptions (like `InstrumentNotFoundError`) are mapped directly to prope
 
 Data fetching is optimized using Next.js caching where applicable, and heavy processing is offloaded to the backend.
 
+## Testing Strategy
+
+Includes unit testing for analytical functions and backend route validation using Pytest.
+
