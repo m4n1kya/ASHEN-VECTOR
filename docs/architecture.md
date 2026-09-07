@@ -34,3 +34,7 @@ Real-time inference is supported by fetching current market snapshots via yfinan
 
 Calculates historical Value at Risk (VaR), Conditional VaR (CVaR), and maximum drawdowns for risk assessment.
 
+### Portfolio Optimization
+
+Uses modern portfolio theory to suggest optimal weights balancing expected return and risk.
+
