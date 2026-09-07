@@ -58,3 +58,7 @@ The UI adapts to various screen sizes while maintaining the dense, terminal-styl
 
 (Reserved for future implementation of JWT-based stateless authentication flows).
 
+### Error Handling
+
+Backend exceptions (like `InstrumentNotFoundError`) are mapped directly to proper HTTP status codes for frontend consumption.
+
