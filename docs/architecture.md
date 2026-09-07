@@ -26,3 +26,7 @@ Aggregates predictions from multiple base models (LightGBM, XGBoost) to form a r
 
 The FastAPI backend exposes REST endpoints categorized by stocks, predictions, live data, and validation.
 
+### Live Market Data
+
+Real-time inference is supported by fetching current market snapshots via yfinance and custom integrations.
+
