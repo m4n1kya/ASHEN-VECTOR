@@ -14,3 +14,7 @@ The data pipeline relies on Qlib for robust financial dataset management and eff
 
 Features include technical indicators (RSI, MACD) and statistical metrics generated securely without look-ahead bias.
 
+## Model Registry
+
+The model registry tracks active models, their versions, validation metrics, and current statuses.
+
