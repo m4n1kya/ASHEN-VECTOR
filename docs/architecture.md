@@ -18,3 +18,7 @@ Features include technical indicators (RSI, MACD) and statistical metrics genera
 
 The model registry tracks active models, their versions, validation metrics, and current statuses.
 
+### Prediction Engine
+
+Aggregates predictions from multiple base models (LightGBM, XGBoost) to form a robust consensus forecast.
+
