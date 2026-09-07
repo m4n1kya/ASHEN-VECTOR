@@ -62,3 +62,7 @@ The UI adapts to various screen sizes while maintaining the dense, terminal-styl
 
 Backend exceptions (like `InstrumentNotFoundError`) are mapped directly to proper HTTP status codes for frontend consumption.
 
+## Performance
+
+Data fetching is optimized using Next.js caching where applicable, and heavy processing is offloaded to the backend.
+
