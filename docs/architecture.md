@@ -78,3 +78,7 @@ Designed to be deployed via standard Docker containers or serverless edge enviro
 
 The frontend deploys easily to Vercel, while the backend is containerized for deployment on AWS or GCP.
 
+### Observability
+
+Logging is integrated across the backend pipeline to trace data ingestion and model inference steps.
+
