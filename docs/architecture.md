@@ -38,3 +38,7 @@ Calculates historical Value at Risk (VaR), Conditional VaR (CVaR), and maximum d
 
 Uses modern portfolio theory to suggest optimal weights balancing expected return and risk.
 
+## Frontend Architecture
+
+Built with Next.js 14, Tailwind CSS, and Lucide icons, focusing on a dark 'matte black' quantitative aesthetic.
+
