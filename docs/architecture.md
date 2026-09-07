@@ -42,3 +42,7 @@ Uses modern portfolio theory to suggest optimal weights balancing expected retur
 
 Built with Next.js 14, Tailwind CSS, and Lucide icons, focusing on a dark 'matte black' quantitative aesthetic.
 
+### State Management
+
+React state is used alongside Server Components to manage real-time UI updates seamlessly.
+
