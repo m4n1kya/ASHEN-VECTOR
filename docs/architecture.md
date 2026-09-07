@@ -74,3 +74,7 @@ Includes unit testing for analytical functions and backend route validation usin
 
 Designed to be deployed via standard Docker containers or serverless edge environments.
 
+## Deployment
+
+The frontend deploys easily to Vercel, while the backend is containerized for deployment on AWS or GCP.
+
