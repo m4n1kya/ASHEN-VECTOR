@@ -22,3 +22,7 @@ The model registry tracks active models, their versions, validation metrics, and
 
 Aggregates predictions from multiple base models (LightGBM, XGBoost) to form a robust consensus forecast.
 
+## API Architecture
+
+The FastAPI backend exposes REST endpoints categorized by stocks, predictions, live data, and validation.
+
