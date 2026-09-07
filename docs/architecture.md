@@ -46,3 +46,7 @@ Built with Next.js 14, Tailwind CSS, and Lucide icons, focusing on a dark 'matte
 
 React state is used alongside Server Components to manage real-time UI updates seamlessly.
 
+### Component Library
+
+Reusable components are structured under `src/components/`, including unified stock detail views and metric grids.
+
