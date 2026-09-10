@@ -34,3 +34,7 @@ Historical scenarios (e.g., 2008 Financial Crisis, 2020 COVID Crash) and Monte C
 
 The portfolio aims for market neutrality, keeping net SPY beta between -0.1 and +0.1 to isolate idiosyncratic alpha.
 
+## Position Sizing
+
+We utilize volatility-scaled position sizing (target volatility) to ensure equal risk contribution across all active trades.
+
