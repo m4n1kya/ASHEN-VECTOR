@@ -38,3 +38,7 @@ The portfolio aims for market neutrality, keeping net SPY beta between -0.1 and 
 
 We utilize volatility-scaled position sizing (target volatility) to ensure equal risk contribution across all active trades.
 
+### Liquidity Constraints
+
+Positions are capped at a maximum of 1% of the asset's average 30-day daily trading volume to ensure execution efficiency.
+
