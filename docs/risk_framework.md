@@ -30,3 +30,7 @@ Maximum Drawdown (MDD) thresholds are strictly enforced, with automated exposure
 
 Historical scenarios (e.g., 2008 Financial Crisis, 2020 COVID Crash) and Monte Carlo simulations are run weekly to stress-test the portfolio.
 
+### Beta Exposure
+
+The portfolio aims for market neutrality, keeping net SPY beta between -0.1 and +0.1 to isolate idiosyncratic alpha.
+
