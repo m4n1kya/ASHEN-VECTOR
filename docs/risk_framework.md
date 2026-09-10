@@ -18,3 +18,7 @@ We prioritize Conditional VaR over traditional VaR to better estimate the expect
 
 The system utilizes both non-parametric historical simulation and parametric GARCH-based volatility modeling for robust estimates.
 
+## Portfolio Volatility
+
+Dynamic correlation matrices are updated intraday to prevent unintended concentration risk across asset classes.
+
