@@ -22,3 +22,7 @@ The system utilizes both non-parametric historical simulation and parametric GAR
 
 Dynamic correlation matrices are updated intraday to prevent unintended concentration risk across asset classes.
 
+### Drawdown Monitoring
+
+Maximum Drawdown (MDD) thresholds are strictly enforced, with automated exposure reduction triggered at specific drawdown watermarks.
+
