@@ -10,3 +10,7 @@ Our primary objective is capital preservation during tail-risk events while main
 
 VaR is computed daily at the 95% and 99% confidence intervals using a rolling 252-day historical window.
 
+### Expected Shortfall (CVaR)
+
+We prioritize Conditional VaR over traditional VaR to better estimate the expected loss severity in the left tail of the distribution.
+
