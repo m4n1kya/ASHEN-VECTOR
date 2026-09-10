@@ -46,3 +46,7 @@ Positions are capped at a maximum of 1% of the asset's average 30-day daily trad
 
 Gross exposure to Fama-French factors (SMB, HML, Momentum) is continuously monitored to avoid unintentional factor tilts.
 
+### Tail Risk Hedging
+
+A small allocation to deep out-of-the-money VIX calls and SPY puts acts as an insurance overlay during regime shifts.
+
