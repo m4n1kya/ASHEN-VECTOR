@@ -26,3 +26,7 @@ Dynamic correlation matrices are updated intraday to prevent unintended concentr
 
 Maximum Drawdown (MDD) thresholds are strictly enforced, with automated exposure reduction triggered at specific drawdown watermarks.
 
+## Stress Testing
+
+Historical scenarios (e.g., 2008 Financial Crisis, 2020 COVID Crash) and Monte Carlo simulations are run weekly to stress-test the portfolio.
+
