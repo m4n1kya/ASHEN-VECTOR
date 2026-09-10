@@ -14,3 +14,7 @@ VaR is computed daily at the 95% and 99% confidence intervals using a rolling 25
 
 We prioritize Conditional VaR over traditional VaR to better estimate the expected loss severity in the left tail of the distribution.
 
+### Simulation Methodologies
+
+The system utilizes both non-parametric historical simulation and parametric GARCH-based volatility modeling for robust estimates.
+
