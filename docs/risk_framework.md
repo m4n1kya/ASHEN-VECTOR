@@ -42,3 +42,7 @@ We utilize volatility-scaled position sizing (target volatility) to ensure equal
 
 Positions are capped at a maximum of 1% of the asset's average 30-day daily trading volume to ensure execution efficiency.
 
+## Factor Exposure
+
+Gross exposure to Fama-French factors (SMB, HML, Momentum) is continuously monitored to avoid unintentional factor tilts.
+
