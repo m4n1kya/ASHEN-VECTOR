@@ -50,3 +50,7 @@ Gross exposure to Fama-French factors (SMB, HML, Momentum) is continuously monit
 
 A small allocation to deep out-of-the-money VIX calls and SPY puts acts as an insurance overlay during regime shifts.
 
+## Regime Detection
+
+Hidden Markov Models (HMM) are employed to identify high-volatility regimes, automatically tightening stop-losses across the board.
+
