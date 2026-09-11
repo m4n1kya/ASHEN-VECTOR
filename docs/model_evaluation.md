@@ -30,3 +30,7 @@ Models are evaluated strictly on out-of-sample datasets that were entirely hidde
 
 Isotonic regression and Platt scaling are used to ensure model outputs represent true mathematical probabilities of market direction.
 
+## Feature Importance
+
+SHAP (SHapley Additive exPlanations) values are computed to ensure model interpretability and to guard against spurious correlations.
+
