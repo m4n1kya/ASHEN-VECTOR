@@ -74,3 +74,7 @@ Strict, conservative transaction costs (commissions and spread crossing) are ass
 
 Models are ultimately evaluated on their out-of-sample Sharpe and Sortino ratios, focusing on downside volatility.
 
+### Information Ratio
+
+The Information Ratio is tracked to evaluate the active return of the models relative to a standard benchmark like the S&P 500.
+
