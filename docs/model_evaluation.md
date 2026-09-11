@@ -14,3 +14,7 @@ Strict pipeline constraints are enforced to guarantee that no future data leaks 
 
 We utilize a purged walk-forward methodology to respect the temporal nature of financial time-series data.
 
+### Embargoing
+
+An embargo period is applied after the training set to prevent overlap between training and testing periods caused by multi-day return calculations.
+
