@@ -86,3 +86,7 @@ An automated pipeline tracks predictive decay over time, triggering periodic ret
 
 Statistical tests monitor the distributions of incoming features to detect concept drift and invalidate models operating in unseen regimes.
 
+## Ensemble Aggregation
+
+A meta-model aggregates the signals from the base learners, weighting them by their recent out-of-sample reliability scores.
+
