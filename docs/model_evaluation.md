@@ -46,3 +46,7 @@ Strict L1 and L2 regularization penalties are applied to XGBoost models to maint
 
 Extremely Randomized Trees (ExtraTrees) are utilized to increase variance reduction and build robust ensemble consensus.
 
+## Loss Functions
+
+We optimize against custom, time-series specific loss functions rather than generic metrics like RMSE or cross-entropy.
+
