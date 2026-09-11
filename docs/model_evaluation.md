@@ -22,3 +22,7 @@ An embargo period is applied after the training set to prevent overlap between t
 
 CPCV is employed to generate multiple backtest paths, allowing us to estimate the probability of backtest overfitting.
 
+## Out-of-Sample Testing
+
+Models are evaluated strictly on out-of-sample datasets that were entirely hidden during the hyperparameter tuning phase.
+
