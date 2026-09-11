@@ -10,3 +10,7 @@ In quantitative finance, rigorous validation is required to prevent overfitting 
 
 Strict pipeline constraints are enforced to guarantee that no future data leaks into the training sets of our predictive models.
 
+## Purged Walk-Forward Cross-Validation
+
+We utilize a purged walk-forward methodology to respect the temporal nature of financial time-series data.
+
