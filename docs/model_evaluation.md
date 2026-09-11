@@ -70,3 +70,7 @@ Model predictions are fed into an event-driven backtester that simulates executi
 
 Strict, conservative transaction costs (commissions and spread crossing) are assumed during all validation phases.
 
+### Risk-Adjusted Returns
+
+Models are ultimately evaluated on their out-of-sample Sharpe and Sortino ratios, focusing on downside volatility.
+
