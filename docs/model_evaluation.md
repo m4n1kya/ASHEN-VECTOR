@@ -62,3 +62,7 @@ Dynamic learning rate decay and aggressive early stopping are implemented based 
 
 Optuna is leveraged for distributed, Bayesian hyperparameter optimization across the purged cross-validation folds.
 
+## Backtesting Integration
+
+Model predictions are fed into an event-driven backtester that simulates execution delays and order book slippage.
+
