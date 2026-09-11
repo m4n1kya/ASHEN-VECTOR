@@ -38,3 +38,7 @@ SHAP (SHapley Additive exPlanations) values are computed to ensure model interpr
 
 LightGBM is highly effective for tabular financial data, capturing complex non-linear feature interactions efficiently.
 
+### XGBoost Regularization
+
+Strict L1 and L2 regularization penalties are applied to XGBoost models to maintain simplicity and prevent curve-fitting.
+
