@@ -82,3 +82,7 @@ The Information Ratio is tracked to evaluate the active return of the models rel
 
 An automated pipeline tracks predictive decay over time, triggering periodic retraining on rolling windows to capture recent market dynamics.
 
+### Concept Drift
+
+Statistical tests monitor the distributions of incoming features to detect concept drift and invalidate models operating in unseen regimes.
+
