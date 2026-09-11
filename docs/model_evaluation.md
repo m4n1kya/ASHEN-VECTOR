@@ -34,3 +34,7 @@ Isotonic regression and Platt scaling are used to ensure model outputs represent
 
 SHAP (SHapley Additive exPlanations) values are computed to ensure model interpretability and to guard against spurious correlations.
 
+### LightGBM Implementation
+
+LightGBM is highly effective for tabular financial data, capturing complex non-linear feature interactions efficiently.
+
