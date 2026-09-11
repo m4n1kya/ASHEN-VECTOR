@@ -26,3 +26,7 @@ CPCV is employed to generate multiple backtest paths, allowing us to estimate th
 
 Models are evaluated strictly on out-of-sample datasets that were entirely hidden during the hyperparameter tuning phase.
 
+### Probability Calibration
+
+Isotonic regression and Platt scaling are used to ensure model outputs represent true mathematical probabilities of market direction.
+
