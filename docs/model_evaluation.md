@@ -66,3 +66,7 @@ Optuna is leveraged for distributed, Bayesian hyperparameter optimization across
 
 Model predictions are fed into an event-driven backtester that simulates execution delays and order book slippage.
 
+### Transaction Costs
+
+Strict, conservative transaction costs (commissions and spread crossing) are assumed during all validation phases.
+
