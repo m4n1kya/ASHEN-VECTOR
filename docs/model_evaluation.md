@@ -50,3 +50,7 @@ Extremely Randomized Trees (ExtraTrees) are utilized to increase variance reduct
 
 We optimize against custom, time-series specific loss functions rather than generic metrics like RMSE or cross-entropy.
 
+### Asymmetric Loss
+
+A custom asymmetric loss function heavily penalizes false positives (buying before a crash) compared to false negatives (missing a rally).
+
