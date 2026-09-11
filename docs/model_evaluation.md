@@ -58,3 +58,7 @@ A custom asymmetric loss function heavily penalizes false positives (buying befo
 
 Dynamic learning rate decay and aggressive early stopping are implemented based on validation set performance to halt overfitting.
 
+## Hyperparameter Optimization
+
+Optuna is leveraged for distributed, Bayesian hyperparameter optimization across the purged cross-validation folds.
+
