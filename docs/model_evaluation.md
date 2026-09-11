@@ -90,3 +90,7 @@ Statistical tests monitor the distributions of incoming features to detect conce
 
 A meta-model aggregates the signals from the base learners, weighting them by their recent out-of-sample reliability scores.
 
+### Meta-Labeling
+
+Secondary models utilize meta-labeling to determine the optimal position size based on the confidence of the primary prediction.
+
