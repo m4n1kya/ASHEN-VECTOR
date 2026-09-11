@@ -54,3 +54,7 @@ We optimize against custom, time-series specific loss functions rather than gene
 
 A custom asymmetric loss function heavily penalizes false positives (buying before a crash) compared to false negatives (missing a rally).
 
+### Early Stopping
+
+Dynamic learning rate decay and aggressive early stopping are implemented based on validation set performance to halt overfitting.
+
