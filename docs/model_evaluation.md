@@ -78,3 +78,7 @@ Models are ultimately evaluated on their out-of-sample Sharpe and Sortino ratios
 
 The Information Ratio is tracked to evaluate the active return of the models relative to a standard benchmark like the S&P 500.
 
+## Model Decay & Retraining
+
+An automated pipeline tracks predictive decay over time, triggering periodic retraining on rolling windows to capture recent market dynamics.
+
