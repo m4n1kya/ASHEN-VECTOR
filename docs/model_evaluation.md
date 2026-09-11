@@ -18,3 +18,7 @@ We utilize a purged walk-forward methodology to respect the temporal nature of f
 
 An embargo period is applied after the training set to prevent overlap between training and testing periods caused by multi-day return calculations.
 
+### Combinatorial Purged CV
+
+CPCV is employed to generate multiple backtest paths, allowing us to estimate the probability of backtest overfitting.
+
