@@ -42,3 +42,7 @@ LightGBM is highly effective for tabular financial data, capturing complex non-l
 
 Strict L1 and L2 regularization penalties are applied to XGBoost models to maintain simplicity and prevent curve-fitting.
 
+### Random Forest Bagging
+
+Extremely Randomized Trees (ExtraTrees) are utilized to increase variance reduction and build robust ensemble consensus.
+
