@@ -38,3 +38,7 @@ Forward-filling is used exclusively for corporate actions, while backward-fillin
 
 Stock splits and cash dividends are ingested daily to construct total return series seamlessly.
 
+### Adjusted Prices
+
+Adjusted close prices are calculated recursively to ensure that historical technical indicators remain mathematically sound post-split.
+
