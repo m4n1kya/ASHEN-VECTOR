@@ -14,3 +14,7 @@ We leverage Microsoft Qlib for centralized dataset management, utilizing its opt
 
 Daily OHLCV (Open, High, Low, Close, Volume) data is ingested from primary vendors via REST APIs and WebSocket streams.
 
+### Timezone Standardization
+
+All timestamps are strictly coerced to UTC, with market-specific trading hours applied to filter pre-market and after-hours noise.
+
