@@ -86,3 +86,7 @@ Variance Inflation Factor (VIF) analysis purges highly correlated features to st
 
 PCA is occasionally applied to extract orthogonal macroeconomic latent factors from highly correlated sector ETFs.
 
+## Storage Architecture
+
+Processed feature sets are serialized directly to Parquet formats, favoring column-oriented reads over legacy HDF5 structures.
+
