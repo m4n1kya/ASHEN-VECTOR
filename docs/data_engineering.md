@@ -66,3 +66,7 @@ Features are often ranked cross-sectionally (e.g., comparing AAPL's RSI against 
 
 Rolling Z-Score normalization and Robust Scalers are applied to tame outliers without bleeding future distribution parameters into the training set.
 
+## Target Variables
+
+The primary target variable is the forward $N$-day return, adjusted for risk-free rates where necessary.
+
