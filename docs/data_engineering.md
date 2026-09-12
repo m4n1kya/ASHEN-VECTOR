@@ -18,3 +18,7 @@ Daily OHLCV (Open, High, Low, Close, Volume) data is ingested from primary vendo
 
 All timestamps are strictly coerced to UTC, with market-specific trading hours applied to filter pre-market and after-hours noise.
 
+## Data Cleaning
+
+Missing values are a reality in finance. We never forward-fill target variables, but we do impute features carefully.
+
