@@ -70,3 +70,7 @@ Rolling Z-Score normalization and Robust Scalers are applied to tame outliers wi
 
 The primary target variable is the forward $N$-day return, adjusted for risk-free rates where necessary.
 
+### Target Binning
+
+For classification models, continuous returns are discretized into quantiles (e.g., top quartile vs bottom quartile) for robust meta-labeling.
+
