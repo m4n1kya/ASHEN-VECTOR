@@ -98,3 +98,7 @@ For deep learning models, extremely large datasets are memory-mapped (`mmap`) to
 
 Intermediate feature engineering steps are cached using Redis and local filesystem hashes to drastically speed up iterative model tuning.
 
+## Automation
+
+A resilient CRON-based task scheduler triggers daily at market close to ingest, clean, and engineer the latest data points.
+
