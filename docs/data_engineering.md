@@ -106,3 +106,7 @@ A resilient CRON-based task scheduler triggers daily at market close to ingest, 
 
 Automated anomaly detection alerts quantitative researchers if the sparsity of a critical feature unexpectedly spikes.
 
+## Alternative Data
+
+Extensible hooks allow for the ingestion of alternative datasets, such as NLP sentiment scores and macroeconomic indicators (e.g., CPI, Non-Farm Payrolls).
+
