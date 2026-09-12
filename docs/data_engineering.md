@@ -58,3 +58,7 @@ Average True Range (ATR) and Bollinger Band bandwidths are extracted to model he
 
 Rolling skewness and kurtosis are calculated to capture changes in the distribution of returns, indicating potential regime shifts.
 
+### Cross-Sectional Ranking
+
+Features are often ranked cross-sectionally (e.g., comparing AAPL's RSI against the entire S&P 500) to neutralize broad market movements.
+
