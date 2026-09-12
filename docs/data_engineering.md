@@ -102,3 +102,7 @@ Intermediate feature engineering steps are cached using Redis and local filesyst
 
 A resilient CRON-based task scheduler triggers daily at market close to ingest, clean, and engineer the latest data points.
 
+### Data Quality Monitoring
+
+Automated anomaly detection alerts quantitative researchers if the sparsity of a critical feature unexpectedly spikes.
+
