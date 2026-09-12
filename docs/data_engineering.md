@@ -22,3 +22,7 @@ All timestamps are strictly coerced to UTC, with market-specific trading hours a
 
 Missing values are a reality in finance. We never forward-fill target variables, but we do impute features carefully.
 
+### Liquidity Filtering
+
+The tradable universe is dynamically filtered to exclude illiquid micro-caps, enforcing a minimum 30-day average daily volume threshold.
+
