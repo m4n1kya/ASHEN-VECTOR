@@ -94,3 +94,7 @@ Processed feature sets are serialized directly to Parquet formats, favoring colu
 
 For deep learning models, extremely large datasets are memory-mapped (`mmap`) to bypass RAM constraints during batch generation.
 
+### Caching Strategy
+
+Intermediate feature engineering steps are cached using Redis and local filesystem hashes to drastically speed up iterative model tuning.
+
