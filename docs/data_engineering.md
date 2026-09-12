@@ -62,3 +62,7 @@ Rolling skewness and kurtosis are calculated to capture changes in the distribut
 
 Features are often ranked cross-sectionally (e.g., comparing AAPL's RSI against the entire S&P 500) to neutralize broad market movements.
 
+## Feature Scaling
+
+Rolling Z-Score normalization and Robust Scalers are applied to tame outliers without bleeding future distribution parameters into the training set.
+
