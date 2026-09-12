@@ -74,3 +74,7 @@ The primary target variable is the forward $N$-day return, adjusted for risk-fre
 
 For classification models, continuous returns are discretized into quantiles (e.g., top quartile vs bottom quartile) for robust meta-labeling.
 
+## Feature Selection
+
+Mutual Information and Spearman rank correlations are utilized to select features with the highest non-linear predictive power.
+
