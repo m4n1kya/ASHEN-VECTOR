@@ -30,3 +30,7 @@ The tradable universe is dynamically filtered to exclude illiquid micro-caps, en
 
 Our historical datasets include delisted equities to ensure backtests do not suffer from survivor bias.
 
+### Imputation Logic
+
+Forward-filling is used exclusively for corporate actions, while backward-filling is strictly prohibited to prevent look-ahead bias.
+
