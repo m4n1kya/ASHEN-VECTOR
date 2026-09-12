@@ -114,3 +114,7 @@ Extensible hooks allow for the ingestion of alternative datasets, such as NLP se
 
 The `AlphaGenerator` base class allows researchers to plug in custom mathematical formulas which are automatically vectorized by the pipeline.
 
+## Training-Live Parity
+
+Strict unit tests guarantee that a feature calculated during historical backtesting exactly matches the feature calculated during real-time live inference.
+
