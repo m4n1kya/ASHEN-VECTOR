@@ -50,3 +50,7 @@ The system constructs hundreds of alpha factors across multiple time horizons.
 
 Standard momentum oscillators including Relative Strength Index (RSI), MACD, and Rate of Change (ROC) are calculated using highly vectorized NumPy operations.
 
+### Volatility Features
+
+Average True Range (ATR) and Bollinger Band bandwidths are extracted to model heteroskedasticity and local market turbulence.
+
