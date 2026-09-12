@@ -26,3 +26,7 @@ Missing values are a reality in finance. We never forward-fill target variables,
 
 The tradable universe is dynamically filtered to exclude illiquid micro-caps, enforcing a minimum 30-day average daily volume threshold.
 
+### Survivor Bias Mitigation
+
+Our historical datasets include delisted equities to ensure backtests do not suffer from survivor bias.
+
