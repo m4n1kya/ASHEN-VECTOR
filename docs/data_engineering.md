@@ -54,3 +54,7 @@ Standard momentum oscillators including Relative Strength Index (RSI), MACD, and
 
 Average True Range (ATR) and Bollinger Band bandwidths are extracted to model heteroskedasticity and local market turbulence.
 
+### Statistical Features
+
+Rolling skewness and kurtosis are calculated to capture changes in the distribution of returns, indicating potential regime shifts.
+
