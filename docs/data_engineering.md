@@ -46,3 +46,7 @@ Adjusted close prices are calculated recursively to ensure that historical techn
 
 The system constructs hundreds of alpha factors across multiple time horizons.
 
+### Momentum Features
+
+Standard momentum oscillators including Relative Strength Index (RSI), MACD, and Rate of Change (ROC) are calculated using highly vectorized NumPy operations.
+
