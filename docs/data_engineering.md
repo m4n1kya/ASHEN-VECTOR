@@ -10,3 +10,7 @@ The foundation of any quantitative model is its data. Our pipeline guarantees da
 
 We leverage Microsoft Qlib for centralized dataset management, utilizing its optimized storage formats for fast time-series retrieval.
 
+### Raw Data Ingestion
+
+Daily OHLCV (Open, High, Low, Close, Volume) data is ingested from primary vendors via REST APIs and WebSocket streams.
+
