@@ -90,3 +90,7 @@ PCA is occasionally applied to extract orthogonal macroeconomic latent factors f
 
 Processed feature sets are serialized directly to Parquet formats, favoring column-oriented reads over legacy HDF5 structures.
 
+### Memory Mapping
+
+For deep learning models, extremely large datasets are memory-mapped (`mmap`) to bypass RAM constraints during batch generation.
+
