@@ -42,3 +42,7 @@ Stock splits and cash dividends are ingested daily to construct total return ser
 
 Adjusted close prices are calculated recursively to ensure that historical technical indicators remain mathematically sound post-split.
 
+## Feature Engineering (Alpha Generation)
+
+The system constructs hundreds of alpha factors across multiple time horizons.
+
