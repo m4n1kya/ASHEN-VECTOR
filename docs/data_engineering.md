@@ -78,3 +78,7 @@ For classification models, continuous returns are discretized into quantiles (e.
 
 Mutual Information and Spearman rank correlations are utilized to select features with the highest non-linear predictive power.
 
+### Multicollinearity
+
+Variance Inflation Factor (VIF) analysis purges highly correlated features to stabilize linear sub-models and reduce dimensionality.
+
