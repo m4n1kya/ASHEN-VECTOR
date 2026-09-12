@@ -34,3 +34,7 @@ Our historical datasets include delisted equities to ensure backtests do not suf
 
 Forward-filling is used exclusively for corporate actions, while backward-filling is strictly prohibited to prevent look-ahead bias.
 
+## Corporate Actions
+
+Stock splits and cash dividends are ingested daily to construct total return series seamlessly.
+
