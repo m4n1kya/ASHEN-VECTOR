@@ -82,3 +82,7 @@ Mutual Information and Spearman rank correlations are utilized to select feature
 
 Variance Inflation Factor (VIF) analysis purges highly correlated features to stabilize linear sub-models and reduce dimensionality.
 
+### Principal Component Analysis
+
+PCA is occasionally applied to extract orthogonal macroeconomic latent factors from highly correlated sector ETFs.
+
