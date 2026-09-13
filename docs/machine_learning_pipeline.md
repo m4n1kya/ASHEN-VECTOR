@@ -150,3 +150,7 @@ The entire training pipeline is optimized to run on NVIDIA A100 GPUs using RAPID
 
 Dask is utilized to distribute hyperparameter search and combinatorial cross-validation across multiple compute nodes seamlessly.
 
+## Inference Pipeline
+
+The batch inference pipeline runs at 3:45 PM EST daily to generate predictions for the Market-On-Close (MOC) auction.
+
