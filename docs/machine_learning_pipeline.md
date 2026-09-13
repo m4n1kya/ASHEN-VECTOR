@@ -66,3 +66,7 @@ To achieve stationarity without destroying memory, price series are fractionally
 
 Features are normalized using Scikit-Learn's `RobustScaler`, prioritizing median and interquartile ranges over mean and variance to ignore fat-tailed anomalies.
 
+#### Rolling Normalization
+
+To prevent data leakage, all scaling parameters are fitted on a strict rolling window trailing the training set, never using future global statistics.
+
