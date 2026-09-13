@@ -118,3 +118,7 @@ Models move through strict states: `Experiment` -> `Staging` (Paper Trading) -> 
 
 Financial regimes shift rapidly. The pipeline constantly monitors for concept drift and statistical degradation.
 
+### Feature Drift (KS Test)
+
+Two-sample Kolmogorov-Smirnov tests are run daily comparing the live incoming feature distributions against the historical training distributions.
+
