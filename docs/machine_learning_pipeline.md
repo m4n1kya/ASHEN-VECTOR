@@ -154,3 +154,7 @@ Dask is utilized to distribute hyperparameter search and combinatorial cross-val
 
 The batch inference pipeline runs at 3:45 PM EST daily to generate predictions for the Market-On-Close (MOC) auction.
 
+### Latency Requirements
+
+End-to-end inference (from data ingestion to signal generation) must complete within 450 milliseconds to avoid execution slippage.
+
