@@ -78,3 +78,7 @@ Standard K-Fold is strictly forbidden. The pipeline implements Purged Walk-Forwa
 
 To maximize the number of testing paths, we simulate multiple historical trajectories using Combinatorial Purged Cross Validation (CPCV).
 
+#### Embargo Period
+
+A 5-day embargo period is strictly enforced after each training block to ensure multi-day return labels do not bleed into the validation fold.
+
