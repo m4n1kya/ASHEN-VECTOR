@@ -122,3 +122,7 @@ Financial regimes shift rapidly. The pipeline constantly monitors for concept dr
 
 Two-sample Kolmogorov-Smirnov tests are run daily comparing the live incoming feature distributions against the historical training distributions.
 
+### Retraining Triggers
+
+If the out-of-sample Sharpe ratio drops below a critical threshold for two consecutive weeks, an automated retraining job is triggered on the cluster.
+
