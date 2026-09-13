@@ -90,3 +90,7 @@ Hyperparameter spaces are searched using Bayesian Optimization via the Optuna fr
 
 Optuna's Median Pruner automatically terminates training trials that show poor early validation performance, saving massive amounts of compute time.
 
+## Loss Functions
+
+The ML pipeline implements custom loss functions rather than standard Mean Squared Error (MSE).
+
