@@ -54,3 +54,7 @@ Following Marcos Lopez de Prado's framework, primary models predict direction, w
 
 The primary model generates a continuous score $[-1, 1]$ indicating the expected strength of the directional move.
 
+### Secondary Sizing
+
+The secondary classification model uses the primary signal along with market volatility as features to output an optimal Kelly fraction for position sizing.
+
