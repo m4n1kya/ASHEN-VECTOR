@@ -178,3 +178,7 @@ SMOTE is used strictly on the training folds to generate synthetic crash example
 
 Isolation Forests are run prior to training to remove catastrophic data errors (e.g., bad ticks) that could heavily skew the loss gradients.
 
+## Overfitting Probability
+
+The Probability of Backtest Overfitting (PBO) metric is calculated for every model before it is permitted to enter Staging.
+
