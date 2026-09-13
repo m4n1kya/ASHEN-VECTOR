@@ -42,3 +42,7 @@ Non-linear SVMs with Radial Basis Function (RBF) kernels are used sparingly for 
 
 While recurrent architectures (LSTMs) exist in the codebase, they are heavily constrained due to their extreme data hunger and risk of catastrophic forgetting.
 
+#### Temporal Convolutional Networks
+
+TCNs with dilated causal convolutions are preferred over LSTMs for extracting long-range dependencies in order book flow without look-ahead bias.
+
