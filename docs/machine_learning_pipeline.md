@@ -46,3 +46,7 @@ While recurrent architectures (LSTMs) exist in the codebase, they are heavily co
 
 TCNs with dilated causal convolutions are preferred over LSTMs for extracting long-range dependencies in order book flow without look-ahead bias.
 
+## Meta-Labeling (Secondary Models)
+
+Following Marcos Lopez de Prado's framework, primary models predict direction, while secondary models predict the probability of the primary model being correct.
+
