@@ -102,3 +102,7 @@ The custom gradient heavily penalizes 'wrong-way risk'—predicting a massive rall
 
 Models are early-stopped based on their validation Sharpe ratio, ensuring we optimize for risk-adjusted returns, not just raw accuracy.
 
+## Model Registry
+
+All trained models, their hyperparameters, and serialized artifacts are tracked in an internal registry powered by MLflow.
+
