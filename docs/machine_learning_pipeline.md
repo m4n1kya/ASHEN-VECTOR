@@ -14,3 +14,7 @@ We utilize a heterogeneous ensemble of base learners, favoring non-parametric tr
 
 LightGBM is our primary model for dense feature interactions, configured with histogram-based binning to optimize training speed on CPU clusters.
 
+#### Hyperparameters (LGBM)
+
+Typical `num_leaves` are restricted strictly between 15 and 63 to aggressively combat the propensity of trees to overfit financial noise.
+
