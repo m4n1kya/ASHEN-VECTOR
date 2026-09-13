@@ -18,3 +18,7 @@ LightGBM is our primary model for dense feature interactions, configured with hi
 
 Typical `num_leaves` are restricted strictly between 15 and 63 to aggressively combat the propensity of trees to overfit financial noise.
 
+### XGBoost
+
+XGBoost is maintained as a parallel learner, emphasizing exact greedy algorithms for smaller, high-signal feature subsets.
+
