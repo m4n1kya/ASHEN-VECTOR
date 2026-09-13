@@ -98,3 +98,7 @@ The ML pipeline implements custom loss functions rather than standard Mean Squar
 
 The custom gradient heavily penalizes 'wrong-way risk'—predicting a massive rally when the asset actually crashes.
 
+### Sharpe Ratio Validation
+
+Models are early-stopped based on their validation Sharpe ratio, ensuring we optimize for risk-adjusted returns, not just raw accuracy.
+
