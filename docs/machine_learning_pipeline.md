@@ -82,3 +82,7 @@ To maximize the number of testing paths, we simulate multiple historical traject
 
 A 5-day embargo period is strictly enforced after each training block to ensure multi-day return labels do not bleed into the validation fold.
 
+## Hyperparameter Tuning
+
+Hyperparameter spaces are searched using Bayesian Optimization via the Optuna framework, focusing on expected improvement over random search.
+
