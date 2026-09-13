@@ -126,3 +126,7 @@ Two-sample Kolmogorov-Smirnov tests are run daily comparing the live incoming fe
 
 If the out-of-sample Sharpe ratio drops below a critical threshold for two consecutive weeks, an automated retraining job is triggered on the cluster.
 
+## Ensemble Consensus
+
+The final trading signal is never reliant on a single model. An overarching meta-learner aggregates the signals.
+
