@@ -110,3 +110,7 @@ All trained models, their hyperparameters, and serialized artifacts are tracked 
 
 Tree-based models are exported using Joblib, while neural networks are exported to ONNX format for high-speed C++ inference in live trading.
 
+### Lifecycle States
+
+Models move through strict states: `Experiment` -> `Staging` (Paper Trading) -> `Production` (Live Execution) -> `Archived`.
+
