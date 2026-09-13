@@ -30,3 +30,7 @@ Alpha (L1) and Lambda (L2) penalties are aggressively tuned, often forcing spars
 
 Random Forests provide critical variance reduction, operating as a stabilizing force when gradient boosting methods become unstable during regime shifts.
 
+#### ExtraTrees
+
+Extremely Randomized Trees are employed to split nodes randomly, further decorating the trees and improving out-of-sample Sharpe ratios.
+
