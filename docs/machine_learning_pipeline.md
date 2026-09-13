@@ -74,3 +74,7 @@ To prevent data leakage, all scaling parameters are fitted on a strict rolling w
 
 Standard K-Fold is strictly forbidden. The pipeline implements Purged Walk-Forward Cross Validation.
 
+### Combinatorial Purged CV
+
+To maximize the number of testing paths, we simulate multiple historical trajectories using Combinatorial Purged Cross Validation (CPCV).
+
