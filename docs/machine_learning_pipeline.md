@@ -170,3 +170,7 @@ Textual data from SEC filings (10-K, 10-Q) and earnings call transcripts are pro
 
 Extreme market events (crashes) are rare, leading to highly imbalanced classification datasets.
 
+### SMOTE Implementation
+
+SMOTE is used strictly on the training folds to generate synthetic crash examples, forcing the model to learn downside protection.
+
