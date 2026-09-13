@@ -50,3 +50,7 @@ TCNs with dilated causal convolutions are preferred over LSTMs for extracting lo
 
 Following Marcos Lopez de Prado's framework, primary models predict direction, while secondary models predict the probability of the primary model being correct.
 
+### Primary Signal
+
+The primary model generates a continuous score $[-1, 1]$ indicating the expected strength of the directional move.
+
