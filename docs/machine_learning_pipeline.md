@@ -106,3 +106,7 @@ Models are early-stopped based on their validation Sharpe ratio, ensuring we opt
 
 All trained models, their hyperparameters, and serialized artifacts are tracked in an internal registry powered by MLflow.
 
+### Serialization
+
+Tree-based models are exported using Joblib, while neural networks are exported to ONNX format for high-speed C++ inference in live trading.
+
