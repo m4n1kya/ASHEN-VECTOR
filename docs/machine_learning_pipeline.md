@@ -162,3 +162,7 @@ End-to-end inference (from data ingestion to signal generation) must complete wi
 
 Textual data from SEC filings (10-K, 10-Q) and earnings call transcripts are processed via FinBERT to generate sentiment features.
 
+### Text Embeddings
+
+768-dimensional embeddings are generated and reduced via UMAP before being fed into the primary LightGBM models.
+
