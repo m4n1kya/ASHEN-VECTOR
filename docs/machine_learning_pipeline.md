@@ -62,3 +62,7 @@ The secondary classification model uses the primary signal along with market vol
 
 To achieve stationarity without destroying memory, price series are fractionally differentiated rather than integer differenced.
 
+### Scaling
+
+Features are normalized using Scikit-Learn's `RobustScaler`, prioritizing median and interquartile ranges over mean and variance to ignore fat-tailed anomalies.
+
