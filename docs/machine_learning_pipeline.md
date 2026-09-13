@@ -22,3 +22,7 @@ Typical `num_leaves` are restricted strictly between 15 and 63 to aggressively c
 
 XGBoost is maintained as a parallel learner, emphasizing exact greedy algorithms for smaller, high-signal feature subsets.
 
+#### Regularization (XGB)
+
+Alpha (L1) and Lambda (L2) penalties are aggressively tuned, often forcing sparsity in the leaf weights to drop collinear momentum indicators.
+
