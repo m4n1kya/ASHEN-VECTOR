@@ -166,3 +166,7 @@ Textual data from SEC filings (10-K, 10-Q) and earnings call transcripts are pro
 
 768-dimensional embeddings are generated and reduced via UMAP before being fed into the primary LightGBM models.
 
+## Imbalanced Data
+
+Extreme market events (crashes) are rare, leading to highly imbalanced classification datasets.
+
