@@ -38,3 +38,7 @@ Extremely Randomized Trees are employed to split nodes randomly, further decorat
 
 Non-linear SVMs with Radial Basis Function (RBF) kernels are used sparingly for classification tasks on highly dimensional PCA-reduced datasets.
 
+### Deep Learning Constraints
+
+While recurrent architectures (LSTMs) exist in the codebase, they are heavily constrained due to their extreme data hunger and risk of catastrophic forgetting.
+
