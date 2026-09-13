@@ -130,3 +130,7 @@ If the out-of-sample Sharpe ratio drops below a critical threshold for two conse
 
 The final trading signal is never reliant on a single model. An overarching meta-learner aggregates the signals.
 
+### Inverse Volatility Weighting
+
+Base models are weighted inversely proportional to their recent out-of-sample volatility, giving more capital allocation to stable models.
+
