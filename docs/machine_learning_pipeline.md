@@ -158,3 +158,7 @@ The batch inference pipeline runs at 3:45 PM EST daily to generate predictions f
 
 End-to-end inference (from data ingestion to signal generation) must complete within 450 milliseconds to avoid execution slippage.
 
+## NLP Integration
+
+Textual data from SEC filings (10-K, 10-Q) and earnings call transcripts are processed via FinBERT to generate sentiment features.
+
