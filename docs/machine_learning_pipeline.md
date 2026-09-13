@@ -34,3 +34,7 @@ Random Forests provide critical variance reduction, operating as a stabilizing f
 
 Extremely Randomized Trees are employed to split nodes randomly, further decorating the trees and improving out-of-sample Sharpe ratios.
 
+### Support Vector Machines
+
+Non-linear SVMs with Radial Basis Function (RBF) kernels are used sparingly for classification tasks on highly dimensional PCA-reduced datasets.
+
