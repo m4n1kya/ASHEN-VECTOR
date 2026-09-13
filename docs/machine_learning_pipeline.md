@@ -190,3 +190,7 @@ The Deflated Sharpe Ratio (DSR) is utilized to penalize models that required tho
 
 The ML codebase is integrated with GitHub Actions to automatically run unit tests on feature engineering logic upon every pull request.
 
+### Containerization
+
+The inference engine is packaged into a minimal Docker container containing ONNX Runtime and the serialized model artifacts.
+
