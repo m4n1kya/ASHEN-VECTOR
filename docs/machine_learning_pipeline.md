@@ -202,3 +202,7 @@ FastAPI exposes endpoints `/api/predict` and `/api/explain` for the frontend das
 
 If the primary ensemble fails to converge or times out during live inference, the system defaults to a baseline momentum/mean-reversion heuristic.
 
+### Disaster Recovery
+
+Nightly snapshots of the MLflow registry and feature store are backed up to AWS S3 Glacier to ensure rapid recovery from cluster failure.
+
