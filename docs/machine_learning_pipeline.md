@@ -142,3 +142,7 @@ Black-box models are unacceptable for risk management. SHAP (SHapley Additive ex
 
 SHAP dependence plots are logged daily to ensure the model's logic aligns with macroeconomic intuition (e.g., higher interest rates penalize growth stocks).
 
+## Hardware Acceleration
+
+The entire training pipeline is optimized to run on NVIDIA A100 GPUs using RAPIDS and CUDA-accelerated XGBoost/LightGBM.
+
