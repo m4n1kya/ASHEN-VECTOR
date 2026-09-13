@@ -3,7 +3,9 @@
 import { useState, useEffect } from "react";
 import { Activity, Play, AlertTriangle, Info, BarChart2, Shield, TrendingUp, Layers, Wind, Activity as ActivityIcon, Loader2, Triangle } from "lucide-react";
 import Link from "next/link";
-import PriceChart from "./PriceChart"; // Ensure we copy this from instruments/[symbol]/PriceChart.tsx
+import PriceChart from "./PriceChart";
+import RadarConsensusChart from "./RadarConsensusChart";
+import RegimeBarChart from "./RegimeBarChart";
 
 export default function StockDetailClient({ symbol }: { symbol: string }) {
   const [loading, setLoading] = useState(true);
@@ -202,15 +204,14 @@ export default function StockDetailClient({ symbol }: { symbol: string }) {
             </div>
 
             {/* HMM Regimes */}
-            <div className="matte-panel p-4">
-              <h3 className="text-[10px] tracking-widest uppercase text-quant-text-muted border-b border-quant-border pb-2 mb-3 flex items-center gap-2"><BarChart2 className="w-3 h-3" /> HMM Regime</h3>
+            <div className="matte-panel p-4 flex flex-col">
+              <h3 className="text-[10px] tracking-widest uppercase text-quant-text-muted border-b border-quant-border pb-2 mb-3 flex items-center gap-2"><BarChart2 className="w-3 h-3" /> HMM Regime Probabilities</h3>
               {liveMath?.math_details?.hmm ? (
-                <div className="space-y-2 text-xs">
-                  <MathRow label="Bull Regime" val={liveMath.math_details.hmm["BULL"]} isPct />
-                  <MathRow label="Bear Regime" val={liveMath.math_details.hmm["BEAR"]} isPct />
-                  <MathRow label="High Volatility" val={liveMath.math_details.hmm["HIGH VOL"]} isPct />
-                  <MathRow label="Low Volatility" val={liveMath.math_details.hmm["LOW VOL"]} isPct />
-                  <div className="border-t border-quant-border pt-2 mt-2 flex justify-between group relative cursor-help">
+                <div className="flex-1 flex flex-col gap-2">
+                  <div className="flex-1 min-h-[120px] -ml-4">
+                    <RegimeBarChart hmmData={liveMath.math_details.hmm} />
+                  </div>
+                  <div className="border-t border-quant-border pt-2 mt-auto flex justify-between group relative cursor-help">
                     <span className="text-quant-text-secondary flex items-center gap-1.5">Current State <Info className="w-3 h-3 text-quant-text-muted group-hover:text-quant-text-primary transition-colors" /></span>
                     <span className={`font-bold ${getSignalColor(liveMath.math_details.hmm_regime)}`}>{liveMath.math_details.hmm_regime}</span>
                   </div>
@@ -293,36 +294,18 @@ export default function StockDetailClient({ symbol }: { symbol: string }) {
           </div>
 
           {/* MODEL CONSENSUS */}
-          <div className="matte-panel p-6 shrink-0">
-            <h2 className="text-[11px] font-semibold tracking-widest text-quant-text-secondary mb-6 border-b border-quant-border pb-4">MODEL CONSENSUS</h2>
+          <div className="matte-panel p-6 shrink-0 flex flex-col flex-1">
+            <h2 className="text-[11px] font-semibold tracking-widest text-quant-text-secondary mb-2 border-b border-quant-border pb-4">MODEL CONSENSUS</h2>
             
-            <div className="flex flex-col gap-5">
-              {liveMath?.consensus?.breakdown?.map((m: any, i: number) => {
-                const isBull = m.signal.includes('BUY') || m.signal.includes('BULL');
-                const isBear = m.signal.includes('SELL') || m.signal.includes('BEAR') || m.signal.includes('RISK') || m.signal.includes('HIGH');
-                const strengthColor = isBull ? 'bg-quant-up-text' : isBear ? 'bg-quant-down-text' : 'bg-quant-warn-text';
-                
-                return (
-                  <div key={i} className="flex flex-col gap-2">
-                    <div className="flex justify-between items-center">
-                      <span className="text-[11px] font-mono tracking-wider text-quant-text-primary truncate">{m.name}</span>
-                      <span className={`text-[10px] font-bold tracking-widest uppercase ${getSignalColor(m.signal)}`}>
-                        {m.signal}
-                      </span>
-                    </div>
-                    <div className="w-full bg-black h-1 rounded-full overflow-hidden border border-quant-border">
-                      <div className={`h-full ${strengthColor}`} style={{ width: `${Math.min(100, Math.max(0, m.strength * 100))}%` }} />
-                    </div>
-                  </div>
-                );
-              })}
-              
-              {!liveMath?.consensus?.breakdown && (
+            <div className="flex-1 flex items-center justify-center -ml-4 -mr-4 min-h-[250px]">
+              {liveMath?.consensus?.breakdown ? (
+                <RadarConsensusChart consensusBreakdown={liveMath.consensus.breakdown} />
+              ) : (
                 <div className="text-xs text-quant-text-muted italic">No consensus models available.</div>
               )}
             </div>
             
-            <Link href="/research/consensus" className="mt-6 w-full text-center block text-[10px] tracking-widest uppercase text-quant-text-muted hover:text-quant-text-primary transition-colors">
+            <Link href="/research/consensus" className="mt-4 w-full text-center block text-[10px] tracking-widest uppercase text-quant-text-muted hover:text-quant-text-primary transition-colors border-t border-quant-border pt-4">
               VIEW DETAILED CONSENSUS →
             </Link>
           </div>
