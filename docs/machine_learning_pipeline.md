@@ -10,3 +10,7 @@ The primary goal of the ML pipeline is to predict the forward $N$-day excess ret
 
 We utilize a heterogeneous ensemble of base learners, favoring non-parametric tree-based models for tabular financial data.
 
+### LightGBM
+
+LightGBM is our primary model for dense feature interactions, configured with histogram-based binning to optimize training speed on CPU clusters.
+
