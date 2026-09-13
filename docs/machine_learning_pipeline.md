@@ -114,3 +114,7 @@ Tree-based models are exported using Joblib, while neural networks are exported 
 
 Models move through strict states: `Experiment` -> `Staging` (Paper Trading) -> `Production` (Live Execution) -> `Archived`.
 
+## Model Decay & Drift
+
+Financial regimes shift rapidly. The pipeline constantly monitors for concept drift and statistical degradation.
+
