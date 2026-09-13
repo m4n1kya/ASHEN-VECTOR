@@ -134,3 +134,7 @@ The final trading signal is never reliant on a single model. An overarching meta
 
 Base models are weighted inversely proportional to their recent out-of-sample volatility, giving more capital allocation to stable models.
 
+## Interpretability
+
+Black-box models are unacceptable for risk management. SHAP (SHapley Additive exPlanations) values are generated for every prediction.
+
