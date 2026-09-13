@@ -58,3 +58,7 @@ The primary model generates a continuous score $[-1, 1]$ indicating the expected
 
 The secondary classification model uses the primary signal along with market volatility as features to output an optimal Kelly fraction for position sizing.
 
+## Feature Preprocessing
+
+To achieve stationarity without destroying memory, price series are fractionally differentiated rather than integer differenced.
+
