@@ -86,3 +86,7 @@ A 5-day embargo period is strictly enforced after each training block to ensure 
 
 Hyperparameter spaces are searched using Bayesian Optimization via the Optuna framework, focusing on expected improvement over random search.
 
+### Trial Pruning
+
+Optuna's Median Pruner automatically terminates training trials that show poor early validation performance, saving massive amounts of compute time.
+
