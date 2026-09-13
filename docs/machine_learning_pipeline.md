@@ -26,3 +26,7 @@ XGBoost is maintained as a parallel learner, emphasizing exact greedy algorithms
 
 Alpha (L1) and Lambda (L2) penalties are aggressively tuned, often forcing sparsity in the leaf weights to drop collinear momentum indicators.
 
+### Random Forest
+
+Random Forests provide critical variance reduction, operating as a stabilizing force when gradient boosting methods become unstable during regime shifts.
+
