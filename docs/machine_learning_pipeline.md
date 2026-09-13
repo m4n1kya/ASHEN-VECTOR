@@ -182,3 +182,7 @@ Isolation Forests are run prior to training to remove catastrophic data errors (
 
 The Probability of Backtest Overfitting (PBO) metric is calculated for every model before it is permitted to enter Staging.
 
+### Deflated Sharpe Ratio
+
+The Deflated Sharpe Ratio (DSR) is utilized to penalize models that required thousands of hyperparameter trials to achieve their reported performance.
+
