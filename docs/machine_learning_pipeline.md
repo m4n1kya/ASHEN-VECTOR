@@ -146,3 +146,7 @@ SHAP dependence plots are logged daily to ensure the model's logic aligns with m
 
 The entire training pipeline is optimized to run on NVIDIA A100 GPUs using RAPIDS and CUDA-accelerated XGBoost/LightGBM.
 
+### Distributed Computing
+
+Dask is utilized to distribute hyperparameter search and combinatorial cross-validation across multiple compute nodes seamlessly.
+
