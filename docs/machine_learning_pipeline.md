@@ -174,3 +174,7 @@ Extreme market events (crashes) are rare, leading to highly imbalanced classific
 
 SMOTE is used strictly on the training folds to generate synthetic crash examples, forcing the model to learn downside protection.
 
+### Outlier Removal
+
+Isolation Forests are run prior to training to remove catastrophic data errors (e.g., bad ticks) that could heavily skew the loss gradients.
+
