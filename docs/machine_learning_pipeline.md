@@ -70,3 +70,7 @@ Features are normalized using Scikit-Learn's `RobustScaler`, prioritizing median
 
 To prevent data leakage, all scaling parameters are fitted on a strict rolling window trailing the training set, never using future global statistics.
 
+## Cross Validation Strategy
+
+Standard K-Fold is strictly forbidden. The pipeline implements Purged Walk-Forward Cross Validation.
+
