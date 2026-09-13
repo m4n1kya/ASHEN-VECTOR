@@ -138,3 +138,7 @@ Base models are weighted inversely proportional to their recent out-of-sample vo
 
 Black-box models are unacceptable for risk management. SHAP (SHapley Additive exPlanations) values are generated for every prediction.
 
+### SHAP Dependence
+
+SHAP dependence plots are logged daily to ensure the model's logic aligns with macroeconomic intuition (e.g., higher interest rates penalize growth stocks).
+
