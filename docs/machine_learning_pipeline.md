@@ -194,3 +194,7 @@ The ML codebase is integrated with GitHub Actions to automatically run unit test
 
 The inference engine is packaged into a minimal Docker container containing ONNX Runtime and the serialized model artifacts.
 
+### REST API
+
+FastAPI exposes endpoints `/api/predict` and `/api/explain` for the frontend dashboard to query model consensus and SHAP values in real-time.
+
