@@ -198,3 +198,7 @@ The inference engine is packaged into a minimal Docker container containing ONNX
 
 FastAPI exposes endpoints `/api/predict` and `/api/explain` for the frontend dashboard to query model consensus and SHAP values in real-time.
 
+## Fallback Logic
+
+If the primary ensemble fails to converge or times out during live inference, the system defaults to a baseline momentum/mean-reversion heuristic.
+
