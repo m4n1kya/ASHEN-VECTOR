@@ -94,3 +94,7 @@ Optuna's Median Pruner automatically terminates training trials that show poor e
 
 The ML pipeline implements custom loss functions rather than standard Mean Squared Error (MSE).
 
+### Asymmetric Penalty
+
+The custom gradient heavily penalizes 'wrong-way risk'—predicting a massive rally when the asset actually crashes.
+
