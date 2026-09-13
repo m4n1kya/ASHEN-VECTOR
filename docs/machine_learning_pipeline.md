@@ -186,3 +186,7 @@ The Probability of Backtest Overfitting (PBO) metric is calculated for every mod
 
 The Deflated Sharpe Ratio (DSR) is utilized to penalize models that required thousands of hyperparameter trials to achieve their reported performance.
 
+## CI/CD for ML
+
+The ML codebase is integrated with GitHub Actions to automatically run unit tests on feature engineering logic upon every pull request.
+
