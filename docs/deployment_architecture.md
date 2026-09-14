@@ -90,3 +90,7 @@ All container `stdout` and `stderr` logs are collected by Fluent Bit and forward
 
 Datadog APM traces every request through the microservices, identifying latency bottlenecks in real-time.
 
+### Metrics Scraping
+
+Prometheus automatically scrapes `/metrics` endpoints across the cluster, tracking pod memory usage, API error rates, and inference times.
+
