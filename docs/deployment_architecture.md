@@ -62,3 +62,7 @@ The Ingress controller is tuned specifically to maintain long-lived WebSocket co
 
 SSL/TLS termination occurs at the AWS Application Load Balancer. All internal pod-to-pod communication is encrypted via a service mesh (Istio).
 
+## Data Layer
+
+The relational state (users, portfolios) is stored in a highly available Amazon Aurora PostgreSQL cluster with cross-AZ read replicas.
+
