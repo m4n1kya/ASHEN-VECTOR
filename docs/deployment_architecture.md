@@ -18,3 +18,7 @@ The FastAPI backend, data ingestion workers, and ML inference engines are fully 
 
 Multi-stage Docker builds ensure that compilers and heavy build tools are stripped from the final lightweight production images.
 
+## Orchestration (Kubernetes)
+
+Containers are orchestrated via Amazon EKS (Elastic Kubernetes Service), abstracting away underlying EC2 node management.
+
