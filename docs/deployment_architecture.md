@@ -22,3 +22,7 @@ Multi-stage Docker builds ensure that compilers and heavy build tools are stripp
 
 Containers are orchestrated via Amazon EKS (Elastic Kubernetes Service), abstracting away underlying EC2 node management.
 
+### Auto-Scaling
+
+Horizontal Pod Autoscalers (HPA) scale the inference pods dynamically based on CPU utilization during market open and close spikes.
+
