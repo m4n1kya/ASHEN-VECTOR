@@ -66,3 +66,7 @@ SSL/TLS termination occurs at the AWS Application Load Balancer. All internal po
 
 The relational state (users, portfolios) is stored in a highly available Amazon Aurora PostgreSQL cluster with cross-AZ read replicas.
 
+### Feature Caching (Redis)
+
+A clustered Redis instance handles ephemeral caching of calculated technical indicators to avoid re-computation during the trading day.
+
