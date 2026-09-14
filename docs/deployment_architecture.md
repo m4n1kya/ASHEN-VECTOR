@@ -10,3 +10,7 @@ Our infrastructure prioritizes extreme low-latency, zero-downtime deployments, a
 
 We employ a hybrid cloud architecture, utilizing AWS for heavy ML compute and Vercel's Edge Network for global frontend distribution.
 
+### Containerization
+
+The FastAPI backend, data ingestion workers, and ML inference engines are fully containerized using Docker.
+
