@@ -82,3 +82,7 @@ Live trading systems utilize locally attached EBS io2 Block Express volumes (via
 
 The database layer is isolated in private subnets. The Kubernetes nodes reside in separate private subnets with strict Security Groups.
 
+## Observability
+
+All container `stdout` and `stderr` logs are collected by Fluent Bit and forwarded to an Elasticsearch cluster (ELK stack) for centralized querying.
+
