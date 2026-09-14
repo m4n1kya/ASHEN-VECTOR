@@ -54,3 +54,7 @@ The Next.js application is deployed to Vercel, heavily utilizing edge caching to
 
 An NGINX Ingress Controller acts as the main reverse proxy, intelligently routing API requests to the appropriate microservices.
 
+### WebSocket Handling
+
+The Ingress controller is tuned specifically to maintain long-lived WebSocket connections required for live price tick streaming.
+
