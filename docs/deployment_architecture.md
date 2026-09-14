@@ -78,3 +78,7 @@ The massive historical OHLCV and tick-level data is stored in AWS S3 and queried
 
 Live trading systems utilize locally attached EBS io2 Block Express volumes (via Kubernetes PVCs) for sub-millisecond IOPS.
 
+## Network Security (VPC)
+
+The database layer is isolated in private subnets. The Kubernetes nodes reside in separate private subnets with strict Security Groups.
+
