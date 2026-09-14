@@ -98,3 +98,7 @@ Prometheus automatically scrapes `/metrics` endpoints across the cluster, tracki
 
 Real-time Grafana dashboards visualize the Prometheus data, alerting quantitative engineers if infrastructure anomalies occur.
 
+## Disaster Recovery
+
+Automated EBS snapshots and continuous Aurora backups ensure that the system can be restored to any second within the last 30 days.
+
