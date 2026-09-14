@@ -34,3 +34,7 @@ Node affinity rules ensure that heavy deep learning inference pods are exclusive
 
 Complex deployments are templated using Helm, allowing for reproducible staging and production environments from a single repository.
 
+## CI/CD Pipeline
+
+GitHub Actions handles continuous integration. Every PR runs unit tests, linting, and a security vulnerability scan on the dependencies.
+
