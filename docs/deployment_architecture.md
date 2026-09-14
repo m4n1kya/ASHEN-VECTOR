@@ -58,3 +58,7 @@ An NGINX Ingress Controller acts as the main reverse proxy, intelligently routin
 
 The Ingress controller is tuned specifically to maintain long-lived WebSocket connections required for live price tick streaming.
 
+### Security (TLS)
+
+SSL/TLS termination occurs at the AWS Application Load Balancer. All internal pod-to-pod communication is encrypted via a service mesh (Istio).
+
