@@ -38,3 +38,7 @@ Complex deployments are templated using Helm, allowing for reproducible staging 
 
 GitHub Actions handles continuous integration. Every PR runs unit tests, linting, and a security vulnerability scan on the dependencies.
 
+### Blue-Green Deployments
+
+Production rollouts utilize a Blue-Green deployment strategy. Traffic is only routed to the new pods once the `/health` probes return 200 OK.
+
