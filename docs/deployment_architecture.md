@@ -46,3 +46,7 @@ Production rollouts utilize a Blue-Green deployment strategy. Traffic is only ro
 
 Environment variables and API keys (e.g., Bloomberg, Alpaca) are never hardcoded. They are injected at runtime via HashiCorp Vault.
 
+## Frontend Hosting
+
+The Next.js application is deployed to Vercel, heavily utilizing edge caching to serve the initial React Server Components instantly worldwide.
+
