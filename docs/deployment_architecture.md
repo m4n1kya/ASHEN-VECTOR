@@ -26,3 +26,7 @@ Containers are orchestrated via Amazon EKS (Elastic Kubernetes Service), abstrac
 
 Horizontal Pod Autoscalers (HPA) scale the inference pods dynamically based on CPU utilization during market open and close spikes.
 
+#### GPU Scheduling
+
+Node affinity rules ensure that heavy deep learning inference pods are exclusively scheduled on accelerated `p4d` instances with NVIDIA A100s.
+
