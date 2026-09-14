@@ -14,3 +14,7 @@ We employ a hybrid cloud architecture, utilizing AWS for heavy ML compute and Ve
 
 The FastAPI backend, data ingestion workers, and ML inference engines are fully containerized using Docker.
 
+#### Multi-stage Builds
+
+Multi-stage Docker builds ensure that compilers and heavy build tools are stripped from the final lightweight production images.
+
