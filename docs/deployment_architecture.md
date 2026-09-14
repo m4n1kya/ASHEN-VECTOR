@@ -42,3 +42,7 @@ GitHub Actions handles continuous integration. Every PR runs unit tests, linting
 
 Production rollouts utilize a Blue-Green deployment strategy. Traffic is only routed to the new pods once the `/health` probes return 200 OK.
 
+## Configuration & Secrets
+
+Environment variables and API keys (e.g., Bloomberg, Alpaca) are never hardcoded. They are injected at runtime via HashiCorp Vault.
+
