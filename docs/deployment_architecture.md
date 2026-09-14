@@ -74,3 +74,7 @@ A clustered Redis instance handles ephemeral caching of calculated technical ind
 
 The massive historical OHLCV and tick-level data is stored in AWS S3 and queried directly via Amazon Athena for research purposes.
 
+#### Persistent Volumes
+
+Live trading systems utilize locally attached EBS io2 Block Express volumes (via Kubernetes PVCs) for sub-millisecond IOPS.
+
