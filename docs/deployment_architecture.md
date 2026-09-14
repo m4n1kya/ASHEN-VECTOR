@@ -86,3 +86,7 @@ The database layer is isolated in private subnets. The Kubernetes nodes reside i
 
 All container `stdout` and `stderr` logs are collected by Fluent Bit and forwarded to an Elasticsearch cluster (ELK stack) for centralized querying.
 
+### APM Tracing
+
+Datadog APM traces every request through the microservices, identifying latency bottlenecks in real-time.
+
