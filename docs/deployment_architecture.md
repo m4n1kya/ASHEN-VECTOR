@@ -70,3 +70,7 @@ The relational state (users, portfolios) is stored in a highly available Amazon 
 
 A clustered Redis instance handles ephemeral caching of calculated technical indicators to avoid re-computation during the trading day.
 
+### Time-Series Storage
+
+The massive historical OHLCV and tick-level data is stored in AWS S3 and queried directly via Amazon Athena for research purposes.
+
