@@ -94,3 +94,7 @@ Datadog APM traces every request through the microservices, identifying latency 
 
 Prometheus automatically scrapes `/metrics` endpoints across the cluster, tracking pod memory usage, API error rates, and inference times.
 
+#### Grafana Dashboards
+
+Real-time Grafana dashboards visualize the Prometheus data, alerting quantitative engineers if infrastructure anomalies occur.
+
