@@ -50,3 +50,7 @@ Environment variables and API keys (e.g., Bloomberg, Alpaca) are never hardcoded
 
 The Next.js application is deployed to Vercel, heavily utilizing edge caching to serve the initial React Server Components instantly worldwide.
 
+## Networking
+
+An NGINX Ingress Controller acts as the main reverse proxy, intelligently routing API requests to the appropriate microservices.
+
