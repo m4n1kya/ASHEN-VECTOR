@@ -18,3 +18,7 @@ Real-time OHLCV bars are constructed dynamically, utilizing Numba JIT-compiled f
 
 Incoming features are scaled against the trailing 252-day distributions held in Redis. Missing ticks are interpolated using cubic splines.
 
+## ONNX Runtime Execution
+
+The primary tree models (LightGBM/XGBoost) are executed via the C++ ONNX Runtime, bypassing Python's Global Interpreter Lock (GIL) for parallel scoring.
+
