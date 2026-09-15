@@ -10,3 +10,7 @@ The inference pipeline transforms raw tick data into a probabilistically weighte
 
 Incoming FIX streams are parsed, and continuous features (like order book imbalance and tick volatility) are updated in memory without hitting disk.
 
+### OHLCV Vectorization
+
+Real-time OHLCV bars are constructed dynamically, utilizing Numba JIT-compiled functions to calculate rolling momentums and Z-scores instantly.
+
