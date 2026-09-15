@@ -34,3 +34,7 @@ A secondary meta-model evaluates the primary model's confidence, applying the Ke
 
 The final signal is an inverse-volatility weighted average of the base models, strictly overriding any single model exhibiting concept drift.
 
+## Risk Overlay
+
+Before any order is permitted, a final risk check validates that the new position will not exceed the portfolio's strict daily Value at Risk (VaR) limits.
+
