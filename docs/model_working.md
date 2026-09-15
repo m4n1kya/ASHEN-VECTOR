@@ -2,3 +2,7 @@
 
 This document details the real-time execution mechanics of the predictive models within ASHEN-VECTOR.
 
+## End-to-End Flow
+
+The inference pipeline transforms raw tick data into a probabilistically weighted execution order in under 450 milliseconds.
+
