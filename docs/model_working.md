@@ -38,3 +38,7 @@ The final signal is an inverse-volatility weighted average of the base models, s
 
 Before any order is permitted, a final risk check validates that the new position will not exceed the portfolio's strict daily Value at Risk (VaR) limits.
 
+## Order Generation
+
+Approved signals are converted into limit orders and routed to the prime broker via the Financial Information eXchange (FIX) protocol.
+
