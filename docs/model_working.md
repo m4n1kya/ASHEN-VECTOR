@@ -30,3 +30,7 @@ Model outputs are returned as tensors representing the raw log-odds of a directi
 
 A secondary meta-model evaluates the primary model's confidence, applying the Kelly Criterion to output a recommended position size fraction.
 
+### Consensus Aggregation
+
+The final signal is an inverse-volatility weighted average of the base models, strictly overriding any single model exhibiting concept drift.
+
