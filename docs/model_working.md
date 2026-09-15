@@ -14,3 +14,7 @@ Incoming FIX streams are parsed, and continuous features (like order book imbala
 
 Real-time OHLCV bars are constructed dynamically, utilizing Numba JIT-compiled functions to calculate rolling momentums and Z-scores instantly.
 
+## Pre-processing Layer
+
+Incoming features are scaled against the trailing 252-day distributions held in Redis. Missing ticks are interpolated using cubic splines.
+
