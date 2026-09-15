@@ -42,3 +42,7 @@ Before any order is permitted, a final risk check validates that the new positio
 
 Approved signals are converted into limit orders and routed to the prime broker via the Financial Information eXchange (FIX) protocol.
 
+### Slippage Estimation
+
+Limit prices are dynamically adjusted based on the current bid-ask spread and estimated market impact models to minimize execution slippage.
+
