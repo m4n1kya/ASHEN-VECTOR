@@ -22,3 +22,7 @@ Incoming features are scaled against the trailing 252-day distributions held in 
 
 The primary tree models (LightGBM/XGBoost) are executed via the C++ ONNX Runtime, bypassing Python's Global Interpreter Lock (GIL) for parallel scoring.
 
+### Base Scoring
+
+Model outputs are returned as tensors representing the raw log-odds of a directional market move over the target horizon.
+
