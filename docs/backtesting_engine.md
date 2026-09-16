@@ -38,3 +38,7 @@ The engine processes cash dividends (credited to cash balance) and stock splits 
 
 Upon completion, the engine generates tear sheets containing CAGR, Maximum Drawdown, Sharpe, Sortino, and Calmar ratios.
 
+### Trade Log Export
+
+Every filled order is exported to a detailed Parquet trade log for ingestion into our custom frontend strategy visualizer.
+
