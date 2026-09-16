@@ -46,3 +46,6 @@ Every filled order is exported to a detailed Parquet trade log for ingestion int
 
 The engine supports resampling trade sequences via Monte Carlo methods to generate confidence intervals around expected strategy returns.
 
+## Conclusion
+
+This pessimistic, high-fidelity backtesting environment ensures that simulated alpha translates reliably into live market performance.
