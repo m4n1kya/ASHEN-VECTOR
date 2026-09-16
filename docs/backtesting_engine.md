@@ -22,3 +22,7 @@ A synthetic microsecond delay is introduced into the matching engine to accurate
 
 Strict commission models are applied, factoring in SEC regulatory fees, exchange routing fees, and per-share prime broker commissions.
 
+### Slippage Penalties
+
+Market orders are assumed to always cross the spread. Limit orders suffer adverse selection slippage penalties based on historical depth-of-book data.
+
