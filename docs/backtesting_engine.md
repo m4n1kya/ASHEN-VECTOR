@@ -18,3 +18,7 @@ The core loop continuously processes an event queue containing `MarketEvent`, `S
 
 A synthetic microsecond delay is introduced into the matching engine to accurately simulate network latency and queue priority.
 
+## Transaction Costs
+
+Strict commission models are applied, factoring in SEC regulatory fees, exchange routing fees, and per-share prime broker commissions.
+
