@@ -34,3 +34,7 @@ The `Portfolio` object tracks real-time cash balances, unrealized P&L, and enfor
 
 The engine processes cash dividends (credited to cash balance) and stock splits (adjusting position sizing) on the exact ex-dividend dates.
 
+## Performance Metrics
+
+Upon completion, the engine generates tear sheets containing CAGR, Maximum Drawdown, Sharpe, Sortino, and Calmar ratios.
+
