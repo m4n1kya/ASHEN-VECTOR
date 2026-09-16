@@ -30,3 +30,7 @@ Market orders are assumed to always cross the spread. Limit orders suffer advers
 
 The `Portfolio` object tracks real-time cash balances, unrealized P&L, and enforces Regulation T initial and maintenance margin requirements.
 
+### Corporate Actions
+
+The engine processes cash dividends (credited to cash balance) and stock splits (adjusting position sizing) on the exact ex-dividend dates.
+
