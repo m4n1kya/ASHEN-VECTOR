@@ -42,3 +42,7 @@ Upon completion, the engine generates tear sheets containing CAGR, Maximum Drawd
 
 Every filled order is exported to a detailed Parquet trade log for ingestion into our custom frontend strategy visualizer.
 
+## Monte Carlo Robustness
+
+The engine supports resampling trade sequences via Monte Carlo methods to generate confidence intervals around expected strategy returns.
+
