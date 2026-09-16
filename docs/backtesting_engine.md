@@ -10,3 +10,7 @@ Unlike vectorized backtesters, our engine is purely event-driven, simulating liv
 
 The core loop continuously processes an event queue containing `MarketEvent`, `SignalEvent`, `OrderEvent`, and `FillEvent` objects sequentially.
 
+## Order Execution Simulation
+
+`OrderEvent` objects are routed to a simulated exchange broker that holds them until the next valid market tick can trigger a fill.
+
