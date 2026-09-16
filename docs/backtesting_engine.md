@@ -26,3 +26,7 @@ Strict commission models are applied, factoring in SEC regulatory fees, exchange
 
 Market orders are assumed to always cross the spread. Limit orders suffer adverse selection slippage penalties based on historical depth-of-book data.
 
+## Portfolio State & Margin
+
+The `Portfolio` object tracks real-time cash balances, unrealized P&L, and enforces Regulation T initial and maintenance margin requirements.
+
