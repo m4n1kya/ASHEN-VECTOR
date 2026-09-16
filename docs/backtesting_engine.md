@@ -14,3 +14,7 @@ The core loop continuously processes an event queue containing `MarketEvent`, `S
 
 `OrderEvent` objects are routed to a simulated exchange broker that holds them until the next valid market tick can trigger a fill.
 
+### Latency Modeling
+
+A synthetic microsecond delay is introduced into the matching engine to accurately simulate network latency and queue priority.
+
