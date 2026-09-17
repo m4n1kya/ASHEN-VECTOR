@@ -14,3 +14,7 @@ This endpoint accepts a batch of tickers, fetches the latest feature snapshots f
 
 For real-time dashboards, WebSockets (`/ws/stream`) push incremental updates of the order book imbalance and tick volatility directly to the client.
 
+### Authentication (JWT)
+
+All endpoints are secured via stateless JSON Web Tokens (JWT), with strict Role-Based Access Control (RBAC) enforced for trade execution endpoints.
+
