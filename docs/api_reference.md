@@ -10,3 +10,7 @@ The backend relies heavily on FastAPI, leveraging Pydantic for strict schema val
 
 This endpoint accepts a batch of tickers, fetches the latest feature snapshots from Redis, and returns the aggregated ensemble consensus.
 
+## WebSocket Streaming
+
+For real-time dashboards, WebSockets (`/ws/stream`) push incremental updates of the order book imbalance and tick volatility directly to the client.
+
