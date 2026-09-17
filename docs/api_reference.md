@@ -22,3 +22,6 @@ All endpoints are secured via stateless JSON Web Tokens (JWT), with strict Role-
 
 Redis-backed sliding window rate limiting prevents accidental self-DDoS during automated high-frequency strategy executions.
 
+## Conclusion
+
+The API is self-documenting. The interactive Swagger UI (OpenAPI 3.0 spec) can be accessed at `/docs` when the server is running.
