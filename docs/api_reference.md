@@ -18,3 +18,7 @@ For real-time dashboards, WebSockets (`/ws/stream`) push incremental updates of 
 
 All endpoints are secured via stateless JSON Web Tokens (JWT), with strict Role-Based Access Control (RBAC) enforced for trade execution endpoints.
 
+## Rate Limiting
+
+Redis-backed sliding window rate limiting prevents accidental self-DDoS during automated high-frequency strategy executions.
+
