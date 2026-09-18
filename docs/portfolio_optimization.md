@@ -42,3 +42,7 @@ The quadratic solver enforces strict L1-norm turnover constraints, ensuring the 
 
 No single position may exceed 8% of total equity, and net sector exposure is capped at 25% to prevent unintended macroeconomic factor bets.
 
+### Short Selling & Margin
+
+The optimizer natively supports long-short portfolios (130/30), tracking the required initial margin to ensure the portfolio remains solvent under stress.
+
