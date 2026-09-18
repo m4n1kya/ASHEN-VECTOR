@@ -10,3 +10,7 @@ We utilize advanced adaptations of Modern Portfolio Theory (MPT) to translate ra
 
 The primary objective function seeks to maximize the expected return of the portfolio subject to a strict upper bound on portfolio variance (volatility).
 
+### Black-Litterman Integration
+
+To prevent the extreme corner solutions typical of naive MVO, we implement the Black-Litterman model, treating the ML predictions as absolute views.
+
