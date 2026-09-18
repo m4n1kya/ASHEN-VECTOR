@@ -46,3 +46,7 @@ No single position may exceed 8% of total equity, and net sector exposure is cap
 
 The optimizer natively supports long-short portfolios (130/30), tracking the required initial margin to ensure the portfolio remains solvent under stress.
 
+## Solver Engine (OSQP)
+
+The convex optimization problem is passed to the OSQP (Operator Splitting Quadratic Program) solver, which typically converges in under 5 milliseconds.
+
