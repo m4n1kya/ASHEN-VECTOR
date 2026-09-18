@@ -30,3 +30,7 @@ The vector of expected returns is directly populated by the primary output of th
 
 As a fallback to MVO, the system can dynamically switch to a Risk Parity algorithm, ensuring that every asset contributes equally to the total portfolio risk.
 
+### Inverse Volatility Weighting
+
+For subsets of highly correlated assets, naive inverse-volatility weighting is utilized to quickly penalize assets experiencing sudden volatility spikes.
+
