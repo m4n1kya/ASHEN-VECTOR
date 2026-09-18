@@ -26,3 +26,7 @@ To ensure the covariance matrix is well-conditioned and invertible, Ledoit-Wolf 
 
 The vector of expected returns is directly populated by the primary output of the ML ensemble, dynamically scaled by the Kelly fraction.
 
+## Risk Parity Allocation
+
+As a fallback to MVO, the system can dynamically switch to a Risk Parity algorithm, ensuring that every asset contributes equally to the total portfolio risk.
+
