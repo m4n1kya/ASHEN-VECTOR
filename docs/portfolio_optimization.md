@@ -14,3 +14,7 @@ The primary objective function seeks to maximize the expected return of the port
 
 To prevent the extreme corner solutions typical of naive MVO, we implement the Black-Litterman model, treating the ML predictions as absolute views.
 
+## Covariance Estimation
+
+The optimization engine relies heavily on an accurate, forward-looking covariance matrix estimated from the trailing 252 days of daily returns.
+
