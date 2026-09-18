@@ -54,3 +54,7 @@ The convex optimization problem is passed to the OSQP (Operator Splitting Quadra
 
 Rebalancing is not purely calendar-based. It is triggered asynchronously when the current portfolio weights drift beyond a 2% tracking error from the optimal weights.
 
+### Fractional Shares
+
+Continuous optimal weights are discretely mapped to actual share counts, utilizing fractional share logic where supported by the execution broker.
+
