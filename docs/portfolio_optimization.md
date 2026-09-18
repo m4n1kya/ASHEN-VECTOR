@@ -38,3 +38,7 @@ For subsets of highly correlated assets, naive inverse-volatility weighting is u
 
 The quadratic solver enforces strict L1-norm turnover constraints, ensuring the proposed rebalance does not incur transaction costs that exceed the expected alpha.
 
+### Concentration Limits
+
+No single position may exceed 8% of total equity, and net sector exposure is capped at 25% to prevent unintended macroeconomic factor bets.
+
