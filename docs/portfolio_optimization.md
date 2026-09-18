@@ -58,3 +58,7 @@ Rebalancing is not purely calendar-based. It is triggered asynchronously when th
 
 Continuous optimal weights are discretely mapped to actual share counts, utilizing fractional share logic where supported by the execution broker.
 
+## Execution Shortfall
+
+The realized execution prices of the rebalanced portfolio are tracked against the VWAP (Volume-Weighted Average Price) to measure implementation shortfall.
+
