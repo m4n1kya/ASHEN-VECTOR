@@ -50,3 +50,7 @@ The optimizer natively supports long-short portfolios (130/30), tracking the req
 
 The convex optimization problem is passed to the OSQP (Operator Splitting Quadratic Program) solver, which typically converges in under 5 milliseconds.
 
+## Rebalancing Logic
+
+Rebalancing is not purely calendar-based. It is triggered asynchronously when the current portfolio weights drift beyond a 2% tracking error from the optimal weights.
+
