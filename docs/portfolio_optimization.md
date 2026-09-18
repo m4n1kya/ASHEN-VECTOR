@@ -34,3 +34,7 @@ As a fallback to MVO, the system can dynamically switch to a Risk Parity algorit
 
 For subsets of highly correlated assets, naive inverse-volatility weighting is utilized to quickly penalize assets experiencing sudden volatility spikes.
 
+## Optimization Constraints
+
+The quadratic solver enforces strict L1-norm turnover constraints, ensuring the proposed rebalance does not incur transaction costs that exceed the expected alpha.
+
