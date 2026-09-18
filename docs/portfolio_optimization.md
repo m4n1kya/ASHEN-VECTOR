@@ -18,3 +18,7 @@ To prevent the extreme corner solutions typical of naive MVO, we implement the B
 
 The optimization engine relies heavily on an accurate, forward-looking covariance matrix estimated from the trailing 252 days of daily returns.
 
+### Ledoit-Wolf Shrinkage
+
+To ensure the covariance matrix is well-conditioned and invertible, Ledoit-Wolf shrinkage is applied, shrinking the sample covariance toward a constant correlation target.
+
