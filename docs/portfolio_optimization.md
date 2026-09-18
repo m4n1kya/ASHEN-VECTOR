@@ -62,3 +62,6 @@ Continuous optimal weights are discretely mapped to actual share counts, utilizi
 
 The realized execution prices of the rebalanced portfolio are tracked against the VWAP (Volume-Weighted Average Price) to measure implementation shortfall.
 
+## Conclusion
+
+This framework ensures that theoretical predictions are safely and optimally translated into a robust, risk-managed live portfolio.
