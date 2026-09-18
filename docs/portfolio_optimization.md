@@ -22,3 +22,7 @@ The optimization engine relies heavily on an accurate, forward-looking covarianc
 
 To ensure the covariance matrix is well-conditioned and invertible, Ledoit-Wolf shrinkage is applied, shrinking the sample covariance toward a constant correlation target.
 
+## Expected Returns Vector
+
+The vector of expected returns is directly populated by the primary output of the ML ensemble, dynamically scaled by the Kelly fraction.
+
