@@ -46,3 +46,7 @@ Incoming text is tokenized into 512-word chunks and dynamically batched for high
 
 For each text chunk, FinBERT outputs a softmax probability distribution across three classes: Positive, Negative, and Neutral.
 
+### Dense Embeddings
+
+Beyond raw sentiment, the pipeline extracts the 768-dimensional pooled output vector from the transformer to capture deep semantic meaning.
+
