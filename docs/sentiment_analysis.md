@@ -50,3 +50,7 @@ For each text chunk, FinBERT outputs a softmax probability distribution across t
 
 Beyond raw sentiment, the pipeline extracts the 768-dimensional pooled output vector from the transformer to capture deep semantic meaning.
 
+## Ticker Aggregation
+
+Sentiment scores are aggregated daily at the ticker level using a volume-weighted average of the underlying news and social mentions.
+
