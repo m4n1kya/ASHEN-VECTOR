@@ -26,3 +26,7 @@ A heuristic filter discards tweets containing excessive emojis, known pump-and-d
 
 Live headlines and article bodies are streamed directly from Bloomberg and Reuters RSS feeds and premium APIs.
 
+## Earnings Call Transcripts
+
+Audio streams of quarterly earnings calls are passed through OpenAI's Whisper model to generate highly accurate, time-stamped text transcripts.
+
