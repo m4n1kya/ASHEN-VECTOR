@@ -66,3 +66,7 @@ The system calculates a 'Divergence Score', triggering alerts when positive sent
 
 To prevent the curse of dimensionality, the 768-dimensional embeddings are reduced to 16 principal components using UMAP before entering the predictive models.
 
+## Feature Store Integration
+
+The processed sentiment scores and reduced embeddings are written directly to the Redis feature store for instant access during inference.
+
