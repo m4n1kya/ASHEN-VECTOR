@@ -62,3 +62,7 @@ An Exponential Moving Average (EMA) is applied to the raw daily sentiment scores
 
 The system calculates a 'Divergence Score', triggering alerts when positive sentiment surges while the underlying asset price is declining.
 
+## Dimensionality Reduction (UMAP)
+
+To prevent the curse of dimensionality, the 768-dimensional embeddings are reduced to 16 principal components using UMAP before entering the predictive models.
+
