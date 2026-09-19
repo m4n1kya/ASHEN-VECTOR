@@ -14,3 +14,7 @@ A custom scraper continuously monitors the SEC EDGAR database for new 10-K, 10-Q
 
 Using regular expressions and HTML parsing, the pipeline extracts the critical 'Management Discussion and Analysis' section from raw filings.
 
+## Social Media Firehose
+
+We ingest real-time social sentiment via the Twitter/X Enterprise Firehose, filtering for cashtags and relevant financial keywords.
+
