@@ -70,3 +70,7 @@ To prevent the curse of dimensionality, the 768-dimensional embeddings are reduc
 
 The processed sentiment scores and reduced embeddings are written directly to the Redis feature store for instant access during inference.
 
+### LightGBM Integration
+
+The NLP features are concatenated with the technical OHLCV features, allowing the primary LightGBM model to learn interactions between price and sentiment.
+
