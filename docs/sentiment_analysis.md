@@ -38,3 +38,7 @@ A Named Entity Recognition (NER) model identifies 'forward-looking statements', 
 
 We utilize FinBERT, a pre-trained NLP model specifically fine-tuned on corporate reports, earnings calls, and financial news.
 
+### Tokenization & Batching
+
+Incoming text is tokenized into 512-word chunks and dynamically batched for high-throughput inference on NVIDIA A100 GPUs.
+
