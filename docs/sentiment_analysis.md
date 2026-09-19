@@ -34,3 +34,7 @@ Audio streams of quarterly earnings calls are passed through OpenAI's Whisper mo
 
 A Named Entity Recognition (NER) model identifies 'forward-looking statements', isolating management guidance from historical performance recaps.
 
+## FinBERT Integration
+
+We utilize FinBERT, a pre-trained NLP model specifically fine-tuned on corporate reports, earnings calls, and financial news.
+
