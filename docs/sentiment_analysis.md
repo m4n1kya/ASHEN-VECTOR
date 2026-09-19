@@ -30,3 +30,7 @@ Live headlines and article bodies are streamed directly from Bloomberg and Reute
 
 Audio streams of quarterly earnings calls are passed through OpenAI's Whisper model to generate highly accurate, time-stamped text transcripts.
 
+### Forward-Looking Statements
+
+A Named Entity Recognition (NER) model identifies 'forward-looking statements', isolating management guidance from historical performance recaps.
+
