@@ -54,3 +54,7 @@ Beyond raw sentiment, the pipeline extracts the 768-dimensional pooled output ve
 
 Sentiment scores are aggregated daily at the ticker level using a volume-weighted average of the underlying news and social mentions.
 
+### Sentiment Smoothing
+
+An Exponential Moving Average (EMA) is applied to the raw daily sentiment scores to reduce noise and identify sustained shifts in narrative.
+
