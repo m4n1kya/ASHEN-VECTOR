@@ -22,3 +22,7 @@ We ingest real-time social sentiment via the Twitter/X Enterprise Firehose, filt
 
 A heuristic filter discards tweets containing excessive emojis, known pump-and-dump keywords, or originating from accounts with high bot-probability scores.
 
+## News Wire Ingestion
+
+Live headlines and article bodies are streamed directly from Bloomberg and Reuters RSS feeds and premium APIs.
+
