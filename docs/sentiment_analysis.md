@@ -18,3 +18,7 @@ Using regular expressions and HTML parsing, the pipeline extracts the critical '
 
 We ingest real-time social sentiment via the Twitter/X Enterprise Firehose, filtering for cashtags and relevant financial keywords.
 
+### Bot Filtering
+
+A heuristic filter discards tweets containing excessive emojis, known pump-and-dump keywords, or originating from accounts with high bot-probability scores.
+
