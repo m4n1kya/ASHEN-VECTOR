@@ -58,3 +58,7 @@ Sentiment scores are aggregated daily at the ticker level using a volume-weighte
 
 An Exponential Moving Average (EMA) is applied to the raw daily sentiment scores to reduce noise and identify sustained shifts in narrative.
 
+## Sentiment Divergence
+
+The system calculates a 'Divergence Score', triggering alerts when positive sentiment surges while the underlying asset price is declining.
+
