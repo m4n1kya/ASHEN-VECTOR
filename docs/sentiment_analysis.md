@@ -42,3 +42,7 @@ We utilize FinBERT, a pre-trained NLP model specifically fine-tuned on corporate
 
 Incoming text is tokenized into 512-word chunks and dynamically batched for high-throughput inference on NVIDIA A100 GPUs.
 
+## Sentiment Scoring
+
+For each text chunk, FinBERT outputs a softmax probability distribution across three classes: Positive, Negative, and Neutral.
+
