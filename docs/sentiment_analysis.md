@@ -78,3 +78,6 @@ The NLP features are concatenated with the technical OHLCV features, allowing th
 
 For illiquid micro-caps lacking sufficient news coverage, the NLP features are imputed using sector-level average sentiment to avoid NaN errors.
 
+## Conclusion
+
+By quantifying qualitative information, the NLP pipeline provides ASHEN-VECTOR with a massive informational advantage over purely technical trading systems.
