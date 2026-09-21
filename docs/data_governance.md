@@ -126,3 +126,7 @@ If the primary pricing provider (e.g., Bloomberg) goes offline, the system autom
 
 To stress-test risk models, the pipeline utilizes GANs (Generative Adversarial Networks) to generate synthetic 'Black Swan' market crashes.
 
+### Vendor Cross-Validation
+
+Alternative data signals are continuously cross-validated against realized price action to detect if a vendor's 'alpha' has decayed over time.
+
