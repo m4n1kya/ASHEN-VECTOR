@@ -122,3 +122,7 @@ Third-party data vendors are actively monitored for Service Level Agreement (SLA
 
 If the primary pricing provider (e.g., Bloomberg) goes offline, the system automatically fails over to the secondary provider (e.g., Refinitiv).
 
+## Synthetic Data
+
+To stress-test risk models, the pipeline utilizes GANs (Generative Adversarial Networks) to generate synthetic 'Black Swan' market crashes.
+
