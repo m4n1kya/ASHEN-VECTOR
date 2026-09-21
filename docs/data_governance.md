@@ -54,3 +54,7 @@ Every pandas/spark transformation applied during feature engineering is logged, 
 
 If a model behaves erratically, quants can trace any final input feature directly back to the raw JSON payload provided by the vendor.
 
+## Schema Registry
+
+All real-time streaming data flows through Kafka topics governed by a strict Confluent Schema Registry.
+
