@@ -62,3 +62,7 @@ All real-time streaming data flows through Kafka topics governed by a strict Con
 
 Market data ticks are serialized using Protocol Buffers (Protobuf) to minimize bandwidth and eliminate JSON parsing overhead.
 
+### Schema Evolution
+
+The registry enforces backward compatibility; vendors cannot drop fields or change data types without creating a new versioned topic.
+
