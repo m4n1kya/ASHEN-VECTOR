@@ -102,3 +102,7 @@ All internal data movement between microservices and databases requires TLS 1.3 
 
 Data is aggressively managed to optimize S3 storage costs without losing valuable historical context.
 
+### Deep Archiving
+
+Level 3 Order Book tick data older than 24 months is automatically transitioned to S3 Glacier Deep Archive to minimize AWS billing.
+
