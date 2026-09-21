@@ -106,3 +106,7 @@ Data is aggressively managed to optimize S3 storage costs without losing valuabl
 
 Level 3 Order Book tick data older than 24 months is automatically transitioned to S3 Glacier Deep Archive to minimize AWS billing.
 
+## Regulatory Compliance
+
+Alternative datasets containing consumer exhaust (app usage, web scraping) are strictly audited for GDPR and CCPA compliance.
+
