@@ -38,3 +38,7 @@ Machine learning anomaly detectors flag suspicious corporate actions (e.g., a 10
 
 Financial data is frequently restated (e.g., earnings revisions). The database strictly records both `knowledge_time` and `effective_time`.
 
+### As-Of Joins
+
+All historical feature generation utilizes exact 'As-Of' joins, guaranteeing that models are only trained on data known at that exact microsecond.
+
