@@ -66,3 +66,7 @@ Market data ticks are serialized using Protocol Buffers (Protobuf) to minimize b
 
 The registry enforces backward compatibility; vendors cannot drop fields or change data types without creating a new versioned topic.
 
+## Feature Store Integration
+
+Calculated alphas and technical indicators are materialized into a centralized Feature Store (Feast architecture).
+
