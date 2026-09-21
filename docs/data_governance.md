@@ -78,3 +78,7 @@ The offline store (Parquet/S3) provides massive throughput for model training, w
 
 The online store utilizes aggressive LRU eviction policies, guaranteeing the inference engine never waits for disk I/O.
 
+### Training Correctness
+
+The Feature Store SDK automatically constructs point-in-time correct training datasets, eliminating complex SQL logic from the quant research process.
+
