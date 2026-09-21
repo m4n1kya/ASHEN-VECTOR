@@ -30,3 +30,7 @@ Strict assertions ensure OHLCV bars do not contain missing minutes during core t
 
 Incoming ticks are evaluated against historical distributions to flag 'fat-finger' errors or corrupt feeds immediately.
 
+### Corporate Action Anomalies
+
+Machine learning anomaly detectors flag suspicious corporate actions (e.g., a 1000:1 split) for manual review by a data engineer.
+
