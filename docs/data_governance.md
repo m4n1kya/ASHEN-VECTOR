@@ -42,3 +42,7 @@ Financial data is frequently restated (e.g., earnings revisions). The database s
 
 All historical feature generation utilizes exact 'As-Of' joins, guaranteeing that models are only trained on data known at that exact microsecond.
 
+## Data Lineage
+
+Data lineage is tracked comprehensively from raw vendor API to final model inference using Apache Atlas.
+
