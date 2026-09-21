@@ -82,3 +82,7 @@ The online store utilizes aggressive LRU eviction policies, guaranteeing the inf
 
 The Feature Store SDK automatically constructs point-in-time correct training datasets, eliminating complex SQL logic from the quant research process.
 
+## Access Control
+
+Strict Identity and Access Management (IAM) policies dictate read/write access to financial datasets.
+
