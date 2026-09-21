@@ -26,3 +26,7 @@ Automated quality gates are enforced using the Great Expectations framework befo
 
 Strict assertions ensure OHLCV bars do not contain missing minutes during core trading hours and that High >= Low always.
 
+### Distribution Checks
+
+Incoming ticks are evaluated against historical distributions to flag 'fat-finger' errors or corrupt feeds immediately.
+
