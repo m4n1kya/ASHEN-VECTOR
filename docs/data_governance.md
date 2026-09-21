@@ -118,3 +118,7 @@ Any Personally Identifiable Information (PII) is tokenized or irreversibly maske
 
 Third-party data vendors are actively monitored for Service Level Agreement (SLA) breaches (e.g., delayed earnings feeds).
 
+### Fallback Mechanisms
+
+If the primary pricing provider (e.g., Bloomberg) goes offline, the system automatically fails over to the secondary provider (e.g., Refinitiv).
+
