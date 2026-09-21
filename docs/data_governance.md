@@ -14,3 +14,7 @@ We maintain a centralized Data Catalog acting as the single source of truth for 
 
 Every dataset is registered with strict metadata schemas, defining the granularity (tick, minute, daily), provider, and update frequency.
 
+### Data Discovery
+
+The catalog is indexed using an Amundsen-style interface, allowing quants to rapidly search and discover alternative datasets for alpha research.
+
