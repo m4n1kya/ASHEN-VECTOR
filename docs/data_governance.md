@@ -86,3 +86,7 @@ The Feature Store SDK automatically constructs point-in-time correct training da
 
 Strict Identity and Access Management (IAM) policies dictate read/write access to financial datasets.
 
+### Role-Based Access
+
+Quants are granted read-only access to the offline store, while only CI/CD pipelines can write to the online production store.
+
