@@ -46,3 +46,7 @@ All historical feature generation utilizes exact 'As-Of' joins, guaranteeing tha
 
 Data lineage is tracked comprehensively from raw vendor API to final model inference using Apache Atlas.
 
+### Transformation Tracking
+
+Every pandas/spark transformation applied during feature engineering is logged, creating a fully reproducible directed acyclic graph (DAG).
+
