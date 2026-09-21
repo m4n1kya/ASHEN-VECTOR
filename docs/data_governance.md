@@ -10,3 +10,7 @@ In quantitative finance, 'garbage in, garbage out' is an existential threat. Thi
 
 We maintain a centralized Data Catalog acting as the single source of truth for all structured and unstructured datasets.
 
+### Metadata Schemas
+
+Every dataset is registered with strict metadata schemas, defining the granularity (tick, minute, daily), provider, and update frequency.
+
