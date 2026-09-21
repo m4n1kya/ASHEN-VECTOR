@@ -50,3 +50,7 @@ Data lineage is tracked comprehensively from raw vendor API to final model infer
 
 Every pandas/spark transformation applied during feature engineering is logged, creating a fully reproducible directed acyclic graph (DAG).
 
+### Feature Provenance
+
+If a model behaves erratically, quants can trace any final input feature directly back to the raw JSON payload provided by the vendor.
+
