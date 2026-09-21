@@ -134,3 +134,7 @@ Alternative data signals are continuously cross-validated against realized price
 
 A strict protocol defines the remediation steps for data outages, including automated circuit breakers that halt trading if data is stale.
 
+### MTTR Tracking
+
+Data engineering KPIs are heavily focused on reducing the Mean-Time-To-Recovery (MTTR) for broken data ingestion DAGs.
+
