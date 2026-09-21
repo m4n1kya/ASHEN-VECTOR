@@ -110,3 +110,7 @@ Level 3 Order Book tick data older than 24 months is automatically transitioned 
 
 Alternative datasets containing consumer exhaust (app usage, web scraping) are strictly audited for GDPR and CCPA compliance.
 
+### PII Tokenization
+
+Any Personally Identifiable Information (PII) is tokenized or irreversibly masked at the ingestion layer before entering the data lake.
+
