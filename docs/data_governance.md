@@ -98,3 +98,7 @@ Highly sensitive proprietary alternative datasets (e.g., credit card receipts) a
 
 All internal data movement between microservices and databases requires TLS 1.3 encryption.
 
+## Lifecycle Management
+
+Data is aggressively managed to optimize S3 storage costs without losing valuable historical context.
+
