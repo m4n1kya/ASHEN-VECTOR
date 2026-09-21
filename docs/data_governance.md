@@ -90,3 +90,7 @@ Strict Identity and Access Management (IAM) policies dictate read/write access t
 
 Quants are granted read-only access to the offline store, while only CI/CD pipelines can write to the online production store.
 
+### Encryption at Rest
+
+Highly sensitive proprietary alternative datasets (e.g., credit card receipts) are encrypted at rest using AWS KMS (Key Management Service).
+
