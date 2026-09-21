@@ -74,3 +74,7 @@ Calculated alphas and technical indicators are materialized into a centralized F
 
 The offline store (Parquet/S3) provides massive throughput for model training, while the online store (Redis) provides sub-millisecond serving latency.
 
+### Online Caching
+
+The online store utilizes aggressive LRU eviction policies, guaranteeing the inference engine never waits for disk I/O.
+
