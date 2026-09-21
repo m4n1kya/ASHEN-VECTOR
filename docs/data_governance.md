@@ -130,3 +130,7 @@ To stress-test risk models, the pipeline utilizes GANs (Generative Adversarial N
 
 Alternative data signals are continuously cross-validated against realized price action to detect if a vendor's 'alpha' has decayed over time.
 
+## Incident Response
+
+A strict protocol defines the remediation steps for data outages, including automated circuit breakers that halt trading if data is stale.
+
