@@ -18,3 +18,7 @@ Every dataset is registered with strict metadata schemas, defining the granulari
 
 The catalog is indexed using an Amundsen-style interface, allowing quants to rapidly search and discover alternative datasets for alpha research.
 
+## Data Quality Engineering
+
+Automated quality gates are enforced using the Great Expectations framework before any data enters the bronze lake.
+
