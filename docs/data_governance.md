@@ -138,3 +138,7 @@ A strict protocol defines the remediation steps for data outages, including auto
 
 Data engineering KPIs are heavily focused on reducing the Mean-Time-To-Recovery (MTTR) for broken data ingestion DAGs.
 
+### Blameless Post-Mortems
+
+Any data quality breach resulting in a live trading loss triggers a blameless post-mortem to permanently patch the validation logic.
+
