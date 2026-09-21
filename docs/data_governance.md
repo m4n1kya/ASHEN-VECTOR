@@ -58,3 +58,7 @@ If a model behaves erratically, quants can trace any final input feature directl
 
 All real-time streaming data flows through Kafka topics governed by a strict Confluent Schema Registry.
 
+### Protobuf Serialization
+
+Market data ticks are serialized using Protocol Buffers (Protobuf) to minimize bandwidth and eliminate JSON parsing overhead.
+
