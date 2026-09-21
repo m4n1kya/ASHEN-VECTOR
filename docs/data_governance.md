@@ -6,3 +6,7 @@ This document outlines the rigorous data management protocols enforcing quality 
 
 In quantitative finance, 'garbage in, garbage out' is an existential threat. This framework guarantees pristine, point-in-time accurate data.
 
+## Data Catalog
+
+We maintain a centralized Data Catalog acting as the single source of truth for all structured and unstructured datasets.
+
