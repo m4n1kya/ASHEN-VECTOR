@@ -114,3 +114,7 @@ Alternative datasets containing consumer exhaust (app usage, web scraping) are s
 
 Any Personally Identifiable Information (PII) is tokenized or irreversibly masked at the ingestion layer before entering the data lake.
 
+## Vendor SLAs
+
+Third-party data vendors are actively monitored for Service Level Agreement (SLA) breaches (e.g., delayed earnings feeds).
+
