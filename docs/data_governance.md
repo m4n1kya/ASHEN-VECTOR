@@ -70,3 +70,7 @@ The registry enforces backward compatibility; vendors cannot drop fields or chan
 
 Calculated alphas and technical indicators are materialized into a centralized Feature Store (Feast architecture).
 
+### Offline vs Online Stores
+
+The offline store (Parquet/S3) provides massive throughput for model training, while the online store (Redis) provides sub-millisecond serving latency.
+
