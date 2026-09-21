@@ -22,3 +22,7 @@ The catalog is indexed using an Amundsen-style interface, allowing quants to rap
 
 Automated quality gates are enforced using the Great Expectations framework before any data enters the bronze lake.
 
+### Row-Level Validation
+
+Strict assertions ensure OHLCV bars do not contain missing minutes during core trading hours and that High >= Low always.
+
