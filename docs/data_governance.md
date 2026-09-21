@@ -34,3 +34,7 @@ Incoming ticks are evaluated against historical distributions to flag 'fat-finge
 
 Machine learning anomaly detectors flag suspicious corporate actions (e.g., a 1000:1 split) for manual review by a data engineer.
 
+## Point-In-Time Architecture
+
+Financial data is frequently restated (e.g., earnings revisions). The database strictly records both `knowledge_time` and `effective_time`.
+
