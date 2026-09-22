@@ -18,3 +18,7 @@ The Volume-Weighted Average Price (VWAP) algorithm dynamically adjusts child ord
 
 The Percentage of Volume (POV) algorithm guarantees that we never constitute more than 5% of the trailing 5-minute trading volume to avoid detection.
 
+## Implementation Shortfall
+
+The Implementation Shortfall (IS) algorithm optimizes the trade-off between execution delay risk and market impact cost, solving the Almgren-Chriss framework.
+
