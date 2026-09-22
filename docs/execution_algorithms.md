@@ -22,3 +22,7 @@ The Percentage of Volume (POV) algorithm guarantees that we never constitute mor
 
 The Implementation Shortfall (IS) algorithm optimizes the trade-off between execution delay risk and market impact cost, solving the Almgren-Chriss framework.
 
+### Aggression Scaling
+
+If the predictive model detects rapid alpha decay (e.g., breaking news), the IS algorithm dynamically increases execution aggression, crossing the spread if necessary.
+
