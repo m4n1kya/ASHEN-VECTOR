@@ -34,3 +34,7 @@ A custom Smart Order Router (SOR) pings multiple lit exchanges (e.g., NASDAQ, NY
 
 Before posting on lit exchanges, child orders are pinged across trusted Dark Pools to capture mid-point price improvement without signaling intent.
 
+## Order Management
+
+The system handles partial fills gracefully, employing aggressive cancel-replace (CXR) loops if the market moves away from our passive limit price.
+
