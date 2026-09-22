@@ -58,3 +58,7 @@ Post-trade Transaction Cost Analysis is mandatory for every executed block trade
 
 Slippage is primarily measured against the 'Arrival Price'—the exact mid-price of the asset at the moment the parent order was generated.
 
+### Post-Trade Reversion
+
+TCA includes 5-minute and 60-minute post-trade reversion metrics to ensure our executions are not suffering from severe adverse selection.
+
