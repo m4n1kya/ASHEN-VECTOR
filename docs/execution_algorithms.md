@@ -46,3 +46,7 @@ The execution engine continuously monitors Level 3 Limit Order Book (LOB) imbala
 
 Machine learning classifiers detect HFT quote stuffing and spoofing in real-time, temporarily halting execution until the book stabilizes.
 
+## Maker-Taker Optimization
+
+Routing logic factors in exchange maker-taker fees, favoring venues that offer rebates for providing liquidity when the execution schedule allows.
+
