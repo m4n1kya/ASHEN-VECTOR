@@ -62,3 +62,6 @@ Slippage is primarily measured against the 'Arrival Price'—the exact mid-price o
 
 TCA includes 5-minute and 60-minute post-trade reversion metrics to ensure our executions are not suffering from severe adverse selection.
 
+## Conclusion
+
+These execution algorithms ensure that ASHEN-VECTOR scales effectively with AUM without suffering diminishing returns due to market impact.
