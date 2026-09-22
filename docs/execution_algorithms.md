@@ -30,3 +30,7 @@ If the predictive model detects rapid alpha decay (e.g., breaking news), the IS 
 
 A custom Smart Order Router (SOR) pings multiple lit exchanges (e.g., NASDAQ, NYSE) simultaneously to capture fragmented liquidity at the NBBO.
 
+### Dark Pool Integration
+
+Before posting on lit exchanges, child orders are pinged across trusted Dark Pools to capture mid-point price improvement without signaling intent.
+
