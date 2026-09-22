@@ -26,3 +26,7 @@ The Implementation Shortfall (IS) algorithm optimizes the trade-off between exec
 
 If the predictive model detects rapid alpha decay (e.g., breaking news), the IS algorithm dynamically increases execution aggression, crossing the spread if necessary.
 
+## Smart Order Routing
+
+A custom Smart Order Router (SOR) pings multiple lit exchanges (e.g., NASDAQ, NYSE) simultaneously to capture fragmented liquidity at the NBBO.
+
