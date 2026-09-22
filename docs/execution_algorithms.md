@@ -50,3 +50,7 @@ Machine learning classifiers detect HFT quote stuffing and spoofing in real-time
 
 Routing logic factors in exchange maker-taker fees, favoring venues that offer rebates for providing liquidity when the execution schedule allows.
 
+## Transaction Cost Analysis (TCA)
+
+Post-trade Transaction Cost Analysis is mandatory for every executed block trade to continuously evaluate algorithmic performance.
+
