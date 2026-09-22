@@ -54,3 +54,7 @@ Routing logic factors in exchange maker-taker fees, favoring venues that offer r
 
 Post-trade Transaction Cost Analysis is mandatory for every executed block trade to continuously evaluate algorithmic performance.
 
+### Arrival Price Benchmark
+
+Slippage is primarily measured against the 'Arrival Price'—the exact mid-price of the asset at the moment the parent order was generated.
+
