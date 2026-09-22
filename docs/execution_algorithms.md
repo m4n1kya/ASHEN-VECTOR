@@ -38,3 +38,7 @@ Before posting on lit exchanges, child orders are pinged across trusted Dark Poo
 
 The system handles partial fills gracefully, employing aggressive cancel-replace (CXR) loops if the market moves away from our passive limit price.
 
+## Microstructure Signals
+
+The execution engine continuously monitors Level 3 Limit Order Book (LOB) imbalances to time passive entries on the bid.
+
