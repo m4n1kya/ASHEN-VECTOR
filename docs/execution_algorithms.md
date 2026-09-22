@@ -10,3 +10,7 @@ Theoretical alpha is useless if destroyed by execution slippage. Our execution l
 
 The Time-Weighted Average Price (TWAP) algorithm breaks large parent orders into smaller child orders, executing evenly over a specified time horizon.
 
+## VWAP Execution
+
+The Volume-Weighted Average Price (VWAP) algorithm dynamically adjusts child order sizing to match historical U-shaped volume profiles.
+
