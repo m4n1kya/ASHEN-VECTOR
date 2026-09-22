@@ -42,3 +42,7 @@ The system handles partial fills gracefully, employing aggressive cancel-replace
 
 The execution engine continuously monitors Level 3 Limit Order Book (LOB) imbalances to time passive entries on the bid.
 
+### Quote Stuffing Detection
+
+Machine learning classifiers detect HFT quote stuffing and spoofing in real-time, temporarily halting execution until the book stabilizes.
+
