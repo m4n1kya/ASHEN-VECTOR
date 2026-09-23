@@ -242,3 +242,7 @@ Cross-sectional signals rank instruments against each other at each point in tim
 
 The most powerful signals are often hybrid constructions: selecting instruments that score well cross-sectionally AND are in a positive time-series trend.
 
+### Volatility Adjustment
+
+All cross-sectional ranks are adjusted for trailing realized volatility, preventing high-vol stocks from dominating the return distribution due to noise.
+
