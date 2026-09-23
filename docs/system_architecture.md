@@ -246,3 +246,7 @@ All list endpoints implement cursor-based pagination using opaque `next_cursor` 
 
 All API errors conform to the RFC 7807 'Problem Details' JSON schema, providing `type`, `title`, `status`, and `detail` fields consistently.
 
+### API Versioning
+
+Breaking API changes are introduced via a new URI version prefix (e.g., `/api/v2/`), with a minimum 6-month deprecation window for `/api/v1/`.
+
