@@ -370,3 +370,7 @@ Crowding risk measures the degree to which our positions overlap with other inst
 
 Quarterly SEC 13F filings are aggregated to construct a Hedge Fund Crowding Index, penalizing stocks that appear in the top 10 holdings of more than 30 funds.
 
+### Borrow Rate Monitoring
+
+Short positions with stock borrow costs exceeding 500bps annually are flagged, as the carry cost can erase the alpha within the holding period.
+
