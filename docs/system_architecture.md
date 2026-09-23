@@ -306,3 +306,7 @@ Apache Flink processes the real-time Kafka event stream for stateful computation
 
 Flink watermarks are configured with a 5-second lateness tolerance, correctly handling late-arriving ticks from high-latency venues.
 
+### Exactly-Once Processing
+
+Flink's incremental checkpointing to S3 provides exactly-once processing guarantees, ensuring no tick is double-counted in rolling feature computations.
+
