@@ -282,3 +282,7 @@ During crisis periods, cross-asset correlations spike toward 1.0, destroying div
 
 Dynamic Conditional Correlation GARCH (DCC-GARCH) provides time-varying correlation estimates, capturing the rapid correlation spikes during market dislocations.
 
+## Signal Deprecation
+
+Signals that show a statistically significant IC decay over any trailing 12-month period are flagged for review and potentially sunset from the live portfolio.
+
