@@ -138,3 +138,7 @@ All strategies are stress-tested against the GFC (2008-09), COVID crash (2020-03
 
 Expected Shortfall at the 5% confidence level is computed across the full return distribution, providing a more complete tail risk picture than simple VaR.
 
+### Drawdown Analysis
+
+Drawdown analysis decomposes maximum drawdown into duration, recovery time, and the spread between underwater and recovery periods.
+
