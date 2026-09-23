@@ -314,3 +314,7 @@ The pairs trading module identifies statistically cointegrated stock pairs using
 
 The normalized spread between cointegrated pairs is z-scored using a rolling 252-day window; entries are triggered at +/-2 sigma and exits at mean reversion.
 
+### Cointegration Stability
+
+The cointegration relationship is re-tested quarterly. If the p-value of the ADF test exceeds 0.05, the pair is automatically dissolved from the portfolio.
+
