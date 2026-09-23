@@ -310,3 +310,7 @@ Flink watermarks are configured with a 5-second lateness tolerance, correctly ha
 
 Flink's incremental checkpointing to S3 provides exactly-once processing guarantees, ensuring no tick is double-counted in rolling feature computations.
 
+## Batch Processing (Apache Spark)
+
+Apache Spark on Amazon EMR handles the nightly batch jobs: full covariance matrix recalculation, model retraining, and portfolio attribution.
+
