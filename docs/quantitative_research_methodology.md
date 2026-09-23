@@ -166,3 +166,7 @@ Strategies with significant negative skewness (below -1.0) are rejected regardle
 
 Multiple orthogonal signals are combined using an inverse-IC-variance weighting scheme, giving more weight to signals with historically stable information content.
 
+### ML-Based Weighting
+
+A secondary XGBoost model is trained to predict the IC of each signal conditional on the current market regime, enabling dynamic signal weight allocation.
+
