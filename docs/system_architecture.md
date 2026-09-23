@@ -302,3 +302,7 @@ The `daily_prices` table is partitioned by year using PostgreSQL declarative par
 
 Apache Flink processes the real-time Kafka event stream for stateful computations like rolling technical indicators and order book aggregations.
 
+### Event-Time Watermarking
+
+Flink watermarks are configured with a 5-second lateness tolerance, correctly handling late-arriving ticks from high-latency venues.
+
