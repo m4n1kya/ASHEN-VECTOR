@@ -378,3 +378,7 @@ Short positions with stock borrow costs exceeding 500bps annually are flagged, a
 
 When the HMM regime classifier outputs high regime uncertainty (max state probability below 60%), position sizes are halved to reduce risk proactively.
 
+### Bayesian Prior Updating
+
+Signal weights are updated using a Bayesian framework, incorporating new IC observations as likelihood updates to a conjugate Gaussian prior distribution.
+
