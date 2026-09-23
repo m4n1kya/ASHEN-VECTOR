@@ -86,3 +86,7 @@ The signal-to-noise ratio is quantified by the ratio of the mean IC to the stand
 
 Spearman Rank IC is used instead of Pearson IC to achieve robustness against outliers in both the signal and the forward return distribution.
 
+### ICIR Metric
+
+The ICIR (IC mean / IC standard deviation) is the primary signal quality filter; signals with ICIR below 0.5 are rejected before backtesting.
+
