@@ -94,3 +94,7 @@ The ICIR (IC mean / IC standard deviation) is the primary signal quality filter;
 
 Raw signals are ranked into quintiles. The spread in average forward returns between Q1 (bottom) and Q5 (top) quantifies the raw alpha power.
 
+### Monotonicity Test
+
+A valid alpha signal must show a near-monotonic increase in average returns from Q1 to Q5, not just a top-minus-bottom spread.
+
