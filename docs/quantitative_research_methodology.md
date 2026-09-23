@@ -214,3 +214,7 @@ Barra-style factor attribution decomposes realized alpha into contributions from
 
 The attribution framework cleanly separates returns derived from overweighting a sector (allocation) from returns from picking winners within it (selection).
 
+### Timing vs. Sizing
+
+Attribution is further decomposed into the value added by the signal's ability to time entries versus its ability to size positions appropriately.
+
