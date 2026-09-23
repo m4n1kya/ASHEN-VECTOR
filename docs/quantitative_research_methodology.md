@@ -10,3 +10,7 @@ Every strategy begins with a falsifiable economic hypothesis grounded in behavio
 
 The investable universe is filtered to liquid, mid-to-large cap equities with a minimum 60-day ADTV of $10M to ensure execution feasibility.
 
+### Liquidity Filters
+
+Stocks with bid-ask spreads exceeding 50 basis points are excluded, as transaction costs would consume the projected alpha entirely.
+
