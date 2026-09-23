@@ -118,3 +118,7 @@ We require a minimum t-statistic of 2.5 on the IC across the full backtest perio
 
 Benjamini-Hochberg False Discovery Rate correction is applied when evaluating a batch of signals to control the expected proportion of false discoveries.
 
+## Walk-Forward Optimization
+
+Hyperparameters are optimized exclusively on in-sample data within each rolling window, then applied identically to the subsequent out-of-sample period.
+
