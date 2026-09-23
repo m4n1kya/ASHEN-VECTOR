@@ -278,3 +278,7 @@ Google Fonts are loaded using `next/font` with `font-display: swap` to eliminate
 
 The relational schema follows Third Normal Form (3NF) strictly, decomposing redundant data into reference tables to ensure data integrity.
 
+### Indexing Strategy
+
+Composite B-Tree indexes on `(symbol, date)` columns eliminate full-table scans for the most frequent time-series range queries.
+
