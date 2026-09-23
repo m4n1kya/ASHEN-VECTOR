@@ -74,3 +74,7 @@ Alpha signal half-life is measured by computing the autocorrelation of forward r
 
 Information Coefficient (IC) is computed at 1, 5, 10, 21, and 63-day forward horizons to map the complete signal decay curve.
 
+### Rebalancing Frequency
+
+The rebalancing frequency is set at the point where marginal alpha gain from more frequent rebalancing is outweighed by incremental transaction costs.
+
