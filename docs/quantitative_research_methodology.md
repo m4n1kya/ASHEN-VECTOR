@@ -42,3 +42,7 @@ High standard deviation in analyst EPS estimates signals fundamental uncertainty
 
 Clustered buying by C-suite insiders within 10 days of each other is treated as a high-conviction bullish signal, weighted by transaction dollar amount.
 
+### Innovation Signals
+
+R&D intensity (R&D expense / revenue) and patent filing velocity are used as slow-moving quality signals for identifying compounders.
+
