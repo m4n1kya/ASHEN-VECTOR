@@ -190,3 +190,7 @@ DVC tracks every dataset used in a research notebook, storing a content hash tha
 
 Every research experiment logs its parameters, metrics, and artifacts to MLflow, creating a permanent, searchable record of all historical research.
 
+### Peer Review Gate
+
+No signal may be promoted to the paper trading portfolio without a mandatory peer review from a second quantitative researcher.
+
