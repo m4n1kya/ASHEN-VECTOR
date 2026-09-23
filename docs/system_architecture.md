@@ -38,3 +38,7 @@ The PAS is the immutable source of truth for all positions, cash balances, and r
 
 The RBS is air-gapped from the live trading cluster, running on a separate compute pool with zero access to live order routing endpoints.
 
+### API Gateway Service (AGS)
+
+The AGS is the single public-facing entry point, aggregating responses from multiple internal microservices for the Next.js frontend.
+
