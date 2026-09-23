@@ -70,3 +70,7 @@ Signals are z-scored separately within large-cap, mid-cap, and small-cap buckets
 
 Alpha signal half-life is measured by computing the autocorrelation of forward returns conditioned on the signal rank, identifying the optimal holding period.
 
+### Information Decay Curves
+
+Information Coefficient (IC) is computed at 1, 5, 10, 21, and 63-day forward horizons to map the complete signal decay curve.
+
