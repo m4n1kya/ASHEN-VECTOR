@@ -258,3 +258,7 @@ An internal GraphQL endpoint allows quantitative researchers to construct arbitr
 
 The Next.js frontend uses Zustand for lightweight client-side state management, avoiding the complexity of Redux for simple UI state.
 
+### Server Component Fetching
+
+Expensive data fetches (e.g., historical performance charts) are performed in React Server Components, eliminating client-side waterfall requests.
+
