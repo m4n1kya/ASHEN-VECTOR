@@ -386,3 +386,7 @@ Controlled Chaos Monkey experiments are run monthly in the staging environment, 
 
 Load testing via Locust simulates peak market-open order flow to validate that the platform sustains 10,000 concurrent API requests without degradation.
 
+### Inference Latency Benchmarks
+
+Benchmarking on production hardware confirms a p50 inference latency of 12ms and a p99 of 87ms for the full 7-model ensemble.
+
