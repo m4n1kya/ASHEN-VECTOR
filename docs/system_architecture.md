@@ -10,3 +10,7 @@ ASHEN-VECTOR is designed around three non-negotiable principles: correctness of 
 
 The monolithic research prototype was decomposed into eight autonomous microservices, each owning its own data store and deployment lifecycle.
 
+### Market Data Service (MDS)
+
+The MDS is the sole owner of raw market data ingestion, responsible for normalizing feeds from multiple providers into a canonical internal format.
+
