@@ -322,3 +322,7 @@ The cointegration relationship is re-tested quarterly. If the p-value of the ADF
 
 Options market data provides forward-looking signals unavailable in price history: implied volatility surface, skew, and put/call volume ratios.
 
+### IV Term Structure
+
+The slope of the implied volatility term structure (30D vs 90D IV) predicts near-term event risk and is used as an input to the GARCH volatility forecast.
+
