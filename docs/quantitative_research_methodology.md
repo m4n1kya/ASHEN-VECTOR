@@ -38,3 +38,7 @@ Earnings Revision Momentum (ERM) captures the rate of change in analyst EPS esti
 
 High standard deviation in analyst EPS estimates signals fundamental uncertainty; low dispersion paired with positive revision is a high-conviction buy signal.
 
+### Insider Transaction Signals
+
+Clustered buying by C-suite insiders within 10 days of each other is treated as a high-conviction bullish signal, weighted by transaction dollar amount.
+
