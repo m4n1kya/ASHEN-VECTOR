@@ -322,3 +322,7 @@ All Spark batch jobs are orchestrated as Apache Airflow DAGs, providing dependen
 
 The raw and processed data lakes are built on AWS S3 with Delta Lake format, providing ACID transactions and time-travel queries for data.
 
+### Medallion Architecture
+
+Data flows through three layers: Bronze (raw vendor data), Silver (cleaned and validated data), and Gold (feature-engineered, model-ready datasets).
+
