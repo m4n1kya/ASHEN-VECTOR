@@ -330,3 +330,7 @@ Data flows through three layers: Bronze (raw vendor data), Silver (cleaned and v
 
 Delta Lake tables are Z-ordered on `(symbol, date)` columns to co-locate related data on the same Parquet files, drastically reducing I/O.
 
+### Table Maintenance
+
+Automated Airflow DAGs run Delta Lake `VACUUM` and `OPTIMIZE` commands nightly to manage small file proliferation and reclaim storage.
+
