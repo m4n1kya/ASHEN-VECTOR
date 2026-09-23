@@ -150,3 +150,7 @@ The Treynor Ratio normalizes excess returns by the portfolio's systematic beta, 
 
 The Sortino Ratio is used alongside Sharpe to penalize only downside volatility, which is economically more relevant than symmetric volatility.
 
+### Calmar Ratio
+
+The Calmar Ratio (CAGR / Maximum Drawdown) is a primary ranking metric for comparing strategies with similar Sharpe Ratios but different risk profiles.
+
