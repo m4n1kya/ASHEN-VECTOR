@@ -114,3 +114,7 @@ After controlling for systematic factors, the residual (idiosyncratic) return at
 
 We require a minimum t-statistic of 2.5 on the IC across the full backtest period before a signal is permitted to proceed to out-of-sample testing.
 
+### Multiple Testing Correction
+
+Benjamini-Hochberg False Discovery Rate correction is applied when evaluating a batch of signals to control the expected proportion of false discoveries.
+
