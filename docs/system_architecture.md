@@ -102,3 +102,7 @@ All significant architectural decisions are documented as ADRs in `docs/adr/`, p
 
 Kafka was selected over RabbitMQ primarily for its immutable log retention, enabling replay-based backtesting of live order flow.
 
+### ADR-002: FastAPI over Django REST Framework
+
+FastAPI was selected for its native async support and automatic OpenAPI schema generation, critical for our high-concurrency inference endpoints.
+
