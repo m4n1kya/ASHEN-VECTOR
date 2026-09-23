@@ -142,3 +142,7 @@ Expected Shortfall at the 5% confidence level is computed across the full return
 
 Drawdown analysis decomposes maximum drawdown into duration, recovery time, and the spread between underwater and recovery periods.
 
+### Treynor Ratio
+
+The Treynor Ratio normalizes excess returns by the portfolio's systematic beta, isolating the compensation received for taking market risk.
+
