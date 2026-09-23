@@ -358,3 +358,7 @@ Year-end tax-loss selling pressure creates a predictable January Effect bounce i
 
 Additions to major indices (S&P 500, Russell 2000) create predictable demand pressure. The strategy front-runs the reconstitution-day buying.
 
+### Short Squeeze Detection
+
+Short squeeze candidates are identified by crossing high short interest ratio (above 20%) with rapidly accelerating price momentum and increasing borrow rate.
+
