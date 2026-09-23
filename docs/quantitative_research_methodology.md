@@ -386,3 +386,7 @@ Signal weights are updated using a Bayesian framework, incorporating new IC obse
 
 The ensemble model probability outputs are calibrated using Platt scaling regression, ensuring that a 70% predicted probability corresponds to a 70% realized hit rate.
 
+### Expected Value Framework
+
+Each trade is evaluated through an explicit expected value calculation: EV = (P(win) * avg_gain) - (P(loss) * avg_loss), rejecting any trade with negative EV.
+
