@@ -178,3 +178,7 @@ Every Docker image built in CI is scanned by Trivy for known CVEs. Images with C
 
 `pip-audit` runs on every pull request to detect known vulnerabilities in transitive dependencies before they enter the codebase.
 
+## Distributed Tracing
+
+Jaeger distributed tracing is integrated across all microservices, providing end-to-end visibility into complex multi-service request flows.
+
