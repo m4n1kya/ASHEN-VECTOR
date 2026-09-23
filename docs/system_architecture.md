@@ -394,3 +394,7 @@ Benchmarking on production hardware confirms a p50 inference latency of 12ms and
 
 Latency-sensitive inference and OMS pods are co-located within a single AWS Cluster Placement Group to minimize cross-rack network hops.
 
+### Kernel-Bypass Networking
+
+For the highest-frequency tick ingestion path, DPDK (Data Plane Development Kit) bypasses the Linux kernel network stack for sub-10 microsecond latency.
+
