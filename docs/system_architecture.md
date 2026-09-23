@@ -398,3 +398,7 @@ Latency-sensitive inference and OMS pods are co-located within a single AWS Clus
 
 For the highest-frequency tick ingestion path, DPDK (Data Plane Development Kit) bypasses the Linux kernel network stack for sub-10 microsecond latency.
 
+## Cost Optimization
+
+ML model training jobs run exclusively on EC2 Spot Instances with automated checkpointing, reducing compute costs by 70% over On-Demand pricing.
+
