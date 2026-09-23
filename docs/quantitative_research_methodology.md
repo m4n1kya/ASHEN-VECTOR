@@ -382,3 +382,7 @@ When the HMM regime classifier outputs high regime uncertainty (max state probab
 
 Signal weights are updated using a Bayesian framework, incorporating new IC observations as likelihood updates to a conjugate Gaussian prior distribution.
 
+### Ensemble Calibration
+
+The ensemble model probability outputs are calibrated using Platt scaling regression, ensuring that a 70% predicted probability corresponds to a 70% realized hit rate.
+
