@@ -170,3 +170,7 @@ Multiple orthogonal signals are combined using an inverse-IC-variance weighting 
 
 A secondary XGBoost model is trained to predict the IC of each signal conditional on the current market regime, enabling dynamic signal weight allocation.
 
+### Equal-Weight Baseline
+
+All ML-based combination schemes are benchmarked against a naive equal-weight combination to ensure the model complexity is justified.
+
