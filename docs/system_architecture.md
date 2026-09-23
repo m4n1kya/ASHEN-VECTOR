@@ -70,3 +70,7 @@ Envoy sidecar proxies are automatically injected into every pod, collecting gran
 
 The Order Management Service state is reconstructed exclusively from an append-only stream of domain events, enabling perfect auditability.
 
+### Command Query Responsibility Segregation (CQRS)
+
+Write operations (order placement) are handled by a command handler, while read operations (portfolio dashboard) query a separate, denormalized read model.
+
