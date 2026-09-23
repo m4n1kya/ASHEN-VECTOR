@@ -82,3 +82,7 @@ The rebalancing frequency is set at the point where marginal alpha gain from mor
 
 The signal-to-noise ratio is quantified by the ratio of the mean IC to the standard deviation of IC across rolling 63-day windows.
 
+### IC Calculation
+
+Spearman Rank IC is used instead of Pearson IC to achieve robustness against outliers in both the signal and the forward return distribution.
+
