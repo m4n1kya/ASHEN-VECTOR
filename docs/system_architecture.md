@@ -266,3 +266,7 @@ Expensive data fetches (e.g., historical performance charts) are performed in Re
 
 Next.js's Turbopack bundler automatically performs code splitting and tree shaking, ensuring each page only loads the JavaScript it strictly requires.
 
+### WebSocket Reconnection
+
+The frontend WebSocket client implements exponential backoff with jitter for reconnection attempts, preventing thundering herd reconnections after server restarts.
+
