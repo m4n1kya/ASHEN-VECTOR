@@ -14,3 +14,7 @@ The investable universe is filtered to liquid, mid-to-large cap equities with a 
 
 Stocks with bid-ask spreads exceeding 50 basis points are excluded, as transaction costs would consume the projected alpha entirely.
 
+### Survivorship Bias
+
+The universe includes all historically listed instruments, including delisted and bankrupt companies, to prevent survivorship bias from inflating backtested returns.
+
