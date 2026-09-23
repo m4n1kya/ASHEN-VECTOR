@@ -18,3 +18,7 @@ Stocks with bid-ask spreads exceeding 50 basis points are excluded, as transacti
 
 The universe includes all historically listed instruments, including delisted and bankrupt companies, to prevent survivorship bias from inflating backtested returns.
 
+## Signal Taxonomy
+
+Alpha signals are classified into four families: Momentum (trend-following), Reversion (mean-reverting), Quality (fundamental), and Sentiment (behavioral).
+
