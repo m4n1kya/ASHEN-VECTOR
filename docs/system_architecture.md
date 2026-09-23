@@ -186,3 +186,7 @@ Jaeger distributed tracing is integrated across all microservices, providing end
 
 All services propagate trace context using the W3C TraceContext standard (`traceparent` header), ensuring compatibility with all observability tools.
 
+### Adaptive Sampling
+
+Jaeger uses adaptive sampling, automatically increasing the trace collection rate for slow or erroneous requests to diagnose production issues.
+
