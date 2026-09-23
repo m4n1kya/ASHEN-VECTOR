@@ -274,3 +274,7 @@ The Almgren-Chriss model estimates the expected market impact of executing a tar
 
 Position sizes are scaled inversely to the GARCH-forecasted realized volatility, maintaining a consistent risk contribution across all holdings.
 
+## Correlation Dynamics
+
+During crisis periods, cross-asset correlations spike toward 1.0, destroying diversification benefits. The system detects this regime shift and reduces gross exposure.
+
