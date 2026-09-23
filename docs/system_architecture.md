@@ -78,3 +78,7 @@ Write operations (order placement) are handled by a command handler, while read 
 
 Each event contains a globally unique `event_id`, a `aggregate_id`, a monotonically increasing `sequence_number`, and an ISO 8601 `recorded_at` timestamp.
 
+## Distributed Transactions (Saga Pattern)
+
+The multi-step trade placement workflow (risk check -> order creation -> execution -> accounting) is orchestrated as a saga with compensating transactions.
+
