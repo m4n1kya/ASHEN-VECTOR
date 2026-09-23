@@ -42,3 +42,7 @@ The RBS is air-gapped from the live trading cluster, running on a separate compu
 
 The AGS is the single public-facing entry point, aggregating responses from multiple internal microservices for the Next.js frontend.
 
+## Inter-Service Communication
+
+Asynchronous communication between services is exclusively mediated through Apache Kafka, ensuring loose coupling and fault isolation.
+
