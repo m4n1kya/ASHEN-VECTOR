@@ -350,3 +350,7 @@ All `terraform plan` and `terraform apply` executions run in Terraform Cloud, en
 
 ArgoCD monitors the `k8s-manifests` Git repository and automatically synchronizes the Kubernetes cluster state to match the declared configuration.
 
+### Application Sets
+
+ArgoCD Application Sets template a single application definition across `dev`, `staging`, and `prod` environments using Git branch selectors.
+
