@@ -174,3 +174,7 @@ A secondary XGBoost model is trained to predict the IC of each signal conditiona
 
 All ML-based combination schemes are benchmarked against a naive equal-weight combination to ensure the model complexity is justified.
 
+### PCA Signal Compression
+
+Principal Component Analysis extracts orthogonal composite signals from a large library of correlated raw signals, reducing noise and improving stability.
+
