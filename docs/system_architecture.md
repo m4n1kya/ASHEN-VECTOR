@@ -294,3 +294,7 @@ PgBouncer acts as a connection pooler in transaction pooling mode, allowing thou
 
 SQLAlchemy is configured to automatically route read-only ORM queries to the Aurora read replica, freeing the primary writer for transactional workloads.
 
+### Table Partitioning
+
+The `daily_prices` table is partitioned by year using PostgreSQL declarative partitioning, enabling instant purging of historical data via `DETACH PARTITION`.
+
