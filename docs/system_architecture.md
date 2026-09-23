@@ -126,3 +126,7 @@ The live trading cluster is deployed in an active-passive multi-region configura
 
 Amazon Aurora automatically promotes the standby read replica to primary within 30 seconds, without requiring manual intervention.
 
+### Health Check Probes
+
+Kubernetes liveness probes restart crashed pods while readiness probes prevent traffic from reaching pods that are still warming up their ONNX models.
+
