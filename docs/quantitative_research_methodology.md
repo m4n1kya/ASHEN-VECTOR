@@ -102,3 +102,7 @@ A valid alpha signal must show a near-monotonic increase in average returns from
 
 Hit rate (fraction of profitable trades) and profit factor (gross profit / gross loss) are computed separately for long and short legs.
 
+### Turnover Decomposition
+
+Signal turnover is decomposed into the contribution from rank changes within each quintile versus migrations across quintile boundaries.
+
