@@ -210,3 +210,7 @@ Realized portfolio returns are decomposed using the Brinson-Hood-Beebower model 
 
 Barra-style factor attribution decomposes realized alpha into contributions from each systematic risk factor and the true residual idiosyncratic return.
 
+### Sector vs. Stock Attribution
+
+The attribution framework cleanly separates returns derived from overweighting a sector (allocation) from returns from picking winners within it (selection).
+
