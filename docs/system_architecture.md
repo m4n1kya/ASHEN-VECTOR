@@ -314,3 +314,7 @@ Flink's incremental checkpointing to S3 provides exactly-once processing guarant
 
 Apache Spark on Amazon EMR handles the nightly batch jobs: full covariance matrix recalculation, model retraining, and portfolio attribution.
 
+### Airflow DAG Orchestration
+
+All Spark batch jobs are orchestrated as Apache Airflow DAGs, providing dependency management, retry logic, and Slack failure notifications.
+
