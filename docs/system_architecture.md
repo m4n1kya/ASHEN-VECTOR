@@ -298,3 +298,7 @@ SQLAlchemy is configured to automatically route read-only ORM queries to the Aur
 
 The `daily_prices` table is partitioned by year using PostgreSQL declarative partitioning, enabling instant purging of historical data via `DETACH PARTITION`.
 
+## Stream Processing (Apache Flink)
+
+Apache Flink processes the real-time Kafka event stream for stateful computations like rolling technical indicators and order book aggregations.
+
