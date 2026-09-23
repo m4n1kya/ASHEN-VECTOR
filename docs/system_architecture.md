@@ -90,3 +90,7 @@ The trade settlement saga uses choreography, where each service reacts to domain
 
 If the accounting service fails to record a fill, a compensating `FILL_REVERSAL` event is emitted, triggering an automated reconciliation workflow.
 
+## Idempotency
+
+All Kafka consumers implement idempotent processing by storing processed `event_id` values in Redis, safely tolerating at-least-once message delivery.
+
