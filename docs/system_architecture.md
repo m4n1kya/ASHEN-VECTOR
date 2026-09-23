@@ -106,3 +106,7 @@ Kafka was selected over RabbitMQ primarily for its immutable log retention, enab
 
 FastAPI was selected for its native async support and automatic OpenAPI schema generation, critical for our high-concurrency inference endpoints.
 
+### ADR-003: ONNX Runtime for Production Serving
+
+ONNX Runtime was selected to eliminate the Python GIL bottleneck during parallel model inference, achieving sub-10ms p99 latency.
+
