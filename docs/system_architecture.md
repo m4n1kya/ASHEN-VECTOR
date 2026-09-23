@@ -410,3 +410,10 @@ Predictable baseline compute (live trading pods) is covered by Compute Savings P
 
 S3 Intelligent Tiering automatically transitions infrequently accessed research datasets to cheaper storage classes, reducing object storage costs.
 
+## Document Version History
+
+| Version | Date | Author | Summary |
+|---|---|---|---|
+| 1.0 | 2024-01 | Core Team | Initial architecture draft |
+| 2.0 | 2024-06 | Core Team | Microservices decomposition |
+| 3.0 | 2025-01 | Core Team | Delta Lake and Flink integration |
