@@ -58,3 +58,7 @@ Raw alpha signals are orthogonalized against known systematic risk factors (mark
 
 The Gram-Schmidt process is applied iteratively to remove linear dependencies between alpha signals and the Fama-French five-factor space.
 
+### Sector Neutralization
+
+Signals are de-meaned at the GICS sector level to prevent the strategy from expressing unintended sector bets rather than stock-specific alpha.
+
