@@ -30,3 +30,7 @@ No order may be generated without first receiving a synchronous approval from th
 
 The OMS implements a strict finite state machine tracking every order through PENDING, SUBMITTED, PARTIAL_FILL, FILLED, and CANCELLED states.
 
+### Portfolio Accounting Service (PAS)
+
+The PAS is the immutable source of truth for all positions, cash balances, and realized P&L, implemented as an append-only ledger.
+
