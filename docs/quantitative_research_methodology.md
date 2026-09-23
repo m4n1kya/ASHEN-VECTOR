@@ -126,3 +126,7 @@ Hyperparameters are optimized exclusively on in-sample data within each rolling 
 
 The backtest is structurally divided into 70% in-sample (training) and 30% out-of-sample (validation), with a 6-month embargo buffer between them.
 
+## Regime-Conditional Backtesting
+
+Backtest performance is decomposed by market regime (BULL, BEAR, HIGH VOL, LOW VOL) to assess strategy robustness across all conditions.
+
