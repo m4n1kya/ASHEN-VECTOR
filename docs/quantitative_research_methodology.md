@@ -238,3 +238,7 @@ The Transfer Coefficient measures how faithfully portfolio weights reflect signa
 
 Cross-sectional signals rank instruments against each other at each point in time, while time-series signals evaluate each instrument against its own history.
 
+### Hybrid Signals
+
+The most powerful signals are often hybrid constructions: selecting instruments that score well cross-sectionally AND are in a positive time-series trend.
+
