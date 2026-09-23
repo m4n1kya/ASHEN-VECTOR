@@ -134,3 +134,7 @@ Kubernetes liveness probes restart crashed pods while readiness probes prevent t
 
 Kubernetes rolling update strategy ensures at least 2 replicas of each service remain available at all times during a deployment rollout.
 
+## Network Topology
+
+The AWS VPC is segmented into three tiers: public (load balancers), private application (Kubernetes nodes), and isolated data (RDS, ElastiCache).
+
