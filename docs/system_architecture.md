@@ -66,3 +66,7 @@ Istio circuit breakers are configured to trip after 3 consecutive 500-series err
 
 Envoy sidecar proxies are automatically injected into every pod, collecting granular telemetry on request rates, latency, and error ratios.
 
+## Event Sourcing
+
+The Order Management Service state is reconstructed exclusively from an append-only stream of domain events, enabling perfect auditability.
+
