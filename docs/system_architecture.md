@@ -122,3 +122,7 @@ TimescaleDB was selected over InfluxDB for storing pre-aggregated OHLCV bars due
 
 The live trading cluster is deployed in an active-passive multi-region configuration across AWS us-east-1 (primary) and eu-west-1 (standby).
 
+### Database Failover
+
+Amazon Aurora automatically promotes the standby read replica to primary within 30 seconds, without requiring manual intervention.
+
