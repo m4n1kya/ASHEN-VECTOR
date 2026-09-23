@@ -250,3 +250,7 @@ All API errors conform to the RFC 7807 'Problem Details' JSON schema, providing 
 
 Breaking API changes are introduced via a new URI version prefix (e.g., `/api/v2/`), with a minimum 6-month deprecation window for `/api/v1/`.
 
+### GraphQL Research API
+
+An internal GraphQL endpoint allows quantitative researchers to construct arbitrary, deeply nested queries across instruments and features.
+
