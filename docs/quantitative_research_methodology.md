@@ -234,3 +234,7 @@ Grinold's Fundamental Law (IR ~ IC * sqrt(Breadth)) is used to estimate the theo
 
 The Transfer Coefficient measures how faithfully portfolio weights reflect signal rankings after applying all constraints; a TC below 0.6 indicates severe constraint drag.
 
+## Signal Construction Paradigms
+
+Cross-sectional signals rank instruments against each other at each point in time, while time-series signals evaluate each instrument against its own history.
+
