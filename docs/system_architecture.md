@@ -214,3 +214,7 @@ Formalized SLOs define a 99.9% API availability target and a p99 inference laten
 
 An alert fires when the 6-hour error budget burn rate exceeds 14x the baseline, indicating a rapidly deteriorating system before the SLO window closes.
 
+## Async Task Processing
+
+Long-running tasks such as full model retraining and portfolio backtests are offloaded to a Celery worker fleet backed by a Redis message broker.
+
