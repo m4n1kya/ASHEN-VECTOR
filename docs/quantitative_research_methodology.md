@@ -350,3 +350,7 @@ The overnight return anomaly (close-to-open) is a well-documented microstructure
 
 Day-of-week and month-of-year seasonality patterns are catalogued but applied only to portfolio overlay timing, not as primary alpha signals.
 
+### Tax-Loss Selling
+
+Year-end tax-loss selling pressure creates a predictable January Effect bounce in prior-year losers; this is exploited as a mean-reversion signal.
+
