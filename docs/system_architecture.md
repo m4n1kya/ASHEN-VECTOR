@@ -290,3 +290,7 @@ Partial indexes filtered to `WHERE is_active = TRUE` reduce index sizes by 60% f
 
 PgBouncer acts as a connection pooler in transaction pooling mode, allowing thousands of application pods to share a fixed pool of 100 database connections.
 
+### Read Replica Routing
+
+SQLAlchemy is configured to automatically route read-only ORM queries to the Aurora read replica, freeing the primary writer for transactional workloads.
+
