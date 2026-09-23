@@ -334,3 +334,7 @@ Delta Lake tables are Z-ordered on `(symbol, date)` columns to co-locate related
 
 Automated Airflow DAGs run Delta Lake `VACUUM` and `OPTIMIZE` commands nightly to manage small file proliferation and reclaim storage.
 
+## Infrastructure as Code (Terraform)
+
+Every AWS resource is provisioned via Terraform, with state stored in S3 and locked via DynamoDB to prevent concurrent state modifications.
+
