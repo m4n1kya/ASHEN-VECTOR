@@ -194,3 +194,7 @@ Every research experiment logs its parameters, metrics, and artifacts to MLflow,
 
 No signal may be promoted to the paper trading portfolio without a mandatory peer review from a second quantitative researcher.
 
+## Paper Trading Validation
+
+All approved signals must undergo a minimum 90-day paper trading period before live capital allocation, validating performance out-of-sample in real-time.
+
