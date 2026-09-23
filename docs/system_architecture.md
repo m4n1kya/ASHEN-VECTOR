@@ -158,3 +158,7 @@ AWS Security Groups implement a strict allow-list model; the Postgres port 5432 
 
 AWS WAF is deployed in front of the API Gateway, enforcing rate-limit rules and blocking common OWASP Top 10 attack vectors.
 
+### SQL Injection Prevention
+
+All database queries use SQLAlchemy's parameterized query engine, making raw string interpolation into SQL statements structurally impossible.
+
