@@ -258,3 +258,7 @@ The optimizer enforces a maximum net market beta of +/-0.1, ensuring the strateg
 
 For market-neutral strategies, gross long exposure equals gross short exposure within a +/-2% tolerance band, enforced at every rebalancing cycle.
 
+### FX and Country Exposure
+
+For multi-regional strategies, net currency exposure to any single non-USD currency is capped at 10% of NAV and hedged via FX forwards.
+
