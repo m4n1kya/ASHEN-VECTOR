@@ -146,3 +146,7 @@ Drawdown analysis decomposes maximum drawdown into duration, recovery time, and 
 
 The Treynor Ratio normalizes excess returns by the portfolio's systematic beta, isolating the compensation received for taking market risk.
 
+### Sortino Ratio
+
+The Sortino Ratio is used alongside Sharpe to penalize only downside volatility, which is economically more relevant than symmetric volatility.
+
