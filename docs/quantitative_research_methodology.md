@@ -278,3 +278,7 @@ Position sizes are scaled inversely to the GARCH-forecasted realized volatility,
 
 During crisis periods, cross-asset correlations spike toward 1.0, destroying diversification benefits. The system detects this regime shift and reduces gross exposure.
 
+### DCC-GARCH Model
+
+Dynamic Conditional Correlation GARCH (DCC-GARCH) provides time-varying correlation estimates, capturing the rapid correlation spikes during market dislocations.
+
