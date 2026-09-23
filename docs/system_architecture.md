@@ -154,3 +154,7 @@ Private application pods route outbound internet requests (e.g., to Bloomberg AP
 
 AWS Security Groups implement a strict allow-list model; the Postgres port 5432 is only reachable from the application subnet CIDR, not the internet.
 
+## Application Security
+
+AWS WAF is deployed in front of the API Gateway, enforcing rate-limit rules and blocking common OWASP Top 10 attack vectors.
+
