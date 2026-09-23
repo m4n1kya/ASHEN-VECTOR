@@ -374,3 +374,7 @@ Quarterly SEC 13F filings are aggregated to construct a Hedge Fund Crowding Inde
 
 Short positions with stock borrow costs exceeding 500bps annually are flagged, as the carry cost can erase the alpha within the holding period.
 
+## Uncertainty-Aware Construction
+
+When the HMM regime classifier outputs high regime uncertainty (max state probability below 60%), position sizes are halved to reduce risk proactively.
+
