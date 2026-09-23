@@ -358,3 +358,7 @@ ArgoCD Application Sets template a single application definition across `dev`, `
 
 Environment-specific differences (replica counts, resource limits, feature flags) are managed via Kustomize overlays on a shared base configuration.
 
+### Resource Quotas
+
+Kubernetes Resource Quotas are applied at the namespace level, preventing a runaway ML training job from starving live trading pods of CPU and memory.
+
