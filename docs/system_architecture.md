@@ -210,3 +210,7 @@ Grafana AlertManager is configured with tiered PagerDuty integrations: P1 alerts
 
 Formalized SLOs define a 99.9% API availability target and a p99 inference latency target of under 500 milliseconds within each trading day.
 
+### Error Budget Alerts
+
+An alert fires when the 6-hour error budget burn rate exceeds 14x the baseline, indicating a rapidly deteriorating system before the SLO window closes.
+
