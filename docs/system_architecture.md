@@ -18,3 +18,7 @@ The MDS is the sole owner of raw market data ingestion, responsible for normaliz
 
 The FES subscribes to the MDS event stream and produces a continuously updated, point-in-time correct feature vector for each instrument.
 
+### Model Inference Service (MIS)
+
+The MIS is intentionally stateless, loading serialized ONNX models from a shared artifact store at startup and serving predictions via gRPC.
+
