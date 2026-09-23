@@ -390,3 +390,7 @@ The ensemble model probability outputs are calibrated using Platt scaling regres
 
 Each trade is evaluated through an explicit expected value calculation: EV = (P(win) * avg_gain) - (P(loss) * avg_loss), rejecting any trade with negative EV.
 
+### Volatility Regime Impact
+
+In HIGH VOL regimes, momentum signals are historically negative IC, prompting an automatic sign-flip from trend-following to mean-reversion mode.
+
