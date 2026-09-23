@@ -62,3 +62,7 @@ The Gram-Schmidt process is applied iteratively to remove linear dependencies be
 
 Signals are de-meaned at the GICS sector level to prevent the strategy from expressing unintended sector bets rather than stock-specific alpha.
 
+### Size Neutralization
+
+Signals are z-scored separately within large-cap, mid-cap, and small-cap buckets, ensuring performance is not driven by a size tilt.
+
