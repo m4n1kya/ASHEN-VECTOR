@@ -142,3 +142,7 @@ The AWS VPC is segmented into three tiers: public (load balancers), private appl
 
 Engineers access the private cluster exclusively via a hardened Bastion Host, with all SSH sessions logged and audited to CloudTrail.
 
+### Service Discovery
+
+Kubernetes CoreDNS provides internal service discovery, allowing services to reach each other via stable DNS names regardless of pod IP changes.
+
