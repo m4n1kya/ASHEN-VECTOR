@@ -34,3 +34,7 @@ Short Interest Ratio (SIR) is computed as shares short divided by average daily 
 
 Earnings Revision Momentum (ERM) captures the rate of change in analyst EPS estimates, exploiting the documented underreaction to estimate revisions.
 
+### Analyst Dispersion
+
+High standard deviation in analyst EPS estimates signals fundamental uncertainty; low dispersion paired with positive revision is a high-conviction buy signal.
+
