@@ -246,3 +246,7 @@ The most powerful signals are often hybrid constructions: selecting instruments 
 
 All cross-sectional ranks are adjusted for trailing realized volatility, preventing high-vol stocks from dominating the return distribution due to noise.
 
+## Factor Exposure Management
+
+Rolling factor exposures of the live portfolio are monitored daily. Breaching the +/-0.3 exposure limit on any Barra factor triggers a forced rebalance.
+
