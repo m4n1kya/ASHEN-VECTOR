@@ -94,3 +94,7 @@ If the accounting service fails to record a fill, a compensating `FILL_REVERSAL`
 
 All Kafka consumers implement idempotent processing by storing processed `event_id` values in Redis, safely tolerating at-least-once message delivery.
 
+## Architectural Decision Records
+
+All significant architectural decisions are documented as ADRs in `docs/adr/`, providing historical context for future engineers.
+
