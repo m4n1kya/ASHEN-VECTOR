@@ -226,3 +226,7 @@ Transaction costs are attributed separately to market impact, bid-ask spread cro
 
 Custom benchmarks are constructed from the investable universe itself to avoid the distortion caused by comparing against capitalization-weighted indices.
 
+### Fundamental Law of Active Management
+
+Grinold's Fundamental Law (IR ~ IC * sqrt(Breadth)) is used to estimate the theoretical maximum IR achievable given the signal quality and trading frequency.
+
