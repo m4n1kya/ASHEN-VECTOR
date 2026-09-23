@@ -50,3 +50,7 @@ Asynchronous communication between services is exclusively mediated through Apac
 
 Kafka topics follow the schema `{env}.{domain}.{entity}.{version}` (e.g., `prod.market.ohlcv.v3`) to enforce discoverability and schema evolution.
 
+### Synchronous gRPC
+
+For latency-critical synchronous calls (e.g., risk checks), services communicate via gRPC with Protocol Buffer schemas, reducing serialization overhead.
+
