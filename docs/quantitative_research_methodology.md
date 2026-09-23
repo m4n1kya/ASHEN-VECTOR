@@ -98,3 +98,7 @@ Raw signals are ranked into quintiles. The spread in average forward returns bet
 
 A valid alpha signal must show a near-monotonic increase in average returns from Q1 to Q5, not just a top-minus-bottom spread.
 
+### Hit Rate Analysis
+
+Hit rate (fraction of profitable trades) and profit factor (gross profit / gross loss) are computed separately for long and short legs.
+
