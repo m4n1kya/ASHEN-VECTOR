@@ -26,3 +26,7 @@ The MIS is intentionally stateless, loading serialized ONNX models from a shared
 
 No order may be generated without first receiving a synchronous approval from the RMS, which validates every proposed position against portfolio-level limits.
 
+### Order Management Service (OMS)
+
+The OMS implements a strict finite state machine tracking every order through PENDING, SUBMITTED, PARTIAL_FILL, FILLED, and CANCELLED states.
+
