@@ -46,3 +46,7 @@ Clustered buying by C-suite insiders within 10 days of each other is treated as 
 
 R&D intensity (R&D expense / revenue) and patent filing velocity are used as slow-moving quality signals for identifying compounders.
 
+### Commodity Sensitivity
+
+Rolling 90-day correlations between stock returns and key commodity prices (WTI, copper, gold) create sector-aware macro hedging signals.
+
