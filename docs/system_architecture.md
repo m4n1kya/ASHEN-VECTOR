@@ -46,3 +46,7 @@ The AGS is the single public-facing entry point, aggregating responses from mult
 
 Asynchronous communication between services is exclusively mediated through Apache Kafka, ensuring loose coupling and fault isolation.
 
+### Topic Naming Conventions
+
+Kafka topics follow the schema `{env}.{domain}.{entity}.{version}` (e.g., `prod.market.ohlcv.v3`) to enforce discoverability and schema evolution.
+
