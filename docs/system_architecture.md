@@ -378,3 +378,7 @@ Recovery Time Objective (RTO) is set at 15 minutes and Recovery Point Objective 
 
 The documented runbook for primary region failover involves three steps: promote Aurora standby, update Route 53 DNS records, and resume Kubernetes deployments.
 
+### Chaos Engineering
+
+Controlled Chaos Monkey experiments are run monthly in the staging environment, validating that circuit breakers and failover mechanisms operate as designed.
+
