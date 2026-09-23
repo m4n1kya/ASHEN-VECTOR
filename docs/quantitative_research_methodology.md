@@ -206,3 +206,7 @@ A formal reconciliation is run monthly comparing live paper trading performance 
 
 Realized portfolio returns are decomposed using the Brinson-Hood-Beebower model into allocation effect, selection effect, and interaction effect.
 
+### Factor Attribution
+
+Barra-style factor attribution decomposes realized alpha into contributions from each systematic risk factor and the true residual idiosyncratic return.
+
