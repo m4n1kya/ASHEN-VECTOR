@@ -74,3 +74,7 @@ The Order Management Service state is reconstructed exclusively from an append-o
 
 Write operations (order placement) are handled by a command handler, while read operations (portfolio dashboard) query a separate, denormalized read model.
 
+### Event Store Schema
+
+Each event contains a globally unique `event_id`, a `aggregate_id`, a monotonically increasing `sequence_number`, and an ISO 8601 `recorded_at` timestamp.
+
