@@ -334,3 +334,7 @@ The Volatility Risk Premium (realized vol minus implied vol) is a robust cross-s
 
 Negative options skew (put IV greater than call IV) indicates the market is pricing tail risk; extreme skew paired with low realized vol signals a volatility compression trade.
 
+### Post-Earnings Announcement Drift
+
+Post-Earnings Announcement Drift (PEAD) exploits the documented underreaction to earnings surprises, going long on positive and short on negative surprises.
+
