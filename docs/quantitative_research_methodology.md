@@ -362,3 +362,7 @@ Additions to major indices (S&P 500, Russell 2000) create predictable demand pre
 
 Short squeeze candidates are identified by crossing high short interest ratio (above 20%) with rapidly accelerating price momentum and increasing borrow rate.
 
+## Crowding Risk
+
+Crowding risk measures the degree to which our positions overlap with other institutional hedge fund books, creating vulnerability to simultaneous de-risking.
+
