@@ -326,3 +326,7 @@ The raw and processed data lakes are built on AWS S3 with Delta Lake format, pro
 
 Data flows through three layers: Bronze (raw vendor data), Silver (cleaned and validated data), and Gold (feature-engineered, model-ready datasets).
 
+### Z-Order Optimization
+
+Delta Lake tables are Z-ordered on `(symbol, date)` columns to co-locate related data on the same Parquet files, drastically reducing I/O.
+
