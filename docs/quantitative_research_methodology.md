@@ -346,3 +346,7 @@ Standardized Unexpected Earnings (SUE) normalizes the earnings surprise by its t
 
 The overnight return anomaly (close-to-open) is a well-documented microstructure phenomenon exploited via limit orders placed at the MOC auction.
 
+### Seasonal Signals
+
+Day-of-week and month-of-year seasonality patterns are catalogued but applied only to portfolio overlay timing, not as primary alpha signals.
+
