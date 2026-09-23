@@ -62,3 +62,7 @@ Istio is deployed as the service mesh layer, providing automatic mTLS encryption
 
 Istio circuit breakers are configured to trip after 3 consecutive 500-series errors, immediately routing traffic to fallback handlers.
 
+### Sidecar Proxies (Envoy)
+
+Envoy sidecar proxies are automatically injected into every pod, collecting granular telemetry on request rates, latency, and error ratios.
+
