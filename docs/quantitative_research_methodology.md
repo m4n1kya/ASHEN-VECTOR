@@ -178,3 +178,7 @@ All ML-based combination schemes are benchmarked against a naive equal-weight co
 
 Principal Component Analysis extracts orthogonal composite signals from a large library of correlated raw signals, reducing noise and improving stability.
 
+## Research Reproducibility
+
+All research notebooks are versioned in Git with pinned `requirements.txt` and a fixed random seed, ensuring any analyst can reproduce results identically.
+
