@@ -22,3 +22,7 @@ The universe includes all historically listed instruments, including delisted an
 
 Alpha signals are classified into four families: Momentum (trend-following), Reversion (mean-reverting), Quality (fundamental), and Sentiment (behavioral).
 
+### Price-Based Signals
+
+Price momentum signals are constructed as exponentially weighted returns over 5, 21, 63, and 252-day windows, normalized by realized volatility.
+
