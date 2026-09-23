@@ -346,3 +346,7 @@ Terraform modules are structured hierarchically: `modules/networking`, `modules/
 
 All `terraform plan` and `terraform apply` executions run in Terraform Cloud, ensuring a consistent environment and providing a full audit log.
 
+## GitOps Deployment (ArgoCD)
+
+ArgoCD monitors the `k8s-manifests` Git repository and automatically synchronizes the Kubernetes cluster state to match the declared configuration.
+
