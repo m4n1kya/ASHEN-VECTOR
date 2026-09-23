@@ -206,3 +206,7 @@ Real-time Kibana dashboards visualize error rates, request latencies, and model 
 
 Grafana AlertManager is configured with tiered PagerDuty integrations: P1 alerts (live trading failures) page on-call engineers immediately.
 
+### Service Level Objectives
+
+Formalized SLOs define a 99.9% API availability target and a p99 inference latency target of under 500 milliseconds within each trading day.
+
