@@ -366,3 +366,7 @@ Kubernetes Resource Quotas are applied at the namespace level, preventing a runa
 
 The VPA automatically adjusts the memory requests of ML inference pods based on historical usage, eliminating manual resource tuning.
 
+### Pod Disruption Budgets
+
+Pod Disruption Budgets (PDB) guarantee a minimum of 2 replicas for the OMS and RMS services during voluntary node drains or cluster upgrades.
+
