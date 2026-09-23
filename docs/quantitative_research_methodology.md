@@ -254,3 +254,7 @@ Rolling factor exposures of the live portfolio are monitored daily. Breaching th
 
 The optimizer enforces a maximum net market beta of +/-0.1, ensuring the strategy P&L is driven by stock selection rather than directional market exposure.
 
+### Dollar Neutrality
+
+For market-neutral strategies, gross long exposure equals gross short exposure within a +/-2% tolerance band, enforced at every rebalancing cycle.
+
