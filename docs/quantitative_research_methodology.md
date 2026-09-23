@@ -106,3 +106,7 @@ Hit rate (fraction of profitable trades) and profit factor (gross profit / gross
 
 Signal turnover is decomposed into the contribution from rank changes within each quintile versus migrations across quintile boundaries.
 
+## Residual Analysis
+
+After controlling for systematic factors, the residual (idiosyncratic) return attribution must remain statistically significant (t-stat > 2.5).
+
