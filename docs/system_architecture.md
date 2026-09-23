@@ -274,3 +274,7 @@ The frontend WebSocket client implements exponential backoff with jitter for rec
 
 Google Fonts are loaded using `next/font` with `font-display: swap` to eliminate layout shifts and meet the Core Web Vitals CLS threshold.
 
+## Database Architecture
+
+The relational schema follows Third Normal Form (3NF) strictly, decomposing redundant data into reference tables to ensure data integrity.
+
