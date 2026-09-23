@@ -306,3 +306,7 @@ The legal review validates that the data was collected ethically, does not const
 
 Before purchasing a dataset, a power analysis estimates the minimum detectable IC given the dataset coverage and sample size, filtering out underpowered datasets.
 
+## Pairs Trading
+
+The pairs trading module identifies statistically cointegrated stock pairs using the Engle-Granger two-step procedure and the Johansen cointegration test.
+
