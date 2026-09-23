@@ -98,3 +98,7 @@ All Kafka consumers implement idempotent processing by storing processed `event_
 
 All significant architectural decisions are documented as ADRs in `docs/adr/`, providing historical context for future engineers.
 
+### ADR-001: Kafka over RabbitMQ
+
+Kafka was selected over RabbitMQ primarily for its immutable log retention, enabling replay-based backtesting of live order flow.
+
