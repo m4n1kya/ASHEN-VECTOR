@@ -162,3 +162,7 @@ The Omega Ratio evaluates the complete empirical return distribution, measuring 
 
 Strategies with significant negative skewness (below -1.0) are rejected regardless of Sharpe Ratio, as they tend to exhibit catastrophic left-tail losses.
 
+## Signal Combination
+
+Multiple orthogonal signals are combined using an inverse-IC-variance weighting scheme, giving more weight to signals with historically stable information content.
+
