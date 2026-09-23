@@ -150,3 +150,7 @@ Kubernetes CoreDNS provides internal service discovery, allowing services to rea
 
 Private application pods route outbound internet requests (e.g., to Bloomberg API) through a managed NAT Gateway, masking internal IPs.
 
+### Least Privilege Security Groups
+
+AWS Security Groups implement a strict allow-list model; the Postgres port 5432 is only reachable from the application subnet CIDR, not the internet.
+
