@@ -338,3 +338,7 @@ Negative options skew (put IV greater than call IV) indicates the market is pric
 
 Post-Earnings Announcement Drift (PEAD) exploits the documented underreaction to earnings surprises, going long on positive and short on negative surprises.
 
+### SUE Score
+
+Standardized Unexpected Earnings (SUE) normalizes the earnings surprise by its trailing standard deviation, making it comparable across companies of different sizes.
+
