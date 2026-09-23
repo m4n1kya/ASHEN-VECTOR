@@ -154,3 +154,7 @@ The Sortino Ratio is used alongside Sharpe to penalize only downside volatility,
 
 The Calmar Ratio (CAGR / Maximum Drawdown) is a primary ranking metric for comparing strategies with similar Sharpe Ratios but different risk profiles.
 
+### Omega Ratio
+
+The Omega Ratio evaluates the complete empirical return distribution, measuring the probability-weighted ratio of gains to losses above a minimum threshold.
+
