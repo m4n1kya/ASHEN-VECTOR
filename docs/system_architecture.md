@@ -270,3 +270,7 @@ Next.js's Turbopack bundler automatically performs code splitting and tree shaki
 
 The frontend WebSocket client implements exponential backoff with jitter for reconnection attempts, preventing thundering herd reconnections after server restarts.
 
+### Core Web Vitals
+
+Google Fonts are loaded using `next/font` with `font-display: swap` to eliminate layout shifts and meet the Core Web Vitals CLS threshold.
+
