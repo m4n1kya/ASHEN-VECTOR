@@ -326,3 +326,7 @@ Options market data provides forward-looking signals unavailable in price histor
 
 The slope of the implied volatility term structure (30D vs 90D IV) predicts near-term event risk and is used as an input to the GARCH volatility forecast.
 
+### Volatility Risk Premium
+
+The Volatility Risk Premium (realized vol minus implied vol) is a robust cross-sectional signal; stocks with high VRP tend to deliver excess returns.
+
