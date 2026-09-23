@@ -186,3 +186,7 @@ All research notebooks are versioned in Git with pinned `requirements.txt` and a
 
 DVC tracks every dataset used in a research notebook, storing a content hash that allows exact historical datasets to be recreated on demand.
 
+### MLflow Experiment Tracking
+
+Every research experiment logs its parameters, metrics, and artifacts to MLflow, creating a permanent, searchable record of all historical research.
+
