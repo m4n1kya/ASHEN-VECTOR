@@ -394,3 +394,6 @@ Each trade is evaluated through an explicit expected value calculation: EV = (P(
 
 In HIGH VOL regimes, momentum signals are historically negative IC, prompting an automatic sign-flip from trend-following to mean-reversion mode.
 
+## Conclusion
+
+This rigorous methodology ensures that only strategies with genuine, statistically sound economic foundations are deployed with live capital in ASHEN-VECTOR.
