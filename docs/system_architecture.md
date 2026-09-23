@@ -190,3 +190,7 @@ All services propagate trace context using the W3C TraceContext standard (`trace
 
 Jaeger uses adaptive sampling, automatically increasing the trace collection rate for slow or erroneous requests to diagnose production issues.
 
+## Structured Logging
+
+All services emit structured JSON logs containing a `correlation_id`, `trace_id`, `service_name`, and `severity` for precise log aggregation.
+
