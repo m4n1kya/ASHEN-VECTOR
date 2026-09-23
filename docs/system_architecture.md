@@ -354,3 +354,7 @@ ArgoCD monitors the `k8s-manifests` Git repository and automatically synchronize
 
 ArgoCD Application Sets template a single application definition across `dev`, `staging`, and `prod` environments using Git branch selectors.
 
+### Kustomize Overlays
+
+Environment-specific differences (replica counts, resource limits, feature flags) are managed via Kustomize overlays on a shared base configuration.
+
