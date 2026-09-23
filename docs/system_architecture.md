@@ -226,3 +226,7 @@ Celery is configured with three priority queues: `critical` (live risk recalcula
 
 Kubernetes KEDA (Kubernetes Event-Driven Autoscaler) scales the Celery worker pool based on the Redis queue depth, from a minimum of 2 to 20 pods.
 
+## Multi-Tier Caching
+
+A multi-tier caching strategy reduces database load: L1 is in-process Python LRU cache, L2 is Redis, and L3 is Aurora's query result cache.
+
