@@ -146,3 +146,7 @@ Engineers access the private cluster exclusively via a hardened Bastion Host, wi
 
 Kubernetes CoreDNS provides internal service discovery, allowing services to reach each other via stable DNS names regardless of pod IP changes.
 
+### NAT Gateway
+
+Private application pods route outbound internet requests (e.g., to Bloomberg API) through a managed NAT Gateway, masking internal IPs.
+
