@@ -310,3 +310,7 @@ Before purchasing a dataset, a power analysis estimates the minimum detectable I
 
 The pairs trading module identifies statistically cointegrated stock pairs using the Engle-Granger two-step procedure and the Johansen cointegration test.
 
+### Spread Z-Score
+
+The normalized spread between cointegrated pairs is z-scored using a rolling 252-day window; entries are triggered at +/-2 sigma and exits at mean reversion.
+
