@@ -174,3 +174,7 @@ All external API keys and database credentials are automatically rotated on a 90
 
 Every Docker image built in CI is scanned by Trivy for known CVEs. Images with Critical vulnerabilities are blocked from deployment.
 
+### Python Dependency Auditing
+
+`pip-audit` runs on every pull request to detect known vulnerabilities in transitive dependencies before they enter the codebase.
+
