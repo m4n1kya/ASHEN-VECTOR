@@ -286,3 +286,7 @@ Composite B-Tree indexes on `(symbol, date)` columns eliminate full-table scans 
 
 Partial indexes filtered to `WHERE is_active = TRUE` reduce index sizes by 60% for queries that exclusively target the active investment universe.
 
+### Connection Pooling (PgBouncer)
+
+PgBouncer acts as a connection pooler in transaction pooling mode, allowing thousands of application pods to share a fixed pool of 100 database connections.
+
