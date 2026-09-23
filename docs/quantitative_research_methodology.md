@@ -330,3 +330,7 @@ The slope of the implied volatility term structure (30D vs 90D IV) predicts near
 
 The Volatility Risk Premium (realized vol minus implied vol) is a robust cross-sectional signal; stocks with high VRP tend to deliver excess returns.
 
+### Options Skew
+
+Negative options skew (put IV greater than call IV) indicates the market is pricing tail risk; extreme skew paired with low realized vol signals a volatility compression trade.
+
