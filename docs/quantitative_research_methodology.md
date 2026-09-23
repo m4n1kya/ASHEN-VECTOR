@@ -110,3 +110,7 @@ Signal turnover is decomposed into the contribution from rank changes within eac
 
 After controlling for systematic factors, the residual (idiosyncratic) return attribution must remain statistically significant (t-stat > 2.5).
 
+### Statistical Significance
+
+We require a minimum t-statistic of 2.5 on the IC across the full backtest period before a signal is permitted to proceed to out-of-sample testing.
+
