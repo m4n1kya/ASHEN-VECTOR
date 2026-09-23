@@ -290,3 +290,7 @@ Signals that show a statistically significant IC decay over any trailing 12-mont
 
 An exponentially smoothed ICIR is tracked for every live signal. If it falls below 0.3 for 4 consecutive weeks, the signal is automatically de-weighted.
 
+### Regime-Switching Detection
+
+HMM-based regime classifiers detect when a signal switches from momentum-driven to reversion-driven behavior, triggering a sign-flip adjustment.
+
