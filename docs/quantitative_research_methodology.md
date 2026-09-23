@@ -122,3 +122,7 @@ Benjamini-Hochberg False Discovery Rate correction is applied when evaluating a 
 
 Hyperparameters are optimized exclusively on in-sample data within each rolling window, then applied identically to the subsequent out-of-sample period.
 
+### Sample Splitting
+
+The backtest is structurally divided into 70% in-sample (training) and 30% out-of-sample (validation), with a 6-month embargo buffer between them.
+
