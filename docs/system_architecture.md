@@ -82,3 +82,7 @@ Each event contains a globally unique `event_id`, a `aggregate_id`, a monotonica
 
 The multi-step trade placement workflow (risk check -> order creation -> execution -> accounting) is orchestrated as a saga with compensating transactions.
 
+### Choreography Saga
+
+The trade settlement saga uses choreography, where each service reacts to domain events and emits new events, eliminating a central orchestrator bottleneck.
+
