@@ -30,3 +30,7 @@ Price momentum signals are constructed as exponentially weighted returns over 5,
 
 Short Interest Ratio (SIR) is computed as shares short divided by average daily volume, serving as a contrarian indicator for crowded shorts.
 
+### Earnings Revision Momentum
+
+Earnings Revision Momentum (ERM) captures the rate of change in analyst EPS estimates, exploiting the documented underreaction to estimate revisions.
+
