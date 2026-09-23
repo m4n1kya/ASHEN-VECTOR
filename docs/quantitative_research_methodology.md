@@ -218,3 +218,7 @@ The attribution framework cleanly separates returns derived from overweighting a
 
 Attribution is further decomposed into the value added by the signal's ability to time entries versus its ability to size positions appropriately.
 
+### Cost Attribution
+
+Transaction costs are attributed separately to market impact, bid-ask spread crossing, and exchange fees to identify the most expensive rebalances.
+
