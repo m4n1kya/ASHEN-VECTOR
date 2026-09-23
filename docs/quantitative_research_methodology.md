@@ -158,3 +158,7 @@ The Calmar Ratio (CAGR / Maximum Drawdown) is a primary ranking metric for compa
 
 The Omega Ratio evaluates the complete empirical return distribution, measuring the probability-weighted ratio of gains to losses above a minimum threshold.
 
+### Distributional Constraints
+
+Strategies with significant negative skewness (below -1.0) are rejected regardless of Sharpe Ratio, as they tend to exhibit catastrophic left-tail losses.
+
