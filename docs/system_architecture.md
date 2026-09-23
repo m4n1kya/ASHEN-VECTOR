@@ -22,3 +22,7 @@ The FES subscribes to the MDS event stream and produces a continuously updated, 
 
 The MIS is intentionally stateless, loading serialized ONNX models from a shared artifact store at startup and serving predictions via gRPC.
 
+### Risk Management Service (RMS)
+
+No order may be generated without first receiving a synchronous approval from the RMS, which validates every proposed position against portfolio-level limits.
+
