@@ -262,3 +262,7 @@ For market-neutral strategies, gross long exposure equals gross short exposure w
 
 For multi-regional strategies, net currency exposure to any single non-USD currency is capped at 10% of NAV and hedged via FX forwards.
 
+## Liquidity-Adjusted Sizing
+
+Maximum position sizes are dynamically capped based on the instrument ADTV, ensuring no single position requires more than 3 days of volume to exit.
+
