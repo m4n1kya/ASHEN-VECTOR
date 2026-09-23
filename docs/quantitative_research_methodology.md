@@ -286,3 +286,7 @@ Dynamic Conditional Correlation GARCH (DCC-GARCH) provides time-varying correlat
 
 Signals that show a statistically significant IC decay over any trailing 12-month period are flagged for review and potentially sunset from the live portfolio.
 
+### Decay Rate Monitoring
+
+An exponentially smoothed ICIR is tracked for every live signal. If it falls below 0.3 for 4 consecutive weeks, the signal is automatically de-weighted.
+
