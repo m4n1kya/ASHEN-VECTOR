@@ -230,3 +230,7 @@ Kubernetes KEDA (Kubernetes Event-Driven Autoscaler) scales the Celery worker po
 
 A multi-tier caching strategy reduces database load: L1 is in-process Python LRU cache, L2 is Redis, and L3 is Aurora's query result cache.
 
+### Cache Invalidation
+
+Feature vector caches are invalidated using a Pub/Sub notification from the FES whenever a new model input is computed for a given instrument.
+
