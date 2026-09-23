@@ -194,3 +194,7 @@ Jaeger uses adaptive sampling, automatically increasing the trace collection rat
 
 All services emit structured JSON logs containing a `correlation_id`, `trace_id`, `service_name`, and `severity` for precise log aggregation.
 
+### Log Pipeline
+
+Fluent Bit DaemonSets collect logs from all pod stdout streams, parse JSON fields, enrich with Kubernetes metadata, and forward to Elasticsearch.
+
