@@ -262,3 +262,7 @@ The Next.js frontend uses Zustand for lightweight client-side state management, 
 
 Expensive data fetches (e.g., historical performance charts) are performed in React Server Components, eliminating client-side waterfall requests.
 
+### Build Optimization
+
+Next.js's Turbopack bundler automatically performs code splitting and tree shaking, ensuring each page only loads the JavaScript it strictly requires.
+
