@@ -234,3 +234,7 @@ A multi-tier caching strategy reduces database load: L1 is in-process Python LRU
 
 Feature vector caches are invalidated using a Pub/Sub notification from the FES whenever a new model input is computed for a given instrument.
 
+### TTL Configuration
+
+OHLCV bars are cached for 60 seconds, calculated alpha features for 30 seconds, and static reference data (e.g., sector mappings) for 24 hours.
+
