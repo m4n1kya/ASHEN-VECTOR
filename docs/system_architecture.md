@@ -402,3 +402,7 @@ For the highest-frequency tick ingestion path, DPDK (Data Plane Development Kit)
 
 ML model training jobs run exclusively on EC2 Spot Instances with automated checkpointing, reducing compute costs by 70% over On-Demand pricing.
 
+### Savings Plans
+
+Predictable baseline compute (live trading pods) is covered by Compute Savings Plans, providing a 40% discount over On-Demand rates.
+
