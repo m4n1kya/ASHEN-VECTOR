@@ -294,3 +294,7 @@ An exponentially smoothed ICIR is tracked for every live signal. If it falls bel
 
 HMM-based regime classifiers detect when a signal switches from momentum-driven to reversion-driven behavior, triggering a sign-flip adjustment.
 
+## Alternative Data Due Diligence
+
+Every alternative data vendor undergoes a rigorous legal, compliance, and statistical review before their data is integrated into the research pipeline.
+
