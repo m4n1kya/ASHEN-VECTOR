@@ -390,3 +390,7 @@ Load testing via Locust simulates peak market-open order flow to validate that t
 
 Benchmarking on production hardware confirms a p50 inference latency of 12ms and a p99 of 87ms for the full 7-model ensemble.
 
+### Placement Groups
+
+Latency-sensitive inference and OMS pods are co-located within a single AWS Cluster Placement Group to minimize cross-rack network hops.
+
