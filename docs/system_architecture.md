@@ -370,3 +370,7 @@ The VPA automatically adjusts the memory requests of ML inference pods based on 
 
 Pod Disruption Budgets (PDB) guarantee a minimum of 2 replicas for the OMS and RMS services during voluntary node drains or cluster upgrades.
 
+## Disaster Recovery Strategy
+
+Recovery Time Objective (RTO) is set at 15 minutes and Recovery Point Objective (RPO) at 60 seconds for the live trading cluster.
+
