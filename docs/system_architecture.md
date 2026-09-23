@@ -130,3 +130,7 @@ Amazon Aurora automatically promotes the standby read replica to primary within 
 
 Kubernetes liveness probes restart crashed pods while readiness probes prevent traffic from reaching pods that are still warming up their ONNX models.
 
+### Rolling Restarts
+
+Kubernetes rolling update strategy ensures at least 2 replicas of each service remain available at all times during a deployment rollout.
+
