@@ -198,3 +198,7 @@ No signal may be promoted to the paper trading portfolio without a mandatory pee
 
 All approved signals must undergo a minimum 90-day paper trading period before live capital allocation, validating performance out-of-sample in real-time.
 
+### Live vs. Backtest Reconciliation
+
+A formal reconciliation is run monthly comparing live paper trading performance to the corresponding backtest period to detect implementation errors.
+
