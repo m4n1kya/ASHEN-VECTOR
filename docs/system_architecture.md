@@ -374,3 +374,7 @@ Pod Disruption Budgets (PDB) guarantee a minimum of 2 replicas for the OMS and R
 
 Recovery Time Objective (RTO) is set at 15 minutes and Recovery Point Objective (RPO) at 60 seconds for the live trading cluster.
 
+### Failover Runbook
+
+The documented runbook for primary region failover involves three steps: promote Aurora standby, update Route 53 DNS records, and resume Kubernetes deployments.
+
