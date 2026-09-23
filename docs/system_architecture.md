@@ -242,3 +242,7 @@ OHLCV bars are cached for 60 seconds, calculated alpha features for 30 seconds, 
 
 All list endpoints implement cursor-based pagination using opaque `next_cursor` tokens, avoiding the performance issues of offset-based pagination.
 
+### Error Response Schema
+
+All API errors conform to the RFC 7807 'Problem Details' JSON schema, providing `type`, `title`, `status`, and `detail` fields consistently.
+
