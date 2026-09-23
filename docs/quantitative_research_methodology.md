@@ -270,3 +270,7 @@ Maximum position sizes are dynamically capped based on the instrument ADTV, ensu
 
 The Almgren-Chriss model estimates the expected market impact of executing a target position, directly feeding into the portfolio optimizer cost function.
 
+### Volatility Targeting
+
+Position sizes are scaled inversely to the GARCH-forecasted realized volatility, maintaining a consistent risk contribution across all holdings.
+
