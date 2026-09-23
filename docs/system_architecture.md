@@ -222,3 +222,7 @@ Long-running tasks such as full model retraining and portfolio backtests are off
 
 Celery is configured with three priority queues: `critical` (live risk recalculation), `high` (model retraining), and `low` (report generation).
 
+### Worker Auto-Scaling
+
+Kubernetes KEDA (Kubernetes Event-Driven Autoscaler) scales the Celery worker pool based on the Redis queue depth, from a minimum of 2 to 20 pods.
+
