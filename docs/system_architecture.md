@@ -170,3 +170,7 @@ The platform undergoes bi-annual third-party penetration tests, with Critical an
 
 All external API keys and database credentials are automatically rotated on a 90-day cycle via HashiCorp Vault's dynamic secrets engine.
 
+### Container Vulnerability Scanning
+
+Every Docker image built in CI is scanned by Trivy for known CVEs. Images with Critical vulnerabilities are blocked from deployment.
+
