@@ -90,3 +90,7 @@ Spearman Rank IC is used instead of Pearson IC to achieve robustness against out
 
 The ICIR (IC mean / IC standard deviation) is the primary signal quality filter; signals with ICIR below 0.5 are rejected before backtesting.
 
+## Quintile Portfolio Analysis
+
+Raw signals are ranked into quintiles. The spread in average forward returns between Q1 (bottom) and Q5 (top) quantifies the raw alpha power.
+
