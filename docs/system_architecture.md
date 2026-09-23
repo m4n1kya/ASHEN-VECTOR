@@ -338,3 +338,7 @@ Automated Airflow DAGs run Delta Lake `VACUUM` and `OPTIMIZE` commands nightly t
 
 Every AWS resource is provisioned via Terraform, with state stored in S3 and locked via DynamoDB to prevent concurrent state modifications.
 
+### Module Structure
+
+Terraform modules are structured hierarchically: `modules/networking`, `modules/compute`, `modules/database`, and `modules/monitoring` for reusability.
+
