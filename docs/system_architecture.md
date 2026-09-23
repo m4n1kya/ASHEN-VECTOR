@@ -54,3 +54,7 @@ Kafka topics follow the schema `{env}.{domain}.{entity}.{version}` (e.g., `prod.
 
 For latency-critical synchronous calls (e.g., risk checks), services communicate via gRPC with Protocol Buffer schemas, reducing serialization overhead.
 
+## Service Mesh (Istio)
+
+Istio is deployed as the service mesh layer, providing automatic mTLS encryption, circuit breaking, and distributed tracing between all pods.
+
