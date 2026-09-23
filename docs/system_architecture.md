@@ -362,3 +362,7 @@ Environment-specific differences (replica counts, resource limits, feature flags
 
 Kubernetes Resource Quotas are applied at the namespace level, preventing a runaway ML training job from starving live trading pods of CPU and memory.
 
+### Vertical Pod Autoscaler
+
+The VPA automatically adjusts the memory requests of ML inference pods based on historical usage, eliminating manual resource tuning.
+
