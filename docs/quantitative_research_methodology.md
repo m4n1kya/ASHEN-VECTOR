@@ -78,3 +78,7 @@ Information Coefficient (IC) is computed at 1, 5, 10, 21, and 63-day forward hor
 
 The rebalancing frequency is set at the point where marginal alpha gain from more frequent rebalancing is outweighed by incremental transaction costs.
 
+## Signal-to-Noise Analysis
+
+The signal-to-noise ratio is quantified by the ratio of the mean IC to the standard deviation of IC across rolling 63-day windows.
+
