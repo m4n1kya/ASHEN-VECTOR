@@ -54,3 +54,7 @@ Rolling 90-day correlations between stock returns and key commodity prices (WTI,
 
 Raw alpha signals are orthogonalized against known systematic risk factors (market beta, size, value) to isolate the idiosyncratic component.
 
+### Gram-Schmidt Process
+
+The Gram-Schmidt process is applied iteratively to remove linear dependencies between alpha signals and the Fama-French five-factor space.
+
