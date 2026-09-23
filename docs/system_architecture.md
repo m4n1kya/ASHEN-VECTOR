@@ -14,3 +14,7 @@ The monolithic research prototype was decomposed into eight autonomous microserv
 
 The MDS is the sole owner of raw market data ingestion, responsible for normalizing feeds from multiple providers into a canonical internal format.
 
+### Feature Engineering Service (FES)
+
+The FES subscribes to the MDS event stream and produces a continuously updated, point-in-time correct feature vector for each instrument.
+
