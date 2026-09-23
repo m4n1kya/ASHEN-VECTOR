@@ -110,3 +110,7 @@ FastAPI was selected for its native async support and automatic OpenAPI schema g
 
 ONNX Runtime was selected to eliminate the Python GIL bottleneck during parallel model inference, achieving sub-10ms p99 latency.
 
+### ADR-004: Next.js 14 App Router
+
+Next.js 14's App Router was selected for its support for React Server Components, dramatically reducing the JavaScript payload sent to clients.
+
