@@ -34,3 +34,7 @@ The OMS implements a strict finite state machine tracking every order through PE
 
 The PAS is the immutable source of truth for all positions, cash balances, and realized P&L, implemented as an append-only ledger.
 
+### Research & Backtesting Service (RBS)
+
+The RBS is air-gapped from the live trading cluster, running on a separate compute pool with zero access to live order routing endpoints.
+
