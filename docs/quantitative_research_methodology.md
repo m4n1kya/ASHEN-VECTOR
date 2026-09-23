@@ -266,3 +266,7 @@ For multi-regional strategies, net currency exposure to any single non-USD curre
 
 Maximum position sizes are dynamically capped based on the instrument ADTV, ensuring no single position requires more than 3 days of volume to exit.
 
+### Almgren-Chriss Impact Model
+
+The Almgren-Chriss model estimates the expected market impact of executing a target position, directly feeding into the portfolio optimizer cost function.
+
