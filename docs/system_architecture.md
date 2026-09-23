@@ -282,3 +282,7 @@ The relational schema follows Third Normal Form (3NF) strictly, decomposing redu
 
 Composite B-Tree indexes on `(symbol, date)` columns eliminate full-table scans for the most frequent time-series range queries.
 
+### Partial Indexes
+
+Partial indexes filtered to `WHERE is_active = TRUE` reduce index sizes by 60% for queries that exclusively target the active investment universe.
+
