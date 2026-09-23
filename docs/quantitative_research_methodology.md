@@ -66,3 +66,7 @@ Signals are de-meaned at the GICS sector level to prevent the strategy from expr
 
 Signals are z-scored separately within large-cap, mid-cap, and small-cap buckets, ensuring performance is not driven by a size tilt.
 
+## Signal Decay Analysis
+
+Alpha signal half-life is measured by computing the autocorrelation of forward returns conditioned on the signal rank, identifying the optimal holding period.
+
