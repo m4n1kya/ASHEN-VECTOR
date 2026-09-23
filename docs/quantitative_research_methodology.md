@@ -130,3 +130,7 @@ The backtest is structurally divided into 70% in-sample (training) and 30% out-o
 
 Backtest performance is decomposed by market regime (BULL, BEAR, HIGH VOL, LOW VOL) to assess strategy robustness across all conditions.
 
+### Historical Stress Tests
+
+All strategies are stress-tested against the GFC (2008-09), COVID crash (2020-03), and 2022 rate-hike drawdown periods as mandatory validation gates.
+
