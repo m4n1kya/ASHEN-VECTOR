@@ -318,3 +318,7 @@ Apache Spark on Amazon EMR handles the nightly batch jobs: full covariance matri
 
 All Spark batch jobs are orchestrated as Apache Airflow DAGs, providing dependency management, retry logic, and Slack failure notifications.
 
+## Data Lakehouse (Delta Lake)
+
+The raw and processed data lakes are built on AWS S3 with Delta Lake format, providing ACID transactions and time-travel queries for data.
+
