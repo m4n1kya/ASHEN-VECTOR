@@ -342,3 +342,7 @@ Every AWS resource is provisioned via Terraform, with state stored in S3 and loc
 
 Terraform modules are structured hierarchically: `modules/networking`, `modules/compute`, `modules/database`, and `modules/monitoring` for reusability.
 
+### Remote Execution
+
+All `terraform plan` and `terraform apply` executions run in Terraform Cloud, ensuring a consistent environment and providing a full audit log.
+
