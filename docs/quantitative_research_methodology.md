@@ -354,3 +354,7 @@ Day-of-week and month-of-year seasonality patterns are catalogued but applied on
 
 Year-end tax-loss selling pressure creates a predictable January Effect bounce in prior-year losers; this is exploited as a mean-reversion signal.
 
+### Index Reconstitution
+
+Additions to major indices (S&P 500, Russell 2000) create predictable demand pressure. The strategy front-runs the reconstitution-day buying.
+
