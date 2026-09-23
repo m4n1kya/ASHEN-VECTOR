@@ -58,3 +58,7 @@ For latency-critical synchronous calls (e.g., risk checks), services communicate
 
 Istio is deployed as the service mesh layer, providing automatic mTLS encryption, circuit breaking, and distributed tracing between all pods.
 
+### Circuit Breaker Pattern
+
+Istio circuit breakers are configured to trip after 3 consecutive 500-series errors, immediately routing traffic to fallback handlers.
+
