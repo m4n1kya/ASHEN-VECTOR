@@ -254,3 +254,7 @@ Breaking API changes are introduced via a new URI version prefix (e.g., `/api/v2
 
 An internal GraphQL endpoint allows quantitative researchers to construct arbitrary, deeply nested queries across instruments and features.
 
+## Frontend Architecture
+
+The Next.js frontend uses Zustand for lightweight client-side state management, avoiding the complexity of Redux for simple UI state.
+
