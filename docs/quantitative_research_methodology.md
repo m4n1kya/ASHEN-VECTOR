@@ -230,3 +230,7 @@ Custom benchmarks are constructed from the investable universe itself to avoid t
 
 Grinold's Fundamental Law (IR ~ IC * sqrt(Breadth)) is used to estimate the theoretical maximum IR achievable given the signal quality and trading frequency.
 
+### Transfer Coefficient
+
+The Transfer Coefficient measures how faithfully portfolio weights reflect signal rankings after applying all constraints; a TC below 0.6 indicates severe constraint drag.
+
