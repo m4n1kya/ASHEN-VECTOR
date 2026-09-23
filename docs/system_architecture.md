@@ -198,3 +198,7 @@ All services emit structured JSON logs containing a `correlation_id`, `trace_id`
 
 Fluent Bit DaemonSets collect logs from all pod stdout streams, parse JSON fields, enrich with Kubernetes metadata, and forward to Elasticsearch.
 
+### Kibana Dashboards
+
+Real-time Kibana dashboards visualize error rates, request latencies, and model inference counts, enabling rapid incident triage.
+
