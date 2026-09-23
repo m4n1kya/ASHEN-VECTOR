@@ -202,3 +202,7 @@ All approved signals must undergo a minimum 90-day paper trading period before l
 
 A formal reconciliation is run monthly comparing live paper trading performance to the corresponding backtest period to detect implementation errors.
 
+## Performance Attribution
+
+Realized portfolio returns are decomposed using the Brinson-Hood-Beebower model into allocation effect, selection effect, and interaction effect.
+
