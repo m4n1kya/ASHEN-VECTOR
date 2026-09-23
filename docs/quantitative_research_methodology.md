@@ -26,3 +26,7 @@ Alpha signals are classified into four families: Momentum (trend-following), Rev
 
 Price momentum signals are constructed as exponentially weighted returns over 5, 21, 63, and 252-day windows, normalized by realized volatility.
 
+### Short Interest Signals
+
+Short Interest Ratio (SIR) is computed as shares short divided by average daily volume, serving as a contrarian indicator for crowded shorts.
+
