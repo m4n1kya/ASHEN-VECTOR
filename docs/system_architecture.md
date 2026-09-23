@@ -166,3 +166,7 @@ All database queries use SQLAlchemy's parameterized query engine, making raw str
 
 The platform undergoes bi-annual third-party penetration tests, with Critical and High findings requiring remediation within 14 days.
 
+### Secrets Rotation
+
+All external API keys and database credentials are automatically rotated on a 90-day cycle via HashiCorp Vault's dynamic secrets engine.
+
