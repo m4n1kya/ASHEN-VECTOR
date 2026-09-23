@@ -302,3 +302,7 @@ Every alternative data vendor undergoes a rigorous legal, compliance, and statis
 
 The legal review validates that the data was collected ethically, does not constitute material non-public information (MNPI), and complies with all data licensing terms.
 
+### Statistical Power Analysis
+
+Before purchasing a dataset, a power analysis estimates the minimum detectable IC given the dataset coverage and sample size, filtering out underpowered datasets.
+
