@@ -162,3 +162,7 @@ AWS WAF is deployed in front of the API Gateway, enforcing rate-limit rules and 
 
 All database queries use SQLAlchemy's parameterized query engine, making raw string interpolation into SQL statements structurally impossible.
 
+### Penetration Testing
+
+The platform undergoes bi-annual third-party penetration tests, with Critical and High findings requiring remediation within 14 days.
+
