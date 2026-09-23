@@ -298,3 +298,7 @@ HMM-based regime classifiers detect when a signal switches from momentum-driven 
 
 Every alternative data vendor undergoes a rigorous legal, compliance, and statistical review before their data is integrated into the research pipeline.
 
+### Legal Review
+
+The legal review validates that the data was collected ethically, does not constitute material non-public information (MNPI), and complies with all data licensing terms.
+
