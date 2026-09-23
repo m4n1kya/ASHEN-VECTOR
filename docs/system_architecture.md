@@ -202,3 +202,7 @@ Fluent Bit DaemonSets collect logs from all pod stdout streams, parse JSON field
 
 Real-time Kibana dashboards visualize error rates, request latencies, and model inference counts, enabling rapid incident triage.
 
+## Alerting
+
+Grafana AlertManager is configured with tiered PagerDuty integrations: P1 alerts (live trading failures) page on-call engineers immediately.
+
