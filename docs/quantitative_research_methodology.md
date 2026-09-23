@@ -318,3 +318,7 @@ The normalized spread between cointegrated pairs is z-scored using a rolling 252
 
 The cointegration relationship is re-tested quarterly. If the p-value of the ADF test exceeds 0.05, the pair is automatically dissolved from the portfolio.
 
+## Implied Information Signals
+
+Options market data provides forward-looking signals unavailable in price history: implied volatility surface, skew, and put/call volume ratios.
+
