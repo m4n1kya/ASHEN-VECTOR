@@ -250,3 +250,7 @@ All cross-sectional ranks are adjusted for trailing realized volatility, prevent
 
 Rolling factor exposures of the live portfolio are monitored daily. Breaching the +/-0.3 exposure limit on any Barra factor triggers a forced rebalance.
 
+### Beta Neutrality
+
+The optimizer enforces a maximum net market beta of +/-0.1, ensuring the strategy P&L is driven by stock selection rather than directional market exposure.
+
