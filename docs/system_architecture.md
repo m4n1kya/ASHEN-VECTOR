@@ -118,3 +118,7 @@ Next.js 14's App Router was selected for its support for React Server Components
 
 TimescaleDB was selected over InfluxDB for storing pre-aggregated OHLCV bars due to its PostgreSQL compatibility and mature SQL support.
 
+## High Availability Architecture
+
+The live trading cluster is deployed in an active-passive multi-region configuration across AWS us-east-1 (primary) and eu-west-1 (standby).
+
