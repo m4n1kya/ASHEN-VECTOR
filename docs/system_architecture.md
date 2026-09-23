@@ -114,3 +114,7 @@ ONNX Runtime was selected to eliminate the Python GIL bottleneck during parallel
 
 Next.js 14's App Router was selected for its support for React Server Components, dramatically reducing the JavaScript payload sent to clients.
 
+### ADR-005: TimescaleDB for Aggregated Metrics
+
+TimescaleDB was selected over InfluxDB for storing pre-aggregated OHLCV bars due to its PostgreSQL compatibility and mature SQL support.
+
