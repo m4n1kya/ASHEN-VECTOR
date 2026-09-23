@@ -406,3 +406,7 @@ ML model training jobs run exclusively on EC2 Spot Instances with automated chec
 
 Predictable baseline compute (live trading pods) is covered by Compute Savings Plans, providing a 40% discount over On-Demand rates.
 
+### S3 Intelligent Tiering
+
+S3 Intelligent Tiering automatically transitions infrequently accessed research datasets to cheaper storage classes, reducing object storage costs.
+
