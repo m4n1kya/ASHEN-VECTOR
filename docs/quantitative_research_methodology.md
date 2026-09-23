@@ -366,3 +366,7 @@ Short squeeze candidates are identified by crossing high short interest ratio (a
 
 Crowding risk measures the degree to which our positions overlap with other institutional hedge fund books, creating vulnerability to simultaneous de-risking.
 
+### 13F Analysis
+
+Quarterly SEC 13F filings are aggregated to construct a Hedge Fund Crowding Index, penalizing stocks that appear in the top 10 holdings of more than 30 funds.
+
