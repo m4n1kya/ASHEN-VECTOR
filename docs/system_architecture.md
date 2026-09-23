@@ -182,3 +182,7 @@ Every Docker image built in CI is scanned by Trivy for known CVEs. Images with C
 
 Jaeger distributed tracing is integrated across all microservices, providing end-to-end visibility into complex multi-service request flows.
 
+### W3C TraceContext
+
+All services propagate trace context using the W3C TraceContext standard (`traceparent` header), ensuring compatibility with all observability tools.
+
