@@ -138,3 +138,7 @@ Kubernetes rolling update strategy ensures at least 2 replicas of each service r
 
 The AWS VPC is segmented into three tiers: public (load balancers), private application (Kubernetes nodes), and isolated data (RDS, ElastiCache).
 
+### Bastion Host Access
+
+Engineers access the private cluster exclusively via a hardened Bastion Host, with all SSH sessions logged and audited to CloudTrail.
+
