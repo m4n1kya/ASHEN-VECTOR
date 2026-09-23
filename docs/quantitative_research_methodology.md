@@ -182,3 +182,7 @@ Principal Component Analysis extracts orthogonal composite signals from a large 
 
 All research notebooks are versioned in Git with pinned `requirements.txt` and a fixed random seed, ensuring any analyst can reproduce results identically.
 
+### Data Version Control
+
+DVC tracks every dataset used in a research notebook, storing a content hash that allows exact historical datasets to be recreated on demand.
+
