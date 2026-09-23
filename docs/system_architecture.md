@@ -382,3 +382,7 @@ The documented runbook for primary region failover involves three steps: promote
 
 Controlled Chaos Monkey experiments are run monthly in the staging environment, validating that circuit breakers and failover mechanisms operate as designed.
 
+## Capacity Planning
+
+Load testing via Locust simulates peak market-open order flow to validate that the platform sustains 10,000 concurrent API requests without degradation.
+
