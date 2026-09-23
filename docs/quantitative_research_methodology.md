@@ -222,3 +222,7 @@ Attribution is further decomposed into the value added by the signal's ability t
 
 Transaction costs are attributed separately to market impact, bid-ask spread crossing, and exchange fees to identify the most expensive rebalances.
 
+## Benchmark Construction
+
+Custom benchmarks are constructed from the investable universe itself to avoid the distortion caused by comparing against capitalization-weighted indices.
+
