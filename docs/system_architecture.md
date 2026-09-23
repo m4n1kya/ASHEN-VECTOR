@@ -218,3 +218,7 @@ An alert fires when the 6-hour error budget burn rate exceeds 14x the baseline, 
 
 Long-running tasks such as full model retraining and portfolio backtests are offloaded to a Celery worker fleet backed by a Redis message broker.
 
+### Priority Queues
+
+Celery is configured with three priority queues: `critical` (live risk recalculation), `high` (model retraining), and `low` (report generation).
+
