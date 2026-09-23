@@ -86,3 +86,7 @@ The multi-step trade placement workflow (risk check -> order creation -> executi
 
 The trade settlement saga uses choreography, where each service reacts to domain events and emits new events, eliminating a central orchestrator bottleneck.
 
+### Compensating Transactions
+
+If the accounting service fails to record a fill, a compensating `FILL_REVERSAL` event is emitted, triggering an automated reconciliation workflow.
+
