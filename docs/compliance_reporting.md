@@ -34,3 +34,7 @@ A nightly Airflow DAG generates a full P&L attribution report decomposing daily 
 
 Quarterly Form PF data (aggregate AUM, leverage, portfolio liquidity profile) is aggregated from the PAS and formatted for SEC submission.
 
+## Audit Log Immutability
+
+All trading system audit logs are written to an append-only AWS S3 bucket with Object Lock enabled, guaranteeing immutability for the 7-year regulatory retention period.
+
