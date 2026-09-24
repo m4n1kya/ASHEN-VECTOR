@@ -6,3 +6,7 @@ This document outlines the compliance architecture ensuring ASHEN-VECTOR operate
 
 All trades are evaluated against MiFID II best execution standards, with a quarterly RTS 27 report generated automatically from the TCA database.
 
+## Market Access Controls (SEC 15c3-5)
+
+Pre-trade risk checks enforce hard limits on order size, notional value, and aggregate daily P&L loss thresholds as mandated by SEC Rule 15c3-5.
+
