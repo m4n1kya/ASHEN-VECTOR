@@ -38,3 +38,7 @@ Quarterly Form PF data (aggregate AUM, leverage, portfolio liquidity profile) is
 
 All trading system audit logs are written to an append-only AWS S3 bucket with Object Lock enabled, guaranteeing immutability for the 7-year regulatory retention period.
 
+## Disaster Recovery Compliance
+
+Semi-annual disaster recovery tests are formally documented and signed off by the CCO, satisfying both SEC and FINRA operational resilience requirements.
+
