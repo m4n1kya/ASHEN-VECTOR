@@ -42,3 +42,6 @@ All trading system audit logs are written to an append-only AWS S3 bucket with O
 
 Semi-annual disaster recovery tests are formally documented and signed off by the CCO, satisfying both SEC and FINRA operational resilience requirements.
 
+## Conclusion
+
+This compliance architecture ensures that all trading activities are conducted within the bounds of applicable regulations, protecting the firm and its investors.
