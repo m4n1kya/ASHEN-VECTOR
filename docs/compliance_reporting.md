@@ -30,3 +30,7 @@ An automated reconciliation job runs at 6 PM ET daily, comparing the internal Po
 
 A nightly Airflow DAG generates a full P&L attribution report decomposing daily returns into alpha, beta, transaction costs, and financing charges.
 
+## Form PF Reporting
+
+Quarterly Form PF data (aggregate AUM, leverage, portfolio liquidity profile) is aggregated from the PAS and formatted for SEC submission.
+
