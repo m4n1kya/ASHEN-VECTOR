@@ -18,3 +18,7 @@ An automated surveillance module flags unusual trading patterns (e.g., front-run
 
 The RMS monitors CFTC-mandated speculative position limits for all futures contracts, issuing alerts at 80% utilization and hard stops at 100%.
 
+## Wash Trade Prevention
+
+An algorithmic check prevents the OMS from simultaneously submitting buy and sell orders in the same instrument from the same account within a 60-second window.
+
