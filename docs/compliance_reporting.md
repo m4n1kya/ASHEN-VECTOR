@@ -22,3 +22,7 @@ The RMS monitors CFTC-mandated speculative position limits for all futures contr
 
 An algorithmic check prevents the OMS from simultaneously submitting buy and sell orders in the same instrument from the same account within a 60-second window.
 
+## EOD Reconciliation
+
+An automated reconciliation job runs at 6 PM ET daily, comparing the internal Portfolio Accounting Service records against the prime broker's official statements.
+
