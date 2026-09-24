@@ -14,3 +14,7 @@ Pre-trade risk checks enforce hard limits on order size, notional value, and agg
 
 An automated surveillance module flags unusual trading patterns (e.g., front-running indicators) and drafts SAR filings for compliance officer review.
 
+## Position Limit Monitoring
+
+The RMS monitors CFTC-mandated speculative position limits for all futures contracts, issuing alerts at 80% utilization and hard stops at 100%.
+
