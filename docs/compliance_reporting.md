@@ -26,3 +26,7 @@ An algorithmic check prevents the OMS from simultaneously submitting buy and sel
 
 An automated reconciliation job runs at 6 PM ET daily, comparing the internal Portfolio Accounting Service records against the prime broker's official statements.
 
+## P&L Attribution Reporting
+
+A nightly Airflow DAG generates a full P&L attribution report decomposing daily returns into alpha, beta, transaction costs, and financing charges.
+
