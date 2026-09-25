@@ -146,3 +146,7 @@ Switching between order types uses a segmented control UI (a pill-shaped contain
 
 Upon successful order execution, a brief green flash animates across the ticket, followed by a crisp toast notification sliding in from the bottom right.
 
+## Toast Notifications
+
+The toast system stacks up to 3 notifications vertically. They feature a left-border color accent indicating severity (Info, Success, Warning, Error).
+
