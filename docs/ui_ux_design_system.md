@@ -126,3 +126,7 @@ Cells displaying P&L automatically apply the `text-quant-up-text` or `text-quant
 
 Users can toggle a 'Compact Mode' which reduces table cell padding from 12px to 4px and scales down font sizes for maximum data density.
 
+## Order Entry Ticket
+
+The execution ticket is redesigned as a floating, elevated modal with a distinct Orange/Blue action button to prevent accidental clicks.
+
