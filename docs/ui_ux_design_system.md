@@ -62,3 +62,7 @@ Modals and dropdown menus utilize a backdrop blur (`backdrop-blur-md`) with a tr
 
 The main dashboard content is constrained to a maximum width of 1600px, horizontally centered, preventing extreme stretching on ultrawide monitors.
 
+### Responsive Breakpoints
+
+The UI is strictly mobile-responsive, collapsing sidebars into hamburger menus and stacking charts vertically on screens below 768px.
+
