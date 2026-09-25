@@ -98,3 +98,7 @@ A continuous, horizontally scrolling ticker tape is added below the header, disp
 
 Chart containers maintain a 16:9 or 21:9 aspect ratio, bounded by rounded borders, with the charting library configured to match the deep navy theme.
 
+### Recharts Tooltips
+
+Recharts tooltips are overridden with custom CSS: dark translucent background, white text, and colored indicator dots matching the data series.
+
