@@ -298,3 +298,7 @@ Invalid CSV uploads immediately render a red error banner inside the dropzone, l
 
 The Risk Dashboard is dominated by large, bold numbers displaying total VaR and exposure, using distinct warning colors if limits are approached.
 
+### Tree-Map Visualization
+
+Portfolio sector composition is visualized as a Tree-Map. Clicking a sector block drills down smoothly into the individual stock constituents.
+
