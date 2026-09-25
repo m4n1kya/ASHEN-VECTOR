@@ -230,3 +230,7 @@ Hovering a heatmap cell slightly scales it up (`scale-105`) and raises its z-ind
 
 Model confidence is visualized using a semi-circular gauge chart, filling with Green for high confidence and Red for low confidence.
 
+### Radar Charts
+
+Stock factor exposures (Value, Size, Momentum) are plotted on a Radar chart, using a translucent brand-blue fill over a subtle web grid.
+
