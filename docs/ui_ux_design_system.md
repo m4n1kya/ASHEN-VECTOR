@@ -266,3 +266,7 @@ Icon colors inherit the current text color (`currentColor`) by default, allowing
 
 The user profile dropdown is a floating, rounded panel with subtle borders. Menu items feature consistent 12px padding and hover states.
 
+### User Avatars
+
+If no profile picture is provided, the avatar falls back to a dynamically generated SVG displaying the user's initials on a gradient background.
+
