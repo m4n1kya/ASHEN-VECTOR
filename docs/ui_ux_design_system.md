@@ -66,3 +66,7 @@ The main dashboard content is constrained to a maximum width of 1600px, horizont
 
 The UI is strictly mobile-responsive, collapsing sidebars into hamburger menus and stacking charts vertically on screens below 768px.
 
+### Spacing Tokens
+
+We strictly adhere to the Tailwind spacing scale (4, 8, 16, 24, 32px), eliminating magic numbers and ensuring consistent rhythm across all views.
+
