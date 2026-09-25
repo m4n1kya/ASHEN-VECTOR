@@ -206,3 +206,7 @@ The market news feed omits pagination in favor of infinite scrolling, fetching t
 
 Sentiment (Bullish/Bearish) and Order Status (Filled/Pending) are displayed using small, rounded pill badges with low-opacity background colors and high-opacity text.
 
+### Pulse Indicators
+
+A small, infinitely pulsing dot animation is placed next to 'System Online' or 'Pending Order' badges to indicate active background processing.
+
