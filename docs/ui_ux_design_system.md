@@ -338,3 +338,7 @@ When multiple filters are active, a 'Clear All' ghost button appears, allowing t
 
 On 1024px screens, the side navigation collapses into an icon-only strip, maximizing horizontal real estate for charting components.
 
+### Touch Targets
+
+On mobile widths (< 768px), all interactive buttons and table rows are padded to a minimum height of 44px to ensure reliable tap targets.
+
