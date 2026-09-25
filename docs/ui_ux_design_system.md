@@ -158,3 +158,7 @@ Traditional loading spinners are replaced with Skeleton screens (shimmering gray
 
 The skeleton shimmer uses a CSS linear gradient moving continuously from left to right, creating a perception of speed while waiting for the API.
 
+### Empty States
+
+When a table is empty (e.g., no open orders), a subtle, custom SVG illustration is shown alongside clear text explaining why the view is empty.
+
