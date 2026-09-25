@@ -330,3 +330,7 @@ Next to the calendar, quick-select buttons (1W, 1M, YTD) allow instant timeframe
 
 Filtering by sector or ticker uses a multi-select dropdown with checkboxes. Selected items appear as removable pill-tags inside the input field.
 
+### Filter Management
+
+When multiple filters are active, a 'Clear All' ghost button appears, allowing the user to reset the view to the default state in one click.
+
