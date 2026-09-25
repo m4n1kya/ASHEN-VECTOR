@@ -234,3 +234,7 @@ Model confidence is visualized using a semi-circular gauge chart, filling with G
 
 Stock factor exposures (Value, Size, Momentum) are plotted on a Radar chart, using a translucent brand-blue fill over a subtle web grid.
 
+## Scrollbar Styling
+
+Default browser scrollbars are hidden. We implement a custom, ultra-thin 6px scrollbar track that blends perfectly with the navy background.
+
