@@ -110,3 +110,7 @@ Chart axes and grid lines are muted (`#334155`) to keep focus on the data, while
 
 Financial data tables feature subtle zebra-striping (alternating `#0B132B` and `#0F172A`) with a prominent hover effect on the entire row.
 
+### Sticky Table Headers
+
+All tables exceeding 500px in height implement a sticky header, ensuring column context is never lost while scrolling through large position lists.
+
