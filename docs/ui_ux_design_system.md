@@ -214,3 +214,7 @@ A small, infinitely pulsing dot animation is placed next to 'System Online' or '
 
 Deep research details (e.g., raw model features) are hidden inside expandable accordion panels to keep the primary UI clean and uncluttered.
 
+### Accordion Animations
+
+Accordions use a calculated `max-height` CSS transition to slide open smoothly, rather than abruptly snapping open and jarring the user.
+
