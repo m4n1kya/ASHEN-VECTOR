@@ -6,3 +6,7 @@ This document outlines the modern, premium design language adopted for the ASHEN
 
 The UI transitions from a brutalist matte-black to a modern, high-contrast, premium aesthetic inspired by top-tier retail brokers like Angel One.
 
+## Base Background Colors
+
+Pure black (#000000) is replaced with a deep, rich navy blue (`#0B132B` or `#0a0e17`) to reduce eye strain while maintaining a professional dark mode.
+
