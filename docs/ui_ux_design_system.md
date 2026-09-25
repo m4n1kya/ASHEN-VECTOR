@@ -294,3 +294,7 @@ The custom data ingestion screen features a dashed, rounded dropzone. Dragging a
 
 Invalid CSV uploads immediately render a red error banner inside the dropzone, listing the specific missing columns (e.g., 'Missing close_price').
 
+## Risk Dashboard
+
+The Risk Dashboard is dominated by large, bold numbers displaying total VaR and exposure, using distinct warning colors if limits are approached.
+
