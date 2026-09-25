@@ -38,3 +38,7 @@ A strict hierarchy is enforced: Regular (400) for body, Medium (500) for table h
 
 All financial figures and changing prices strictly enforce `tabular-nums` to prevent horizontal jittering during live market ticks.
 
+## Shape and Radii
+
+The brutalist sharp corners are softened. We adopt a standard 8px (`rounded-lg`) for internal panels and 12px (`rounded-xl`) for major structural containers.
+
