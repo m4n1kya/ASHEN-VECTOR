@@ -286,3 +286,7 @@ While a backtest runs, a smooth, animated progress bar (filling from left to rig
 
 The UI supports a split-screen layout, allowing quants to select two models and compare their equity curves and metrics side-by-side on identical axes.
 
+## File Upload UI
+
+The custom data ingestion screen features a dashed, rounded dropzone. Dragging a CSV over it triggers a background color change and icon animation.
+
