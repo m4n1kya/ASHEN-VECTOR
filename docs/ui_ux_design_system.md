@@ -18,3 +18,7 @@ The primary accent color is set to a vibrant Indigo/Royal Blue (`#2D42ED`), inje
 
 A secondary vibrant Orange/Coral (`#FF6B00`) is used for primary call-to-action buttons (e.g., executing trades) to draw immediate attention.
 
+## Semantic Market Colors
+
+The market state colors are modernized to brighter, glowing neon variants: `#00C853` (Up/Bull) and `#FF3D00` (Down/Bear).
+
