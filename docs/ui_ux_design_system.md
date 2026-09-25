@@ -182,3 +182,7 @@ Advanced users can navigate via hotkeys. Tiny, stylized `<kbd>` tags (e.g., `Ctr
 
 Pressing Cmd+K opens a central Command Palette modal with a blurred backdrop, allowing instant navigation to any ticker symbol or settings page.
 
+## User Settings Interface
+
+The settings module uses a left-hand vertical tab list to switch between 'Account', 'API Keys', 'Trading Defaults', and 'Appearance'.
+
