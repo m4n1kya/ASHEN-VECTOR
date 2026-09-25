@@ -282,3 +282,7 @@ The Backtest configuration screen utilizes a multi-step wizard layout, breaking 
 
 While a backtest runs, a smooth, animated progress bar (filling from left to right in brand blue) provides continuous visual feedback on job completion.
 
+## Model Comparison View
+
+The UI supports a split-screen layout, allowing quants to select two models and compare their equity curves and metrics side-by-side on identical axes.
+
