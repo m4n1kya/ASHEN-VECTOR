@@ -10,3 +10,7 @@ The UI transitions from a brutalist matte-black to a modern, high-contrast, prem
 
 Pure black (#000000) is replaced with a deep, rich navy blue (`#0B132B` or `#0a0e17`) to reduce eye strain while maintaining a professional dark mode.
 
+### Primary Brand Accent
+
+The primary accent color is set to a vibrant Indigo/Royal Blue (`#2D42ED`), injecting energy and establishing visual hierarchy.
+
