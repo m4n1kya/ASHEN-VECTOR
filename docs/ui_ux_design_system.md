@@ -130,3 +130,7 @@ Users can toggle a 'Compact Mode' which reduces table cell padding from 12px to 
 
 The execution ticket is redesigned as a floating, elevated modal with a distinct Orange/Blue action button to prevent accidental clicks.
 
+### Form Inputs
+
+Text inputs and dropdowns feature a solid dark background with no border, revealing a glowing 2px Indigo ring (`ring-2 ring-indigo-500`) upon focus.
+
