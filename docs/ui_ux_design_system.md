@@ -174,3 +174,7 @@ Small `(i)` icons are placed next to complex metrics (e.g., 'Information Ratio')
 
 Tooltips utilize smart positioning to avoid clipping off the screen edge, opening above the target by default, but flipping below if space is constrained.
 
+## Keyboard Navigation
+
+Advanced users can navigate via hotkeys. Tiny, stylized `<kbd>` tags (e.g., `Ctrl+K`) are displayed inside search bars and tooltips to discover these shortcuts.
+
