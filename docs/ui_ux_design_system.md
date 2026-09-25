@@ -222,3 +222,7 @@ Accordions use a calculated `max-height` CSS transition to slide open smoothly, 
 
 A custom CSS Grid component renders the S&P 500 sector heatmap. Cell background color intensity maps directly to the magnitude of the percent change.
 
+### Heatmap Interaction
+
+Hovering a heatmap cell slightly scales it up (`scale-105`) and raises its z-index, revealing a tooltip with the exact ticker and performance figure.
+
