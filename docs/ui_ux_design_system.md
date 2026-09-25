@@ -142,3 +142,7 @@ Share quantity inputs include integrated +/- stepper buttons, styled with subtle
 
 Switching between order types uses a segmented control UI (a pill-shaped container with a sliding active background) rather than a native dropdown.
 
+### Success States
+
+Upon successful order execution, a brief green flash animates across the ticket, followed by a crisp toast notification sliding in from the bottom right.
+
