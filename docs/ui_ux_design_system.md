@@ -30,3 +30,7 @@ System warnings and moderate risk alerts utilize a vibrant Amber (`#FFC107`) to 
 
 The typography system heavily leverages `Inter` for all UI text, providing excellent legibility at small sizes, typical of premium fintech apps.
 
+### Font Weight Hierarchy
+
+A strict hierarchy is enforced: Regular (400) for body, Medium (500) for table headers, Semibold (600) for primary metrics, and Bold (700) for tickers.
+
