@@ -254,3 +254,7 @@ All text-to-background color combinations are verified to pass the WCAG AA contr
 
 Icon-only buttons (e.g., the settings gear) include hidden text or `aria-label` attributes to ensure compatibility with screen reading software.
 
+## Iconography
+
+The system standardizes on Lucide React icons, configured with a consistent 2px stroke width and rounded caps to match the typography.
+
