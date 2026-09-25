@@ -194,3 +194,7 @@ While currently dark-mode exclusive, the UI foundation is built using CSS variab
 
 Export buttons are styled as secondary ghost buttons (`bg-transparent hover:bg-slate-800`) with small download icons, placed consistently at the top right of tables.
 
+## Pagination Controls
+
+Table pagination uses a row of distinct, rounded number buttons. The active page is highlighted with the primary brand blue background.
+
