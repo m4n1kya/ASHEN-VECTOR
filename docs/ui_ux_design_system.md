@@ -342,3 +342,7 @@ On 1024px screens, the side navigation collapses into an icon-only strip, maximi
 
 On mobile widths (< 768px), all interactive buttons and table rows are padded to a minimum height of 44px to ensure reliable tap targets.
 
+### Mobile Interactions
+
+The mobile dashboard implements native pull-to-refresh mechanics, allowing users to quickly poll the backend for the latest market data.
+
