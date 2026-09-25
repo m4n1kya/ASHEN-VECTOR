@@ -218,3 +218,7 @@ Deep research details (e.g., raw model features) are hidden inside expandable ac
 
 Accordions use a calculated `max-height` CSS transition to slide open smoothly, rather than abruptly snapping open and jarring the user.
 
+## Heatmaps
+
+A custom CSS Grid component renders the S&P 500 sector heatmap. Cell background color intensity maps directly to the magnitude of the percent change.
+
