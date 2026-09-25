@@ -42,3 +42,7 @@ All financial figures and changing prices strictly enforce `tabular-nums` to pre
 
 The brutalist sharp corners are softened. We adopt a standard 8px (`rounded-lg`) for internal panels and 12px (`rounded-xl`) for major structural containers.
 
+### Border Colors
+
+Panel borders use a subtle Slate/Navy tone (`#1E293B`) rather than harsh gray, creating a seamless separation between elevated surfaces.
+
