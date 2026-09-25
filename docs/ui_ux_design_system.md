@@ -202,3 +202,7 @@ Table pagination uses a row of distinct, rounded number buttons. The active page
 
 The market news feed omits pagination in favor of infinite scrolling, fetching the next page of articles seamlessly as the user nears the bottom.
 
+## Badges and Tags
+
+Sentiment (Bullish/Bearish) and Order Status (Filled/Pending) are displayed using small, rounded pill badges with low-opacity background colors and high-opacity text.
+
