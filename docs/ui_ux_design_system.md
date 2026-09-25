@@ -102,3 +102,7 @@ Chart containers maintain a 16:9 or 21:9 aspect ratio, bounded by rounded border
 
 Recharts tooltips are overridden with custom CSS: dark translucent background, white text, and colored indicator dots matching the data series.
 
+### Axis and Legend Styling
+
+Chart axes and grid lines are muted (`#334155`) to keep focus on the data, while legends use a crisp, small sans-serif font.
+
