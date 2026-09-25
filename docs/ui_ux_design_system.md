@@ -354,3 +354,7 @@ Instead of centered modals, mobile actions (like order entry) slide up from the 
 
 A `manifest.json` is added with high-res Angel One inspired icons, allowing users to install the dashboard to their home screen as a standalone app.
 
+### Offline State
+
+If the client loses network connectivity, the service worker renders a stylized offline page featuring a disconnected chart icon and retry logic.
+
