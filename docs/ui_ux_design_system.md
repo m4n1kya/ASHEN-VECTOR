@@ -186,3 +186,7 @@ Pressing Cmd+K opens a central Command Palette modal with a blurred backdrop, al
 
 The settings module uses a left-hand vertical tab list to switch between 'Account', 'API Keys', 'Trading Defaults', and 'Appearance'.
 
+### Theme Toggling
+
+While currently dark-mode exclusive, the UI foundation is built using CSS variables, fully preparing the system for a Light Mode toggle in the future.
+
