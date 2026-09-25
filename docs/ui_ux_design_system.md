@@ -178,3 +178,7 @@ Tooltips utilize smart positioning to avoid clipping off the screen edge, openin
 
 Advanced users can navigate via hotkeys. Tiny, stylized `<kbd>` tags (e.g., `Ctrl+K`) are displayed inside search bars and tooltips to discover these shortcuts.
 
+### Command Palette
+
+Pressing Cmd+K opens a central Command Palette modal with a blurred backdrop, allowing instant navigation to any ticker symbol or settings page.
+
