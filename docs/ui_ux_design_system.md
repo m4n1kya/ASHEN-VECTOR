@@ -90,3 +90,7 @@ The primary dashboard utilizes a CSS Grid layout: a wide central column for char
 
 Top-level portfolio metrics (AUM, Day P&L, Margin) are displayed in elevated cards with glowing metric numbers and sparkline charts.
 
+### Market Ticker Tape
+
+A continuous, horizontally scrolling ticker tape is added below the header, displaying live index and primary watchlist prices.
+
