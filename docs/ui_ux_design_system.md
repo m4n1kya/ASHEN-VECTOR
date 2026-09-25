@@ -54,3 +54,7 @@ In a dark theme, elevation is communicated via surface lightness (lighter blue-g
 
 Buttons and clickable table rows feature a slight background lightness shift combined with a subtle outer glow using the primary brand blue.
 
+### Glassmorphism Overlays
+
+Modals and dropdown menus utilize a backdrop blur (`backdrop-blur-md`) with a translucent navy background to create depth over the main application.
+
