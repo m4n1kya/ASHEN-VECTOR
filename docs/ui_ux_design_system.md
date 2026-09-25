@@ -326,3 +326,7 @@ The custom Date Range picker uses a dual-calendar popover. Selected ranges are h
 
 Next to the calendar, quick-select buttons (1W, 1M, YTD) allow instant timeframe switching, immediately updating all charts on the dashboard.
 
+## Multi-Select Filters
+
+Filtering by sector or ticker uses a multi-select dropdown with checkboxes. Selected items appear as removable pill-tags inside the input field.
+
