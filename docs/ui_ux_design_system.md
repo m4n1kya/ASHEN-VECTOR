@@ -314,3 +314,7 @@ Slider changes update the UI immediately but use a 300ms debounce before firing 
 
 Long UUIDs and API keys are truncated with an ellipsis. Clicking them copies the full string to the clipboard, instantly showing a 'Copied!' tooltip.
 
+### Code Blocks
+
+Raw JSON payloads and API responses are wrapped in a dark, monospaced (`JetBrains Mono`) container with syntax highlighting via Prism.js.
+
