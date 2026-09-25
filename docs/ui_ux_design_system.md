@@ -290,3 +290,7 @@ The UI supports a split-screen layout, allowing quants to select two models and 
 
 The custom data ingestion screen features a dashed, rounded dropzone. Dragging a CSV over it triggers a background color change and icon animation.
 
+### Upload Validation
+
+Invalid CSV uploads immediately render a red error banner inside the dropzone, listing the specific missing columns (e.g., 'Missing close_price').
+
