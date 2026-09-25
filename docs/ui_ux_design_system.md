@@ -262,3 +262,7 @@ The system standardizes on Lucide React icons, configured with a consistent 2px 
 
 Icon colors inherit the current text color (`currentColor`) by default, allowing them to easily transition colors during hover states.
 
+## Dropdown Menus
+
+The user profile dropdown is a floating, rounded panel with subtle borders. Menu items feature consistent 12px padding and hover states.
+
