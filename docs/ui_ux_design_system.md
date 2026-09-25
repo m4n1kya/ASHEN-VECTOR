@@ -310,3 +310,7 @@ Hyperparameter tuning uses custom range sliders with a thick blue track for the 
 
 Slider changes update the UI immediately but use a 300ms debounce before firing API requests to prevent overwhelming the backend.
 
+## Clipboard Interactions
+
+Long UUIDs and API keys are truncated with an ellipsis. Clicking them copies the full string to the clipboard, instantly showing a 'Copied!' tooltip.
+
