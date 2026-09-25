@@ -306,3 +306,7 @@ Portfolio sector composition is visualized as a Tree-Map. Clicking a sector bloc
 
 Hyperparameter tuning uses custom range sliders with a thick blue track for the selected range and a clean, circular grab handle.
 
+### Slider Interaction
+
+Slider changes update the UI immediately but use a 300ms debounce before firing API requests to prevent overwhelming the backend.
+
