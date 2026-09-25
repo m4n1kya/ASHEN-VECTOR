@@ -322,3 +322,7 @@ Raw JSON payloads and API responses are wrapped in a dark, monospaced (`JetBrain
 
 The custom Date Range picker uses a dual-calendar popover. Selected ranges are highlighted with a light blue background spanning across days.
 
+### Date Presets
+
+Next to the calendar, quick-select buttons (1W, 1M, YTD) allow instant timeframe switching, immediately updating all charts on the dashboard.
+
