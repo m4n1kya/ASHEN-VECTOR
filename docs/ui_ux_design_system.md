@@ -114,3 +114,7 @@ Financial data tables feature subtle zebra-striping (alternating `#0B132B` and `
 
 All tables exceeding 500px in height implement a sticky header, ensuring column context is never lost while scrolling through large position lists.
 
+### Numerical Alignment
+
+A strict design rule: all numerical columns (Price, Volume, P&L) are right-aligned, while textual columns (Ticker, Name) are left-aligned.
+
