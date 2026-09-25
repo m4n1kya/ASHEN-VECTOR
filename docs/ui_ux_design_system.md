@@ -74,3 +74,7 @@ We strictly adhere to the Tailwind spacing scale (4, 8, 16, 24, 32px), eliminati
 
 The top header is thickened to 64px, featuring a bold branding area on the left and a quick-access global search bar in the center.
 
+### Sidebar Navigation
+
+The sidebar uses distinct Lucide icons paired with Medium-weight text. Active states are highlighted with a vertical blue accent bar on the left edge.
+
