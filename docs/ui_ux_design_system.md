@@ -170,3 +170,7 @@ React Error Boundaries catch component crashes and render a polished fallback UI
 
 Small `(i)` icons are placed next to complex metrics (e.g., 'Information Ratio'). Hovering triggers a fast-fading, dark-themed tooltip with plain-English definitions.
 
+### Tooltip Positioning
+
+Tooltips utilize smart positioning to avoid clipping off the screen edge, opening above the target by default, but flipping below if space is constrained.
+
