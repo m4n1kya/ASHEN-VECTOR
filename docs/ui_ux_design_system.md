@@ -334,3 +334,7 @@ Filtering by sector or ticker uses a multi-select dropdown with checkboxes. Sele
 
 When multiple filters are active, a 'Clear All' ghost button appears, allowing the user to reset the view to the default state in one click.
 
+## Tablet Optimization
+
+On 1024px screens, the side navigation collapses into an icon-only strip, maximizing horizontal real estate for charting components.
+
