@@ -46,3 +46,7 @@ The brutalist sharp corners are softened. We adopt a standard 8px (`rounded-lg`)
 
 Panel borders use a subtle Slate/Navy tone (`#1E293B`) rather than harsh gray, creating a seamless separation between elevated surfaces.
 
+## Elevation and Shadows
+
+In a dark theme, elevation is communicated via surface lightness (lighter blue-gray) combined with very subtle, widespread drop shadows (`shadow-lg`).
+
