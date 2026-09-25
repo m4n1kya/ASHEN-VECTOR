@@ -278,3 +278,7 @@ Available buying power is permanently pinned to the top header in a distinct, ta
 
 The Backtest configuration screen utilizes a multi-step wizard layout, breaking complex parameters (dates, models, risk) into digestible, sequential panels.
 
+### Progress Bars
+
+While a backtest runs, a smooth, animated progress bar (filling from left to right in brand blue) provides continuous visual feedback on job completion.
+
