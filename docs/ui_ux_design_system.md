@@ -238,3 +238,7 @@ Stock factor exposures (Value, Size, Momentum) are plotted on a Radar chart, usi
 
 Default browser scrollbars are hidden. We implement a custom, ultra-thin 6px scrollbar track that blends perfectly with the navy background.
 
+### Scrollbar Interaction
+
+The scrollbar thumb remains nearly invisible until hovered, at which point it darkens slightly and expands to 8px for easier grabbing.
+
