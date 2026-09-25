@@ -94,3 +94,7 @@ Top-level portfolio metrics (AUM, Day P&L, Margin) are displayed in elevated car
 
 A continuous, horizontally scrolling ticker tape is added below the header, displaying live index and primary watchlist prices.
 
+## Charting Components
+
+Chart containers maintain a 16:9 or 21:9 aspect ratio, bounded by rounded borders, with the charting library configured to match the deep navy theme.
+
