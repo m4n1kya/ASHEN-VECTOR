@@ -270,3 +270,7 @@ The user profile dropdown is a floating, rounded panel with subtle borders. Menu
 
 If no profile picture is provided, the avatar falls back to a dynamically generated SVG displaying the user's initials on a gradient background.
 
+### Buy Power Display
+
+Available buying power is permanently pinned to the top header in a distinct, tabular font, ensuring the user always knows their capital constraints.
+
