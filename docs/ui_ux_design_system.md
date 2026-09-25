@@ -350,3 +350,7 @@ The mobile dashboard implements native pull-to-refresh mechanics, allowing users
 
 Instead of centered modals, mobile actions (like order entry) slide up from the bottom of the screen as a 'Bottom Sheet' attached to the thumb zone.
 
+## PWA Configuration
+
+A `manifest.json` is added with high-res Angel One inspired icons, allowing users to install the dashboard to their home screen as a standalone app.
+
