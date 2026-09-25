@@ -250,3 +250,7 @@ To support keyboard navigation, all interactive elements utilize the `:focus-vis
 
 All text-to-background color combinations are verified to pass the WCAG AA contrast ratio threshold of 4.5:1, ensuring legibility for all users.
 
+### Screen Reader Support
+
+Icon-only buttons (e.g., the settings gear) include hidden text or `aria-label` attributes to ensure compatibility with screen reading software.
+
