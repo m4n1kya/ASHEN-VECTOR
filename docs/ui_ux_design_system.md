@@ -346,3 +346,7 @@ On mobile widths (< 768px), all interactive buttons and table rows are padded to
 
 The mobile dashboard implements native pull-to-refresh mechanics, allowing users to quickly poll the backend for the latest market data.
 
+### Bottom Sheets
+
+Instead of centered modals, mobile actions (like order entry) slide up from the bottom of the screen as a 'Bottom Sheet' attached to the thumb zone.
+
