@@ -138,3 +138,7 @@ Text inputs and dropdowns feature a solid dark background with no border, reveal
 
 Share quantity inputs include integrated +/- stepper buttons, styled with subtle hover backgrounds to encourage mouse interaction.
 
+### Segmented Controls
+
+Switching between order types uses a segmented control UI (a pill-shaped container with a sliding active background) rather than a native dropdown.
+
