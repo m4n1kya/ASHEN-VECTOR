@@ -78,3 +78,7 @@ The top header is thickened to 64px, featuring a bold branding area on the left 
 
 The sidebar uses distinct Lucide icons paired with Medium-weight text. Active states are highlighted with a vertical blue accent bar on the left edge.
 
+### Micro-interactions
+
+Navigation links utilize a 200ms `ease-in-out` transition for color and background changes, making the interface feel highly responsive and polished.
+
