@@ -154,3 +154,7 @@ The toast system stacks up to 3 notifications vertically. They feature a left-bo
 
 Traditional loading spinners are replaced with Skeleton screens (shimmering gray rectangles) that perfectly match the layout of the incoming data.
 
+### Shimmer Animation
+
+The skeleton shimmer uses a CSS linear gradient moving continuously from left to right, creating a perception of speed while waiting for the API.
+
