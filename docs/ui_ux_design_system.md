@@ -82,3 +82,7 @@ The sidebar uses distinct Lucide icons paired with Medium-weight text. Active st
 
 Navigation links utilize a 200ms `ease-in-out` transition for color and background changes, making the interface feel highly responsive and polished.
 
+## Dashboard Layout
+
+The primary dashboard utilizes a CSS Grid layout: a wide central column for charts and a narrower right-hand column for the live order book and execution panel.
+
