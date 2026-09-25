@@ -162,3 +162,7 @@ The skeleton shimmer uses a CSS linear gradient moving continuously from left to
 
 When a table is empty (e.g., no open orders), a subtle, custom SVG illustration is shown alongside clear text explaining why the view is empty.
 
+### Error Boundaries
+
+React Error Boundaries catch component crashes and render a polished fallback UI with a 'Reload Component' button, preventing the entire app from white-screening.
+
