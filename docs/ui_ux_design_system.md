@@ -318,3 +318,7 @@ Long UUIDs and API keys are truncated with an ellipsis. Clicking them copies the
 
 Raw JSON payloads and API responses are wrapped in a dark, monospaced (`JetBrains Mono`) container with syntax highlighting via Prism.js.
 
+## Date Pickers
+
+The custom Date Range picker uses a dual-calendar popover. Selected ranges are highlighted with a light blue background spanning across days.
+
