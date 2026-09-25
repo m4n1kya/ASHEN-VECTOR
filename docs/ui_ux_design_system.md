@@ -226,3 +226,7 @@ A custom CSS Grid component renders the S&P 500 sector heatmap. Cell background 
 
 Hovering a heatmap cell slightly scales it up (`scale-105`) and raises its z-index, revealing a tooltip with the exact ticker and performance figure.
 
+## Gauge Charts
+
+Model confidence is visualized using a semi-circular gauge chart, filling with Green for high confidence and Red for low confidence.
+
