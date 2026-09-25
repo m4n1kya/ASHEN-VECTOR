@@ -274,3 +274,7 @@ If no profile picture is provided, the avatar falls back to a dynamically genera
 
 Available buying power is permanently pinned to the top header in a distinct, tabular font, ensuring the user always knows their capital constraints.
 
+## Backtest Interface
+
+The Backtest configuration screen utilizes a multi-step wizard layout, breaking complex parameters (dates, models, risk) into digestible, sequential panels.
+
