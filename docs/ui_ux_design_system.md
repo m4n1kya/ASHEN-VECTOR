@@ -210,3 +210,7 @@ Sentiment (Bullish/Bearish) and Order Status (Filled/Pending) are displayed usin
 
 A small, infinitely pulsing dot animation is placed next to 'System Online' or 'Pending Order' badges to indicate active background processing.
 
+## Accordions and Collapsibles
+
+Deep research details (e.g., raw model features) are hidden inside expandable accordion panels to keep the primary UI clean and uncluttered.
+
