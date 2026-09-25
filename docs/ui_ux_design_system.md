@@ -86,3 +86,7 @@ Navigation links utilize a 200ms `ease-in-out` transition for color and backgrou
 
 The primary dashboard utilizes a CSS Grid layout: a wide central column for charts and a narrower right-hand column for the live order book and execution panel.
 
+### Portfolio Summary Cards
+
+Top-level portfolio metrics (AUM, Day P&L, Margin) are displayed in elevated cards with glowing metric numbers and sparkline charts.
+
