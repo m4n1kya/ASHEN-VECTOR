@@ -118,3 +118,7 @@ All tables exceeding 500px in height implement a sticky header, ensuring column 
 
 A strict design rule: all numerical columns (Price, Volume, P&L) are right-aligned, while textual columns (Ticker, Name) are left-aligned.
 
+### P&L Color Logic
+
+Cells displaying P&L automatically apply the `text-quant-up-text` or `text-quant-down-text` utility classes based on the value's sign.
+
