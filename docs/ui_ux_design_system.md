@@ -50,3 +50,7 @@ Panel borders use a subtle Slate/Navy tone (`#1E293B`) rather than harsh gray, c
 
 In a dark theme, elevation is communicated via surface lightness (lighter blue-gray) combined with very subtle, widespread drop shadows (`shadow-lg`).
 
+### Interactive Hover States
+
+Buttons and clickable table rows feature a slight background lightness shift combined with a subtle outer glow using the primary brand blue.
+
