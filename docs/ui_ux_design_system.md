@@ -150,3 +150,7 @@ Upon successful order execution, a brief green flash animates across the ticket,
 
 The toast system stacks up to 3 notifications vertically. They feature a left-border color accent indicating severity (Info, Success, Warning, Error).
 
+## Loading States
+
+Traditional loading spinners are replaced with Skeleton screens (shimmering gray rectangles) that perfectly match the layout of the incoming data.
+
