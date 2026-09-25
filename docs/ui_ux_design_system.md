@@ -58,3 +58,7 @@ Buttons and clickable table rows feature a slight background lightness shift com
 
 Modals and dropdown menus utilize a backdrop blur (`backdrop-blur-md`) with a translucent navy background to create depth over the main application.
 
+## Layout Architecture
+
+The main dashboard content is constrained to a maximum width of 1600px, horizontally centered, preventing extreme stretching on ultrawide monitors.
+
