@@ -246,3 +246,7 @@ The scrollbar thumb remains nearly invisible until hovered, at which point it da
 
 To support keyboard navigation, all interactive elements utilize the `:focus-visible` pseudo-class to render a distinct blue outline when tabbed into.
 
+### Contrast Compliance
+
+All text-to-background color combinations are verified to pass the WCAG AA contrast ratio threshold of 4.5:1, ensuring legibility for all users.
+
