@@ -70,3 +70,7 @@ The UI is strictly mobile-responsive, collapsing sidebars into hamburger menus a
 
 We strictly adhere to the Tailwind spacing scale (4, 8, 16, 24, 32px), eliminating magic numbers and ensuring consistent rhythm across all views.
 
+## Top Navigation Redesign
+
+The top header is thickened to 64px, featuring a bold branding area on the left and a quick-access global search bar in the center.
+
