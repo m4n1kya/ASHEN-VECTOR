@@ -258,3 +258,7 @@ Icon-only buttons (e.g., the settings gear) include hidden text or `aria-label` 
 
 The system standardizes on Lucide React icons, configured with a consistent 2px stroke width and rounded caps to match the typography.
 
+### Icon Colors
+
+Icon colors inherit the current text color (`currentColor`) by default, allowing them to easily transition colors during hover states.
+
