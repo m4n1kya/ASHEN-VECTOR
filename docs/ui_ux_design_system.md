@@ -26,3 +26,7 @@ The market state colors are modernized to brighter, glowing neon variants: `#00C
 
 System warnings and moderate risk alerts utilize a vibrant Amber (`#FFC107`) to stand out against the deep blue background.
 
+## Typography
+
+The typography system heavily leverages `Inter` for all UI text, providing excellent legibility at small sizes, typical of premium fintech apps.
+
