@@ -190,3 +190,7 @@ The settings module uses a left-hand vertical tab list to switch between 'Accoun
 
 While currently dark-mode exclusive, the UI foundation is built using CSS variables, fully preparing the system for a Light Mode toggle in the future.
 
+### Export Actions
+
+Export buttons are styled as secondary ghost buttons (`bg-transparent hover:bg-slate-800`) with small download icons, placed consistently at the top right of tables.
+
