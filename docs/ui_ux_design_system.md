@@ -34,3 +34,7 @@ The typography system heavily leverages `Inter` for all UI text, providing excel
 
 A strict hierarchy is enforced: Regular (400) for body, Medium (500) for table headers, Semibold (600) for primary metrics, and Bold (700) for tickers.
 
+### Tabular Data
+
+All financial figures and changing prices strictly enforce `tabular-nums` to prevent horizontal jittering during live market ticks.
+
