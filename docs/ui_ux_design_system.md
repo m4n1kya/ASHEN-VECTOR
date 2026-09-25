@@ -198,3 +198,7 @@ Export buttons are styled as secondary ghost buttons (`bg-transparent hover:bg-s
 
 Table pagination uses a row of distinct, rounded number buttons. The active page is highlighted with the primary brand blue background.
 
+### Infinite Scrolling
+
+The market news feed omits pagination in favor of infinite scrolling, fetching the next page of articles seamlessly as the user nears the bottom.
+
