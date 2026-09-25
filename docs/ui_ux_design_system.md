@@ -134,3 +134,7 @@ The execution ticket is redesigned as a floating, elevated modal with a distinct
 
 Text inputs and dropdowns feature a solid dark background with no border, revealing a glowing 2px Indigo ring (`ring-2 ring-indigo-500`) upon focus.
 
+### Quantity Selectors
+
+Share quantity inputs include integrated +/- stepper buttons, styled with subtle hover backgrounds to encourage mouse interaction.
+
