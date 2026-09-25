@@ -106,3 +106,7 @@ Recharts tooltips are overridden with custom CSS: dark translucent background, w
 
 Chart axes and grid lines are muted (`#334155`) to keep focus on the data, while legends use a crisp, small sans-serif font.
 
+## Data Tables
+
+Financial data tables feature subtle zebra-striping (alternating `#0B132B` and `#0F172A`) with a prominent hover effect on the entire row.
+
