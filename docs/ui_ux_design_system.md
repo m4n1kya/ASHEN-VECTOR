@@ -302,3 +302,7 @@ The Risk Dashboard is dominated by large, bold numbers displaying total VaR and 
 
 Portfolio sector composition is visualized as a Tree-Map. Clicking a sector block drills down smoothly into the individual stock constituents.
 
+## Parameter Sliders
+
+Hyperparameter tuning uses custom range sliders with a thick blue track for the selected range and a clean, circular grab handle.
+
