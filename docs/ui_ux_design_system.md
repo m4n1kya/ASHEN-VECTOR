@@ -166,3 +166,7 @@ When a table is empty (e.g., no open orders), a subtle, custom SVG illustration 
 
 React Error Boundaries catch component crashes and render a polished fallback UI with a 'Reload Component' button, preventing the entire app from white-screening.
 
+## Tooltip System
+
+Small `(i)` icons are placed next to complex metrics (e.g., 'Information Ratio'). Hovering triggers a fast-fading, dark-themed tooltip with plain-English definitions.
+
