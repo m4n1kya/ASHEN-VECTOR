@@ -22,3 +22,7 @@ A secondary vibrant Orange/Coral (`#FF6B00`) is used for primary call-to-action 
 
 The market state colors are modernized to brighter, glowing neon variants: `#00C853` (Up/Bull) and `#FF3D00` (Down/Bear).
 
+### Alert Colors
+
+System warnings and moderate risk alerts utilize a vibrant Amber (`#FFC107`) to stand out against the deep blue background.
+
