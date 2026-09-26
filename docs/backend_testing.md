@@ -38,3 +38,7 @@ A `Locust` swarm is configured to simulate 10,000 concurrent web socket connecti
 
 Integration tests validate that the payload published to the mock Kafka broker strictly adheres to the latest registered Protobuf schema.
 
+### Redis Eviction Testing
+
+Tests explicitly verify that a simulated `MarketEvent` successfully triggers the cache invalidation of the corresponding Redis feature vectors.
+
