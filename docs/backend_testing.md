@@ -42,3 +42,7 @@ Integration tests validate that the payload published to the mock Kafka broker s
 
 Tests explicitly verify that a simulated `MarketEvent` successfully triggers the cache invalidation of the corresponding Redis feature vectors.
 
+## Coverage Gates
+
+CI/CD pipelines enforce a strict 90% line coverage and 100% branch coverage requirement; PRs falling below this threshold are automatically rejected.
+
