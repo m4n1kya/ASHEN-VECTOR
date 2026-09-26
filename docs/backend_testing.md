@@ -18,3 +18,7 @@ The `responses` library is used to intercept HTTP calls, simulating vendor API r
 
 The `TestClient` from FastAPI is used to execute full request/response lifecycles, ensuring middleware and Pydantic validation operate correctly.
 
+### Database Fixtures
+
+Integration tests utilize Testcontainers to spin up ephemeral Postgres instances, guaranteeing tests never pollute the development database.
+
