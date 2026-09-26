@@ -34,3 +34,7 @@ A `Locust` swarm is configured to simulate 10,000 concurrent web socket connecti
 
 `mutmut` is run periodically to alter the source code slightly (e.g., changing `>` to `>=`). If the tests still pass, the test suite is deemed inadequate.
 
+### Kafka Schema Validation
+
+Integration tests validate that the payload published to the mock Kafka broker strictly adheres to the latest registered Protobuf schema.
+
