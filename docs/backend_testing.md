@@ -22,3 +22,7 @@ The `TestClient` from FastAPI is used to execute full request/response lifecycle
 
 Integration tests utilize Testcontainers to spin up ephemeral Postgres instances, guaranteeing tests never pollute the development database.
 
+## Property-Based Testing
+
+The `hypothesis` library is used to fuzz the risk engine with thousands of randomized input distributions, uncovering complex edge case crashes.
+
