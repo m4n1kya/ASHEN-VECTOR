@@ -30,3 +30,7 @@ The `hypothesis` library is used to fuzz the risk engine with thousands of rando
 
 A `Locust` swarm is configured to simulate 10,000 concurrent web socket connections to the API gateway, verifying the async event loop does not block.
 
+## Mutation Testing
+
+`mutmut` is run periodically to alter the source code slightly (e.g., changing `>` to `>=`). If the tests still pass, the test suite is deemed inadequate.
+
