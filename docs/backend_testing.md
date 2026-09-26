@@ -14,3 +14,7 @@ Pure mathematical functions (e.g., VaR calculation, EWMA smoothing) are tested i
 
 The `responses` library is used to intercept HTTP calls, simulating vendor API rate limits (HTTP 429) to ensure exponential backoff logic works.
 
+## Integration Testing
+
+The `TestClient` from FastAPI is used to execute full request/response lifecycles, ensuring middleware and Pydantic validation operate correctly.
+
