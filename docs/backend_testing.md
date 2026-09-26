@@ -26,3 +26,7 @@ Integration tests utilize Testcontainers to spin up ephemeral Postgres instances
 
 The `hypothesis` library is used to fuzz the risk engine with thousands of randomized input distributions, uncovering complex edge case crashes.
 
+## Load Testing
+
+A `Locust` swarm is configured to simulate 10,000 concurrent web socket connections to the API gateway, verifying the async event loop does not block.
+
