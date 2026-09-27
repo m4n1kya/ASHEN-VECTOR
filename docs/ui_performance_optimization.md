@@ -186,3 +186,7 @@ Long-running single-page applications (SPAs) are highly susceptible to memory le
 
 Every `useEffect` hook that subscribes to a WebSocket channel or adds a DOM event listener MUST return a cleanup function to unsubscribe.
 
+### Closure Traps
+
+Stale closures holding references to massive historical arrays are prevented by passing dependencies correctly to `useCallback` arrays.
+
