@@ -18,3 +18,7 @@ All heavy charting and tabular components are wrapped in `React.memo()`, ensurin
 
 Calculations like sorting arrays or filtering large tick datasets are wrapped in `useMemo` to prevent recalculation on every render cycle.
 
+### Stable Event Handlers
+
+Event handlers passed to deeply nested child components are wrapped in `useCallback` to prevent breaking `React.memo` reference equality checks.
+
