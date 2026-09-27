@@ -198,3 +198,7 @@ Engineers must profile the application using Chrome DevTools Memory Timeline, en
 
 Internal object caches utilize `WeakMap`, allowing the browser's Garbage Collector to freely destroy cached objects when they lose their DOM references.
 
+## CSS Rendering Performance
+
+Visual updates are offloaded to the GPU wherever possible to bypass the browser's slow layout and paint phases.
+
