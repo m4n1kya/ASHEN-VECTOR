@@ -42,3 +42,7 @@ React 18's concurrent features (`useTransition`) allow the UI to remain responsi
 
 The browser's main thread is reserved strictly for UI manipulation; all heavy data crunching is offloaded to Web Workers.
 
+### JSON Parsing Pool
+
+Large historical datasets (e.g., 100k OHLCV bars) are deserialized in a background Web Worker pool to prevent main thread blocking.
+
