@@ -82,3 +82,7 @@ For ultra-high-frequency data (like bid/ask prices), state is mutated directly v
 
 SVGs are limited to UI icons; all data-dense charts have been migrated to the HTML5 `<canvas>` element for massive performance gains.
 
+### TradingView Integration
+
+The primary price charts utilize TradingView's Lightweight Charts library, capable of rendering millions of data points flawlessly.
+
