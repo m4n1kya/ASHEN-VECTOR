@@ -194,3 +194,7 @@ Stale closures holding references to massive historical arrays are prevented by 
 
 Engineers must profile the application using Chrome DevTools Memory Timeline, ensuring the JS heap size returns to baseline after route transitions.
 
+### WeakMap Caching
+
+Internal object caches utilize `WeakMap`, allowing the browser's Garbage Collector to freely destroy cached objects when they lose their DOM references.
+
