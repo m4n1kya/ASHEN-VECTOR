@@ -254,3 +254,7 @@ Static assets and compiled JS/CSS are served from a global edge CDN (Cloudflare)
 
 Webpack-hashed asset URLs (`main.[hash].js`) are served with `Cache-Control: public, max-age=31536000, immutable`, preventing unnecessary re-validation requests.
 
+### Resource Hints
+
+The document `<head>` includes `<link rel="preconnect">` tags for the backend API and WebSocket domains, shaving 100ms off the initial TLS handshake.
+
