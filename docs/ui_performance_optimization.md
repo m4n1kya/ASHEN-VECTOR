@@ -294,3 +294,7 @@ ESLint is configured with strict rules targeting React performance anti-patterns
 
 ESLint enforces that `key` props must be unique IDs, forbidding the use of array indices, which forces React to unmount/remount unnecessarily during sorting.
 
+### Context Splitting
+
+Global React Context is split into multiple independent providers (e.g., ThemeContext vs UserContext) to prevent theme updates from re-rendering the user profile.
+
