@@ -38,3 +38,7 @@ The `'use client'` directive is pushed as deep down the component tree as possib
 
 React 18's concurrent features (`useTransition`) allow the UI to remain responsive during heavy charting updates by yielding control back to the browser.
 
+## Web Worker Architecture
+
+The browser's main thread is reserved strictly for UI manipulation; all heavy data crunching is offloaded to Web Workers.
+
