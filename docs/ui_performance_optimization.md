@@ -282,3 +282,7 @@ Custom `performance.mark()` and `performance.measure()` calls are embedded in th
 
 React Query is tuned aggressively: `gcTime` is set to 5 minutes to free memory quickly, while `staleTime` is mapped to asset volatility.
 
+### Batching Updates
+
+We heavily rely on React 18's automatic batching, intentionally avoiding `flushSync` unless absolutely required for synchronous DOM measurements.
+
