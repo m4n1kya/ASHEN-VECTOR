@@ -166,3 +166,7 @@ The dashboard is engineered to achieve a perfect 'Good' score across all three G
 
 To achieve an LCP under 2.5s, the critical CSS is inlined, and the primary structural containers are rendered server-side via Next.js.
 
+### Cumulative Layout Shift (CLS)
+
+All image and chart containers are assigned fixed aspect ratios and min-heights, completely eliminating layout shifting as data loads asynchronously.
+
