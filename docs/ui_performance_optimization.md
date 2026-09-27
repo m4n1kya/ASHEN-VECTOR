@@ -354,3 +354,7 @@ The PWA Service Worker is configured with strict 200ms timeout limits on Cache A
 
 In specialized deployments, WebRTC data channels are used to synchronize state directly between browser tabs, bypassing the server entirely.
 
+### SharedWorker Deduplication
+
+A `SharedWorker` holds the single active WebSocket connection to the exchange; if the user opens 5 tabs, they all receive tick data via `MessagePort` from the one worker.
+
