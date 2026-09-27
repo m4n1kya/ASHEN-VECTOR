@@ -238,3 +238,7 @@ All static assets route through `next/image`, serving modern WebP formats and au
 
 Heavy, outdated legacy libraries are continuously purged from the bundle to keep the application lean and fast.
 
+### Day.js Migration
+
+The monolithic `moment.js` library (300KB) was entirely stripped and replaced with `day.js` (2KB), preserving the API while dropping bundle weight.
+
