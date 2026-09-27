@@ -134,3 +134,7 @@ WebSocket connections utilize permessage-deflate compression to reduce the bandw
 
 For the highest density feeds, JSON is replaced with binary Protocol Buffers over WebSockets, eliminating string parsing overhead entirely.
 
+### Request Deduplication
+
+If five components request the same ticker data simultaneously, the API client deduplicates the requests into a single network call.
+
