@@ -338,3 +338,7 @@ Zustand selectors use strict equality functions (e.g., `shallow` from `zustand/s
 
 Complex derived state (e.g., grouping portfolio positions by sector) is memoized using the `reselect` library, ensuring calculation only runs when the underlying collection changes.
 
+## Hydration Optimization
+
+React hydration is an expensive CPU operation. We implement 'lazy hydration' for components that exist far below the initial fold.
+
