@@ -298,3 +298,7 @@ ESLint enforces that `key` props must be unique IDs, forbidding the use of array
 
 Global React Context is split into multiple independent providers (e.g., ThemeContext vs UserContext) to prevent theme updates from re-rendering the user profile.
 
+## The Vanilla JS Fallback
+
+For the absolute hottest paths in the application (e.g., the high-frequency ticker tape), React is bypassed entirely.
+
