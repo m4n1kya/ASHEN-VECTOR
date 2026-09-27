@@ -114,3 +114,7 @@ The virtual list renders an extra 5 'overscan' items above and below the viewpor
 
 The research news feed loads articles dynamically as the user approaches the bottom of the page, utilizing the Intersection Observer API.
 
+### SWR Data Caching
+
+The `swr` (Stale-While-Revalidate) library caches paginated API responses locally, instantly restoring the scroll position if the user navigates back.
+
