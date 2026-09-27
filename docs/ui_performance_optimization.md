@@ -330,3 +330,7 @@ When a deep copy is absolutely necessary, the native `structuredClone()` API is 
 
 Math-heavy indicator calculations operate exclusively on `Float64Array` typed arrays, allowing contiguous memory allocation and blisteringly fast iteration.
 
+## Selector Optimization
+
+Zustand selectors use strict equality functions (e.g., `shallow` from `zustand/shallow`) to accurately detect changes in nested object slices.
+
