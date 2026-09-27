@@ -130,3 +130,7 @@ If the backend rejects the trade (e.g., margin failure), the local state is smoo
 
 WebSocket connections utilize permessage-deflate compression to reduce the bandwidth of streaming JSON market data by up to 70%.
 
+### Protobuf Serialization
+
+For the highest density feeds, JSON is replaced with binary Protocol Buffers over WebSockets, eliminating string parsing overhead entirely.
+
