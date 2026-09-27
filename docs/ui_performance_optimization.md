@@ -174,3 +174,7 @@ All image and chart containers are assigned fixed aspect ratios and min-heights,
 
 FID is kept below 100ms by fiercely minimizing Long Tasks (execution > 50ms) on the main thread during initial page load.
 
+### Interaction to Next Paint (INP)
+
+The new INP metric is optimized by yielding to the main thread via `setTimeout` during heavy client-side filtering operations.
+
