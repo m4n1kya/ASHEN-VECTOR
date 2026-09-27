@@ -202,3 +202,7 @@ Internal object caches utilize `WeakMap`, allowing the browser's Garbage Collect
 
 Visual updates are offloaded to the GPU wherever possible to bypass the browser's slow layout and paint phases.
 
+### CSS Transforms
+
+Animating elements (like sliding sidebars) strictly uses `transform: translate()` rather than changing `margin` or `top`, preventing layout thrashing.
+
