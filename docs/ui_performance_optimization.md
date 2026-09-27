@@ -110,3 +110,7 @@ Virtualization handles variable-height rows efficiently using a `ResizeObserver`
 
 The virtual list renders an extra 5 'overscan' items above and below the viewport to prevent white flashes during rapid scrolling.
 
+## Infinite Scrolling
+
+The research news feed loads articles dynamically as the user approaches the bottom of the page, utilizing the Intersection Observer API.
+
