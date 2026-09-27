@@ -10,3 +10,7 @@ To maintain a smooth 60 frames per second, the main thread must process all Reac
 
 Unnecessary re-renders are the primary cause of UI stutter. We strictly enforce shallow equality checks before allowing a component to update.
 
+### Memoization Boundaries
+
+All heavy charting and tabular components are wrapped in `React.memo()`, ensuring they only re-render when their specific primitive props change.
+
