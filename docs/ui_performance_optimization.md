@@ -106,3 +106,7 @@ The Level 3 Order Book utilizes `react-window` to only render the 30 rows curren
 
 Virtualization handles variable-height rows efficiently using a `ResizeObserver` cache to measure and position elements asynchronously.
 
+### Overscanning
+
+The virtual list renders an extra 5 'overscan' items above and below the viewport to prevent white flashes during rapid scrolling.
+
