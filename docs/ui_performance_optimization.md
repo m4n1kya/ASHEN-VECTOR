@@ -94,3 +94,7 @@ Options volatility surfaces are rendered in 3D using WebGL (via Three.js), lever
 
 Canvas internal dimensions are multiplied by `window.devicePixelRatio` and scaled down via CSS to prevent blurriness on high-DPI Apple displays.
 
+## DOM Virtualization
+
+Rendering thousands of DOM nodes crashes browsers. We implement strict DOM virtualization for any list exceeding 50 items.
+
