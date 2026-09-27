@@ -170,3 +170,7 @@ To achieve an LCP under 2.5s, the critical CSS is inlined, and the primary struc
 
 All image and chart containers are assigned fixed aspect ratios and min-heights, completely eliminating layout shifting as data loads asynchronously.
 
+### First Input Delay (FID)
+
+FID is kept below 100ms by fiercely minimizing Long Tasks (execution > 50ms) on the main thread during initial page load.
+
