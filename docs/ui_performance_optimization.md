@@ -102,3 +102,7 @@ Rendering thousands of DOM nodes crashes browsers. We implement strict DOM virtu
 
 The Level 3 Order Book utilizes `react-window` to only render the 30 rows currently visible in the viewport, discarding off-screen rows.
 
+### Dynamic Row Heights
+
+Virtualization handles variable-height rows efficiently using a `ResizeObserver` cache to measure and position elements asynchronously.
+
