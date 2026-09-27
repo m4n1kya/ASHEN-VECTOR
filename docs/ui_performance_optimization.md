@@ -142,3 +142,7 @@ If five components request the same ticker data simultaneously, the API client d
 
 The API gateway strictly enforces HTTP/2, allowing dozens of concurrent asset requests to be multiplexed over a single TCP connection.
 
+## Bundle Optimization
+
+Webpack bundle analysis is run on every CI build to ensure the initial JavaScript payload remains under 150KB (gzipped).
+
