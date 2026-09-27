@@ -154,3 +154,7 @@ Heavy dependencies (like Three.js or Recharts) are loaded via `next/dynamic` onl
 
 We enforce strict ECMAScript module imports (e.g., `import debounce from 'lodash/debounce'`) to ensure Webpack tree-shakes unused code from the final bundle.
 
+### Font Subsetting
+
+The Inter and JetBrains Mono fonts are subsetted to contain only Latin characters and numbers, reducing the font payload by 85%.
+
