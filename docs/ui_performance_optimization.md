@@ -70,3 +70,7 @@ WebAssembly SIMD (Single Instruction, Multiple Data) is enabled, allowing the cl
 
 We utilize Zustand for global state management, avoiding the boilerplate and performance overhead of Redux context propagation.
 
+### Atomic Selection
+
+Components must select the exact slice of state they require (e.g., `useStore(state => state.theme)`) rather than subscribing to the entire store object.
+
