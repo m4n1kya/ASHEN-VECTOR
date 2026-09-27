@@ -342,3 +342,7 @@ Complex derived state (e.g., grouping portfolio positions by sector) is memoized
 
 React hydration is an expensive CPU operation. We implement 'lazy hydration' for components that exist far below the initial fold.
 
+### Interactive Islands
+
+Using an islands-architecture approach, static structural elements are never hydrated, reserving CPU cycles exclusively for the interactive charting modules.
+
