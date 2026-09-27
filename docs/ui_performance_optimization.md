@@ -90,3 +90,7 @@ The primary price charts utilize TradingView's Lightweight Charts library, capab
 
 Options volatility surfaces are rendered in 3D using WebGL (via Three.js), leveraging the user's local GPU for rendering complex geometry.
 
+### Retina Display Crispness
+
+Canvas internal dimensions are multiplied by `window.devicePixelRatio` and scaled down via CSS to prevent blurriness on high-DPI Apple displays.
+
