@@ -122,3 +122,7 @@ The `swr` (Stale-While-Revalidate) library caches paginated API responses locall
 
 When a user submits a trade, the UI instantly updates to the 'Pending' state locally, masking the 50ms network latency of the actual API call.
 
+### Optimistic Rollbacks
+
+If the backend rejects the trade (e.g., margin failure), the local state is smoothly rolled back and an error toast is surfaced to the user.
+
