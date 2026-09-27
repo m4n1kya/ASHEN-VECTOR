@@ -270,3 +270,7 @@ Engineers periodically capture Chrome tracing profiles to identify bottlenecks i
 
 Playwright tests capture screenshots before and after PRs, utilizing pixel-matching to ensure layout shifts are not introduced accidentally.
 
+### Lighthouse CI
+
+Google Lighthouse runs as a CI action; any PR that drops the Performance score below 95/100 fails the build immediately.
+
