@@ -362,3 +362,7 @@ A `SharedWorker` holds the single active WebSocket connection to the exchange; i
 
 The application achieves a Time to Interactive (TTI) of 1.2s, a First Contentful Paint (FCP) of 0.8s, and maintains a rock-solid 60 FPS during market open volatility.
 
+### Regression Monitoring
+
+Datadog RUM (Real User Monitoring) continuously samples client-side framerates in production, automatically alerting the engineering team if an update degrades performance.
+
