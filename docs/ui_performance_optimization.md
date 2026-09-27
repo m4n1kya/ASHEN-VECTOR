@@ -98,3 +98,7 @@ Canvas internal dimensions are multiplied by `window.devicePixelRatio` and scale
 
 Rendering thousands of DOM nodes crashes browsers. We implement strict DOM virtualization for any list exceeding 50 items.
 
+### Order Book Virtualization
+
+The Level 3 Order Book utilizes `react-window` to only render the 30 rows currently visible in the viewport, discarding off-screen rows.
+
