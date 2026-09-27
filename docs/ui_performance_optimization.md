@@ -222,3 +222,7 @@ Complex JS-driven animations synchronize perfectly with the monitor refresh rate
 
 High-frequency DOM events that trigger reflows are heavily throttled to prevent crashing the render cycle.
 
+### Mousemove Throttling
+
+Crosshair rendering on financial charts throttles `mousemove` events to 30ms intervals, balancing visual smoothness with CPU load.
+
