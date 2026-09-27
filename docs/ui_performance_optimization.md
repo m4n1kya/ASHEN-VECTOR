@@ -322,3 +322,7 @@ Functions processing tick data are written strictly monomorphically—always acc
 
 The `delete` operator is strictly avoided on data objects, as it destroys the V8 hidden class; properties are instead nulled out (`obj.val = null`).
 
+### Structured Cloning
+
+When a deep copy is absolutely necessary, the native `structuredClone()` API is used, which is significantly faster than `JSON.parse(JSON.stringify())`.
+
