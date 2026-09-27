@@ -250,3 +250,7 @@ We utilize a heavily stripped-down CSS reset specifically tailored for our Tailw
 
 Static assets and compiled JS/CSS are served from a global edge CDN (Cloudflare) using aggressive Brotli compression.
 
+### Immutable Caching
+
+Webpack-hashed asset URLs (`main.[hash].js`) are served with `Cache-Control: public, max-age=31536000, immutable`, preventing unnecessary re-validation requests.
+
