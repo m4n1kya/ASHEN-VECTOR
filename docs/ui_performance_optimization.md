@@ -230,3 +230,7 @@ Crosshair rendering on financial charts throttles `mousemove` events to 30ms int
 
 Images, avatars, and complex components below the fold are lazy-loaded using the native Intersection Observer API.
 
+### Next/Image Optimization
+
+All static assets route through `next/image`, serving modern WebP formats and automatically generating `srcset` for different screen densities.
+
