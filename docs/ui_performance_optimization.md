@@ -22,3 +22,7 @@ Calculations like sorting arrays or filtering large tick datasets are wrapped in
 
 Event handlers passed to deeply nested child components are wrapped in `useCallback` to prevent breaking `React.memo` reference equality checks.
 
+### Object Instantiation
+
+Inline object and array instantiation (e.g., `style={{ margin: 10 }}`) is strictly prohibited in render functions of high-frequency components.
+
