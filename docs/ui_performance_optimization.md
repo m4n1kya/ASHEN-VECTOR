@@ -346,3 +346,7 @@ React hydration is an expensive CPU operation. We implement 'lazy hydration' for
 
 Using an islands-architecture approach, static structural elements are never hydrated, reserving CPU cycles exclusively for the interactive charting modules.
 
+## Service Worker Performance
+
+The PWA Service Worker is configured with strict 200ms timeout limits on Cache API lookups, immediately falling back to the network to prevent stalled requests.
+
