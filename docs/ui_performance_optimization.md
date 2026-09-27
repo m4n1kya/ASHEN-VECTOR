@@ -306,3 +306,7 @@ For the absolute hottest paths in the application (e.g., the high-frequency tick
 
 The ticker tape uses vanilla JavaScript to directly mutate `element.textContent` via a `useRef`, achieving 100x the speed of a standard React state update.
 
+### Element Pooling
+
+The raw DOM approach maintains a fixed pool of HTML elements, recycling them rather than creating and destroying nodes, completely eliminating GC pauses.
+
