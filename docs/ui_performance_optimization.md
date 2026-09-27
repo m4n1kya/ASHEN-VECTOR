@@ -138,3 +138,7 @@ For the highest density feeds, JSON is replaced with binary Protocol Buffers ove
 
 If five components request the same ticker data simultaneously, the API client deduplicates the requests into a single network call.
 
+### HTTP/2 Multiplexing
+
+The API gateway strictly enforces HTTP/2, allowing dozens of concurrent asset requests to be multiplexed over a single TCP connection.
+
