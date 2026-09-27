@@ -62,3 +62,7 @@ To pass gigabytes of tick data to Workers instantly, we transfer ownership of ra
 
 Complex client-side risk calculations (e.g., local VaR approximations) are written in Rust and compiled to WebAssembly for near-native execution speed.
 
+### Wasm SIMD
+
+WebAssembly SIMD (Single Instruction, Multiple Data) is enabled, allowing the client to process 4 floating-point operations in a single CPU cycle.
+
