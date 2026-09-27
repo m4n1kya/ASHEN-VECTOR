@@ -210,3 +210,7 @@ Animating elements (like sliding sidebars) strictly uses `transform: translate()
 
 Fade effects rely exclusively on animating the `opacity` property, as this is one of the only properties the GPU can composite natively.
 
+### The will-change Property
+
+The `will-change: transform` property is applied to highly dynamic elements (like custom cursors) to hint the browser to promote them to their own compositor layer.
+
