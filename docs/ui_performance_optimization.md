@@ -86,3 +86,7 @@ SVGs are limited to UI icons; all data-dense charts have been migrated to the HT
 
 The primary price charts utilize TradingView's Lightweight Charts library, capable of rendering millions of data points flawlessly.
 
+### WebGL Volatility Surfaces
+
+Options volatility surfaces are rendered in 3D using WebGL (via Three.js), leveraging the user's local GPU for rendering complex geometry.
+
