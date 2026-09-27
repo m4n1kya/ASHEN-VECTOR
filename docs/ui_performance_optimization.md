@@ -258,3 +258,7 @@ Webpack-hashed asset URLs (`main.[hash].js`) are served with `Cache-Control: pub
 
 The document `<head>` includes `<link rel="preconnect">` tags for the backend API and WebSocket domains, shaving 100ms off the initial TLS handshake.
 
+### Critical Path CSS
+
+Next.js Turbopack extracts and inlines only the absolute minimum CSS required to render the initial viewport, deferring the rest.
+
