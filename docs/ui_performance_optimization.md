@@ -58,3 +58,7 @@ The `Comlink` library wraps the native `postMessage` API, allowing the main thre
 
 To pass gigabytes of tick data to Workers instantly, we transfer ownership of raw `ArrayBuffer` objects instead of using structured cloning.
 
+## WebAssembly (Wasm)
+
+Complex client-side risk calculations (e.g., local VaR approximations) are written in Rust and compiled to WebAssembly for near-native execution speed.
+
