@@ -74,3 +74,7 @@ We utilize Zustand for global state management, avoiding the boilerplate and per
 
 Components must select the exact slice of state they require (e.g., `useStore(state => state.theme)`) rather than subscribing to the entire store object.
 
+### Transient State
+
+For ultra-high-frequency data (like bid/ask prices), state is mutated directly via `useStore.setState` and DOM refs without triggering a full React render.
+
