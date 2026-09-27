@@ -46,3 +46,7 @@ The browser's main thread is reserved strictly for UI manipulation; all heavy da
 
 Large historical datasets (e.g., 100k OHLCV bars) are deserialized in a background Web Worker pool to prevent main thread blocking.
 
+### OffscreenCanvas
+
+Chart rendering is delegated to an `OffscreenCanvas` inside a Web Worker, ensuring that rapid tick updates never freeze the DOM.
+
