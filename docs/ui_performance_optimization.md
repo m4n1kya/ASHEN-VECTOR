@@ -78,3 +78,7 @@ Components must select the exact slice of state they require (e.g., `useStore(st
 
 For ultra-high-frequency data (like bid/ask prices), state is mutated directly via `useStore.setState` and DOM refs without triggering a full React render.
 
+## Data Visualization Rendering
+
+SVGs are limited to UI icons; all data-dense charts have been migrated to the HTML5 `<canvas>` element for massive performance gains.
+
