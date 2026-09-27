@@ -150,3 +150,7 @@ Webpack bundle analysis is run on every CI build to ensure the initial JavaScrip
 
 Heavy dependencies (like Three.js or Recharts) are loaded via `next/dynamic` only when the user navigates to the specific dashboard requiring them.
 
+### Tree-Shaking
+
+We enforce strict ECMAScript module imports (e.g., `import debounce from 'lodash/debounce'`) to ensure Webpack tree-shakes unused code from the final bundle.
+
