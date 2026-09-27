@@ -334,3 +334,7 @@ Math-heavy indicator calculations operate exclusively on `Float64Array` typed ar
 
 Zustand selectors use strict equality functions (e.g., `shallow` from `zustand/shallow`) to accurately detect changes in nested object slices.
 
+### Derived State Memoization
+
+Complex derived state (e.g., grouping portfolio positions by sector) is memoized using the `reselect` library, ensuring calculation only runs when the underlying collection changes.
+
