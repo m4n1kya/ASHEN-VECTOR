@@ -162,3 +162,7 @@ The Inter and JetBrains Mono fonts are subsetted to contain only Latin character
 
 The dashboard is engineered to achieve a perfect 'Good' score across all three Google Core Web Vitals metrics.
 
+### Largest Contentful Paint (LCP)
+
+To achieve an LCP under 2.5s, the critical CSS is inlined, and the primary structural containers are rendered server-side via Next.js.
+
