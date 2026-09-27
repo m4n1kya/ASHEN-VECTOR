@@ -26,3 +26,7 @@ Event handlers passed to deeply nested child components are wrapped in `useCallb
 
 Inline object and array instantiation (e.g., `style={{ margin: 10 }}`) is strictly prohibited in render functions of high-frequency components.
 
+### React Server Components
+
+Static shells and initial data fetching are offloaded to React Server Components (RSC) to drastically reduce the JavaScript payload sent to the client.
+
