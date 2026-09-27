@@ -266,3 +266,7 @@ Next.js Turbopack extracts and inlines only the absolute minimum CSS required to
 
 Engineers periodically capture Chrome tracing profiles to identify bottlenecks in the GPU rasterization thread.
 
+### Visual Regression Tests
+
+Playwright tests capture screenshots before and after PRs, utilizing pixel-matching to ensure layout shifts are not introduced accidentally.
+
