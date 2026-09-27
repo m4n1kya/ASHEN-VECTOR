@@ -246,3 +246,7 @@ The monolithic `moment.js` library (300KB) was entirely stripped and replaced wi
 
 We utilize a heavily stripped-down CSS reset specifically tailored for our Tailwind setup, removing unused legacy browser normalizations.
 
+## CDN Optimization
+
+Static assets and compiled JS/CSS are served from a global edge CDN (Cloudflare) using aggressive Brotli compression.
+
