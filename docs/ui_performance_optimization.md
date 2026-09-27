@@ -146,3 +146,7 @@ The API gateway strictly enforces HTTP/2, allowing dozens of concurrent asset re
 
 Webpack bundle analysis is run on every CI build to ensure the initial JavaScript payload remains under 150KB (gzipped).
 
+### Dynamic Imports
+
+Heavy dependencies (like Three.js or Recharts) are loaded via `next/dynamic` only when the user navigates to the specific dashboard requiring them.
+
