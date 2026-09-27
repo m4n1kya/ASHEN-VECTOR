@@ -350,3 +350,7 @@ Using an islands-architecture approach, static structural elements are never hyd
 
 The PWA Service Worker is configured with strict 200ms timeout limits on Cache API lookups, immediately falling back to the network to prevent stalled requests.
 
+### WebRTC Data Channels
+
+In specialized deployments, WebRTC data channels are used to synchronize state directly between browser tabs, bypassing the server entirely.
+
