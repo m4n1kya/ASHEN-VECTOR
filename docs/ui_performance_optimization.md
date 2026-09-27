@@ -302,3 +302,7 @@ Global React Context is split into multiple independent providers (e.g., ThemeCo
 
 For the absolute hottest paths in the application (e.g., the high-frequency ticker tape), React is bypassed entirely.
 
+### Direct DOM Manipulation
+
+The ticker tape uses vanilla JavaScript to directly mutate `element.textContent` via a `useRef`, achieving 100x the speed of a standard React state update.
+
