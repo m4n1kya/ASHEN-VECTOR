@@ -206,3 +206,7 @@ Visual updates are offloaded to the GPU wherever possible to bypass the browser'
 
 Animating elements (like sliding sidebars) strictly uses `transform: translate()` rather than changing `margin` or `top`, preventing layout thrashing.
 
+### Opacity Animations
+
+Fade effects rely exclusively on animating the `opacity` property, as this is one of the only properties the GPU can composite natively.
+
