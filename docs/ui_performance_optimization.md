@@ -314,3 +314,7 @@ The raw DOM approach maintains a fixed pool of HTML elements, recycling them rat
 
 Engineers structure high-frequency functions specifically to accommodate the V8 JavaScript engine's JIT compiler optimizations.
 
+### Monomorphic Functions
+
+Functions processing tick data are written strictly monomorphically—always accepting objects with the exact same hidden class shape to prevent JIT deoptimization.
+
