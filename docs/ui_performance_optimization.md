@@ -66,3 +66,7 @@ Complex client-side risk calculations (e.g., local VaR approximations) are writt
 
 WebAssembly SIMD (Single Instruction, Multiple Data) is enabled, allowing the client to process 4 floating-point operations in a single CPU cycle.
 
+## State Management (Zustand)
+
+We utilize Zustand for global state management, avoiding the boilerplate and performance overhead of Redux context propagation.
+
