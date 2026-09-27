@@ -14,3 +14,7 @@ Unnecessary re-renders are the primary cause of UI stutter. We strictly enforce 
 
 All heavy charting and tabular components are wrapped in `React.memo()`, ensuring they only re-render when their specific primitive props change.
 
+### Expensive Computations
+
+Calculations like sorting arrays or filtering large tick datasets are wrapped in `useMemo` to prevent recalculation on every render cycle.
+
