@@ -262,3 +262,7 @@ The document `<head>` includes `<link rel="preconnect">` tags for the backend AP
 
 Next.js Turbopack extracts and inlines only the absolute minimum CSS required to render the initial viewport, deferring the rest.
 
+## Performance Profiling
+
+Engineers periodically capture Chrome tracing profiles to identify bottlenecks in the GPU rasterization thread.
+
