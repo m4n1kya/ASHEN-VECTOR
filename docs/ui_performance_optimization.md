@@ -310,3 +310,7 @@ The ticker tape uses vanilla JavaScript to directly mutate `element.textContent`
 
 The raw DOM approach maintains a fixed pool of HTML elements, recycling them rather than creating and destroying nodes, completely eliminating GC pauses.
 
+## JS Engine Mechanics
+
+Engineers structure high-frequency functions specifically to accommodate the V8 JavaScript engine's JIT compiler optimizations.
+
