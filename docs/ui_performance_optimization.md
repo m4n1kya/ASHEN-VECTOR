@@ -290,3 +290,7 @@ We heavily rely on React 18's automatic batching, intentionally avoiding `flushS
 
 ESLint is configured with strict rules targeting React performance anti-patterns, such as `react/jsx-no-bind` to prevent inline function recreation.
 
+### Stable React Keys
+
+ESLint enforces that `key` props must be unique IDs, forbidding the use of array indices, which forces React to unmount/remount unnecessarily during sorting.
+
