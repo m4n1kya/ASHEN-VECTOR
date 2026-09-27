@@ -30,3 +30,7 @@ Inline object and array instantiation (e.g., `style={{ margin: 10 }}`) is strict
 
 Static shells and initial data fetching are offloaded to React Server Components (RSC) to drastically reduce the JavaScript payload sent to the client.
 
+### Boundary Separation
+
+The `'use client'` directive is pushed as deep down the component tree as possible, keeping interactivity isolated to the leaves of the DOM.
+
