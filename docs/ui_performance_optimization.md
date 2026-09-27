@@ -226,3 +226,7 @@ High-frequency DOM events that trigger reflows are heavily throttled to prevent 
 
 Crosshair rendering on financial charts throttles `mousemove` events to 30ms intervals, balancing visual smoothness with CPU load.
 
+### Lazy Loading
+
+Images, avatars, and complex components below the fold are lazy-loaded using the native Intersection Observer API.
+
