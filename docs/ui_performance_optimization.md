@@ -218,3 +218,7 @@ The `will-change: transform` property is applied to highly dynamic elements (lik
 
 Complex JS-driven animations synchronize perfectly with the monitor refresh rate by executing exclusively within `requestAnimationFrame` callbacks.
 
+## Event Throttling
+
+High-frequency DOM events that trigger reflows are heavily throttled to prevent crashing the render cycle.
+
