@@ -242,3 +242,7 @@ Heavy, outdated legacy libraries are continuously purged from the bundle to keep
 
 The monolithic `moment.js` library (300KB) was entirely stripped and replaced with `day.js` (2KB), preserving the API while dropping bundle weight.
 
+### Minimal CSS Reset
+
+We utilize a heavily stripped-down CSS reset specifically tailored for our Tailwind setup, removing unused legacy browser normalizations.
+
