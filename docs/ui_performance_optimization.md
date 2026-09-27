@@ -318,3 +318,7 @@ Engineers structure high-frequency functions specifically to accommodate the V8 
 
 Functions processing tick data are written strictly monomorphically—always accepting objects with the exact same hidden class shape to prevent JIT deoptimization.
 
+### Hidden Class Preservation
+
+The `delete` operator is strictly avoided on data objects, as it destroys the V8 hidden class; properties are instead nulled out (`obj.val = null`).
+
