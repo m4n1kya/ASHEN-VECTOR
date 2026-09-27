@@ -234,3 +234,7 @@ Images, avatars, and complex components below the fold are lazy-loaded using the
 
 All static assets route through `next/image`, serving modern WebP formats and automatically generating `srcset` for different screen densities.
 
+## Dependency Auditing
+
+Heavy, outdated legacy libraries are continuously purged from the bundle to keep the application lean and fast.
+
