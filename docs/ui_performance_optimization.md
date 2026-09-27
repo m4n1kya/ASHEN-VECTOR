@@ -326,3 +326,7 @@ The `delete` operator is strictly avoided on data objects, as it destroys the V8
 
 When a deep copy is absolutely necessary, the native `structuredClone()` API is used, which is significantly faster than `JSON.parse(JSON.stringify())`.
 
+### Typed Arrays
+
+Math-heavy indicator calculations operate exclusively on `Float64Array` typed arrays, allowing contiguous memory allocation and blisteringly fast iteration.
+
