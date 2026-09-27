@@ -34,3 +34,7 @@ Static shells and initial data fetching are offloaded to React Server Components
 
 The `'use client'` directive is pushed as deep down the component tree as possible, keeping interactivity isolated to the leaves of the DOM.
 
+### Concurrent Rendering
+
+React 18's concurrent features (`useTransition`) allow the UI to remain responsive during heavy charting updates by yielding control back to the browser.
+
