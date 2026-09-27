@@ -50,3 +50,7 @@ Large historical datasets (e.g., 100k OHLCV bars) are deserialized in a backgrou
 
 Chart rendering is delegated to an `OffscreenCanvas` inside a Web Worker, ensuring that rapid tick updates never freeze the DOM.
 
+### Worker RPC (Comlink)
+
+The `Comlink` library wraps the native `postMessage` API, allowing the main thread to call Worker functions natively via Proxies.
+
