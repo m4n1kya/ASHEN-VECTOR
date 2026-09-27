@@ -286,3 +286,7 @@ React Query is tuned aggressively: `gcTime` is set to 5 minutes to free memory q
 
 We heavily rely on React 18's automatic batching, intentionally avoiding `flushSync` unless absolutely required for synchronous DOM measurements.
 
+## Linting & Static Analysis
+
+ESLint is configured with strict rules targeting React performance anti-patterns, such as `react/jsx-no-bind` to prevent inline function recreation.
+
