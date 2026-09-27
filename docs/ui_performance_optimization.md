@@ -190,3 +190,7 @@ Every `useEffect` hook that subscribes to a WebSocket channel or adds a DOM even
 
 Stale closures holding references to massive historical arrays are prevented by passing dependencies correctly to `useCallback` arrays.
 
+### Memory Profiling
+
+Engineers must profile the application using Chrome DevTools Memory Timeline, ensuring the JS heap size returns to baseline after route transitions.
+
