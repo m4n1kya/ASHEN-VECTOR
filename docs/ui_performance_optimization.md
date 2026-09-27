@@ -214,3 +214,7 @@ Fade effects rely exclusively on animating the `opacity` property, as this is on
 
 The `will-change: transform` property is applied to highly dynamic elements (like custom cursors) to hint the browser to promote them to their own compositor layer.
 
+### RequestAnimationFrame
+
+Complex JS-driven animations synchronize perfectly with the monitor refresh rate by executing exclusively within `requestAnimationFrame` callbacks.
+
