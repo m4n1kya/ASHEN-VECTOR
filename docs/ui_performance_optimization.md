@@ -126,3 +126,7 @@ When a user submits a trade, the UI instantly updates to the 'Pending' state loc
 
 If the backend rejects the trade (e.g., margin failure), the local state is smoothly rolled back and an error toast is surfaced to the user.
 
+## Network Optimization
+
+WebSocket connections utilize permessage-deflate compression to reduce the bandwidth of streaming JSON market data by up to 70%.
+
