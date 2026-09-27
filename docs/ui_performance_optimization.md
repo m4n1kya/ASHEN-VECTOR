@@ -118,3 +118,7 @@ The research news feed loads articles dynamically as the user approaches the bot
 
 The `swr` (Stale-While-Revalidate) library caches paginated API responses locally, instantly restoring the scroll position if the user navigates back.
 
+## Optimistic UI
+
+When a user submits a trade, the UI instantly updates to the 'Pending' state locally, masking the 50ms network latency of the actual API call.
+
