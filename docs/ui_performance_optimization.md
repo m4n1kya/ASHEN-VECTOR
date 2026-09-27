@@ -178,3 +178,7 @@ FID is kept below 100ms by fiercely minimizing Long Tasks (execution > 50ms) on 
 
 The new INP metric is optimized by yielding to the main thread via `setTimeout` during heavy client-side filtering operations.
 
+## Memory Management
+
+Long-running single-page applications (SPAs) are highly susceptible to memory leaks; strict cleanup protocols are enforced.
+
