@@ -278,3 +278,7 @@ Google Lighthouse runs as a CI action; any PR that drops the Performance score b
 
 Custom `performance.mark()` and `performance.measure()` calls are embedded in the chart rendering lifecycle to transmit telemetry back to Datadog.
 
+## React Query Tuning
+
+React Query is tuned aggressively: `gcTime` is set to 5 minutes to free memory quickly, while `staleTime` is mapped to asset volatility.
+
