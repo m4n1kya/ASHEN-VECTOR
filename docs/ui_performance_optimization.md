@@ -158,3 +158,7 @@ We enforce strict ECMAScript module imports (e.g., `import debounce from 'lodash
 
 The Inter and JetBrains Mono fonts are subsetted to contain only Latin characters and numbers, reducing the font payload by 85%.
 
+## Core Web Vitals (CWV)
+
+The dashboard is engineered to achieve a perfect 'Good' score across all three Google Core Web Vitals metrics.
+
