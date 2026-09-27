@@ -182,3 +182,7 @@ The new INP metric is optimized by yielding to the main thread via `setTimeout` 
 
 Long-running single-page applications (SPAs) are highly susceptible to memory leaks; strict cleanup protocols are enforced.
 
+### Effect Cleanup
+
+Every `useEffect` hook that subscribes to a WebSocket channel or adds a DOM event listener MUST return a cleanup function to unsubscribe.
+
