@@ -54,3 +54,7 @@ Chart rendering is delegated to an `OffscreenCanvas` inside a Web Worker, ensuri
 
 The `Comlink` library wraps the native `postMessage` API, allowing the main thread to call Worker functions natively via Proxies.
 
+### Zero-Copy Transfer
+
+To pass gigabytes of tick data to Workers instantly, we transfer ownership of raw `ArrayBuffer` objects instead of using structured cloning.
+
