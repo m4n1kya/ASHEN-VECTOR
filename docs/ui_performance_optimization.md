@@ -274,3 +274,7 @@ Playwright tests capture screenshots before and after PRs, utilizing pixel-match
 
 Google Lighthouse runs as a CI action; any PR that drops the Performance score below 95/100 fails the build immediately.
 
+### User Timing API
+
+Custom `performance.mark()` and `performance.measure()` calls are embedded in the chart rendering lifecycle to transmit telemetry back to Datadog.
+
