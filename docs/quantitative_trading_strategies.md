@@ -22,3 +22,7 @@ Cross-asset momentum signals are generated using dual-moving average crossovers 
 
 An unsupervised clustering algorithm (DBSCAN) groups thousands of equities by fundamental and price-action features to discover novel trading pairs.
 
+### Regime Switching (HMM)
+
+A Gaussian Hidden Markov Model detects shifts between 'bull', 'bear', and 'sideways' regimes, dynamically adjusting the portfolio beta.
+
