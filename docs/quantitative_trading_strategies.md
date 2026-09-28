@@ -50,3 +50,7 @@ Market making algorithms continuously quote bid/ask spreads, utilizing the Avell
 
 Order Flow Imbalance (OFI) metrics at the top of the book are used to pull resting limit orders milliseconds before toxic flow sweeps the book.
 
+## Event-Driven Strategies
+
+The Post-Earnings Announcement Drift (PEAD) strategy goes long on stocks with massive positive earnings surprises, capturing the multi-day drift.
+
