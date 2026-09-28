@@ -58,3 +58,7 @@ The Post-Earnings Announcement Drift (PEAD) strategy goes long on stocks with ma
 
 During scheduled CPI or FOMC releases, the engine widens spreads and switches to a momentum-ignition strategy to ride the initial volatility spike.
 
+## Factor Investing
+
+A Market-Neutral Long/Short equity book is constructed using Fama-French style factors (Value, Size, Quality, Momentum) neutralized for sector risk.
+
