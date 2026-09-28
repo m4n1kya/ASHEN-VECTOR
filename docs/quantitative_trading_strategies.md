@@ -66,3 +66,7 @@ A Market-Neutral Long/Short equity book is constructed using Fama-French style f
 
 Triangular arbitrage bots monitor Binance, Kraken, and Coinbase via WebSockets, executing riskless cyclic trades when price disparities exceed fee thresholds.
 
+### NLP Sentiment Divergence
+
+FinBERT models parse 10-K and 10-Q SEC filings in real-time; divergence between management tone and current stock price triggers convergence trades.
+
