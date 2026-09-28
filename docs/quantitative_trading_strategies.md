@@ -54,3 +54,7 @@ Order Flow Imbalance (OFI) metrics at the top of the book are used to pull resti
 
 The Post-Earnings Announcement Drift (PEAD) strategy goes long on stocks with massive positive earnings surprises, capturing the multi-day drift.
 
+### Macro Shock Absorber
+
+During scheduled CPI or FOMC releases, the engine widens spreads and switches to a momentum-ignition strategy to ride the initial volatility spike.
+
