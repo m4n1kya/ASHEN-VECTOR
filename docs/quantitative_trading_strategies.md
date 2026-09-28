@@ -62,3 +62,7 @@ During scheduled CPI or FOMC releases, the engine widens spreads and switches to
 
 A Market-Neutral Long/Short equity book is constructed using Fama-French style factors (Value, Size, Quality, Momentum) neutralized for sector risk.
 
+## Crypto Arbitrage
+
+Triangular arbitrage bots monitor Binance, Kraken, and Coinbase via WebSockets, executing riskless cyclic trades when price disparities exceed fee thresholds.
+
