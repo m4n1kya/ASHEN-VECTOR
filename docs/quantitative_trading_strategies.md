@@ -14,3 +14,7 @@ We trade the implied versus realized correlation by taking positions in an index
 
 Algorithms scan the options chain for localized mispricings on the volatility surface, exploiting violations of put-call parity.
 
+## Momentum and Trend
+
+Cross-asset momentum signals are generated using dual-moving average crossovers filtered by ADX (Average Directional Index) to confirm trend strength.
+
