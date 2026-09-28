@@ -34,3 +34,7 @@ This strategy fades extreme intraday deviations from the Volume Weighted Average
 
 The system predicts Russell and S&P index reconstitution events, accumulating positions in likely additions before the official announcement.
 
+## Options Market Making
+
+Gamma scalping is employed on long straddle positions, dynamically hedging delta as the underlying price fluctuates to capture realized volatility.
+
