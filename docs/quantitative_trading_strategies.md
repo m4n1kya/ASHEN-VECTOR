@@ -6,3 +6,7 @@ This document catalogs the proprietary alpha-generating strategies deployed by t
 
 The core StatArb framework relies on identifying temporary pricing inefficiencies across highly correlated assets using cointegration tests.
 
+### Dispersion Trading
+
+We trade the implied versus realized correlation by taking positions in an index ETF against a basket of its underlying constituents.
+
