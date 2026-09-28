@@ -18,3 +18,7 @@ Algorithms scan the options chain for localized mispricings on the volatility su
 
 Cross-asset momentum signals are generated using dual-moving average crossovers filtered by ADX (Average Directional Index) to confirm trend strength.
 
+### ML Pairs Selection
+
+An unsupervised clustering algorithm (DBSCAN) groups thousands of equities by fundamental and price-action features to discover novel trading pairs.
+
