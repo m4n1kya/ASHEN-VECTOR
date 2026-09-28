@@ -26,3 +26,7 @@ An unsupervised clustering algorithm (DBSCAN) groups thousands of equities by fu
 
 A Gaussian Hidden Markov Model detects shifts between 'bull', 'bear', and 'sideways' regimes, dynamically adjusting the portfolio beta.
 
+## Intraday Mean Reversion
+
+This strategy fades extreme intraday deviations from the Volume Weighted Average Price (VWAP) assuming mean reversion before the market close.
+
