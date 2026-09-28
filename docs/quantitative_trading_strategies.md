@@ -74,3 +74,7 @@ FinBERT models parse 10-K and 10-Q SEC filings in real-time; divergence between 
 
 The system calculates the implied probability of deal completion in M&A announcements, taking positions when the market price underprices the deal success.
 
+## Risk Management Triggers
+
+All strategies are bound by a universal risk overlay enforcing Chandelier Exits and volatility-adjusted trailing stops based on ATR.
+
