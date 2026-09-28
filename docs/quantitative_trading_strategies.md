@@ -46,3 +46,7 @@ A persistent short-volatility strategy harvests the roll yield from the contango
 
 Market making algorithms continuously quote bid/ask spreads, utilizing the Avellaneda-Stoikov model to manage inventory risk.
 
+### Adverse Selection Mitigation
+
+Order Flow Imbalance (OFI) metrics at the top of the book are used to pull resting limit orders milliseconds before toxic flow sweeps the book.
+
