@@ -70,3 +70,7 @@ Triangular arbitrage bots monitor Binance, Kraken, and Coinbase via WebSockets, 
 
 FinBERT models parse 10-K and 10-Q SEC filings in real-time; divergence between management tone and current stock price triggers convergence trades.
 
+### Merger Arbitrage
+
+The system calculates the implied probability of deal completion in M&A announcements, taking positions when the market price underprices the deal success.
+
