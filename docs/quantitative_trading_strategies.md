@@ -30,3 +30,7 @@ A Gaussian Hidden Markov Model detects shifts between 'bull', 'bear', and 'sidew
 
 This strategy fades extreme intraday deviations from the Volume Weighted Average Price (VWAP) assuming mean reversion before the market close.
 
+### Index Rebalancing
+
+The system predicts Russell and S&P index reconstitution events, accumulating positions in likely additions before the official announcement.
+
