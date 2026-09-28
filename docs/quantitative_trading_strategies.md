@@ -78,3 +78,6 @@ The system calculates the implied probability of deal completion in M&A announce
 
 All strategies are bound by a universal risk overlay enforcing Chandelier Exits and volatility-adjusted trailing stops based on ATR.
 
+## Conclusion
+
+The diversification across Mean Reversion, Momentum, Event-Driven, and Arbitrage strategies ensures consistent absolute returns regardless of broader market direction.
