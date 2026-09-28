@@ -38,3 +38,7 @@ The system predicts Russell and S&P index reconstitution events, accumulating po
 
 Gamma scalping is employed on long straddle positions, dynamically hedging delta as the underlying price fluctuates to capture realized volatility.
 
+### Volatility Risk Premium
+
+A persistent short-volatility strategy harvests the roll yield from the contango term structure of VIX futures, protected by deep out-of-the-money calls.
+
