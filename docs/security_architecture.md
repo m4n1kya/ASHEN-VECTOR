@@ -154,3 +154,7 @@ Incremental optimization to the network heuristic analysis and packet inspection
 
 Incremental optimization to the network heuristic analysis and packet inspection ruleset.
 
+### Intrusion Detection Part 40
+
+Incremental optimization to the network heuristic analysis and packet inspection ruleset.
+
