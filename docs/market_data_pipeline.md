@@ -18,3 +18,7 @@ The core of the generator uses GBM with drift and volatility parameters calibrat
 
 Merton's Jump Diffusion is layered over the GBM to simulate sudden macroeconomic shocks (fat tails) seen in real equities.
 
+### Deterministic Generation
+
+Random number generators are seeded using the ASCII hash of the ticker symbol, ensuring `AAPL` always returns the exact same historical path.
+
