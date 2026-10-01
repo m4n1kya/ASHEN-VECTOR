@@ -38,3 +38,7 @@ If the metadata API fails, a deterministic company name generator combines the t
 
 The OOS reliability scores are approximated using deterministic noise layered over real momentum signals for frontend testing.
 
+## Comprehensive Test Suite
+
+The new pipeline is backed by 21 rigorous `pytest` unit tests ensuring structural integrity and mathematical correctness.
+
