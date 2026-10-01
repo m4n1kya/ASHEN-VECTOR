@@ -46,3 +46,7 @@ Corporate authentication leverages OpenID Connect (OIDC) linked to Azure Active 
 
 All logs stream to Datadog; sensitive PII (emails, names, IP addresses) is automatically hashed/redacted before leaving the VPC.
 
+### Content Security Policy
+
+The Next.js frontend delivers a strict CSP header, completely mitigating cross-site scripting (XSS) by blocking inline scripts.
+
