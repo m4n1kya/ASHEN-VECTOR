@@ -38,3 +38,7 @@ Repeated failed login attempts trigger an exponential backoff lock, ultimately r
 
 A granular RBAC matrix ensures analysts can view models but cannot trigger live executions without 'Portfolio Manager' privileges.
 
+### Single Sign-On (SSO)
+
+Corporate authentication leverages OpenID Connect (OIDC) linked to Azure Active Directory, enforcing hardware MFA.
+
