@@ -50,3 +50,7 @@ All logs stream to Datadog; sensitive PII (emails, names, IP addresses) is autom
 
 The Next.js frontend delivers a strict CSP header, completely mitigating cross-site scripting (XSS) by blocking inline scripts.
 
+### CSRF Mitigation
+
+Authentication cookies are flagged `HttpOnly`, `Secure`, and `SameSite=Strict`, rendering Cross-Site Request Forgery impossible.
+
