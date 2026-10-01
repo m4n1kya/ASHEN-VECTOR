@@ -26,3 +26,7 @@ Random number generators are seeded using the ASCII hash of the ticker symbol, e
 
 Daily trading volume is synthesized using a log-normal distribution, accurately reflecting the positive skew of real market participation.
 
+### OHLC Structural Integrity
+
+Strict constraints ensure High >= Low, and Open/Close fall within the High/Low bounds to prevent impossible candlestick generation.
+
