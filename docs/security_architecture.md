@@ -22,3 +22,7 @@ All PostgreSQL volumes and S3 buckets are encrypted at rest using AES-256-GCM wi
 
 The API Gateway strictly enforces TLS 1.3, dropping older protocols and weak cipher suites to prevent downgrade attacks.
 
+### WAF Configuration
+
+Cloudflare WAF is configured with OWASP Top 10 managed rulesets to automatically block SQLi, XSS, and LFI attempts at the edge.
+
