@@ -18,3 +18,7 @@ Refresh tokens are strictly single-use and cryptographically bound to the device
 
 All PostgreSQL volumes and S3 buckets are encrypted at rest using AES-256-GCM with keys managed by AWS KMS.
 
+## Data in Transit
+
+The API Gateway strictly enforces TLS 1.3, dropping older protocols and weak cipher suites to prevent downgrade attacks.
+
