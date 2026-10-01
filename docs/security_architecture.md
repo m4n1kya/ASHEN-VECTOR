@@ -54,3 +54,7 @@ The Next.js frontend delivers a strict CSP header, completely mitigating cross-s
 
 Authentication cookies are flagged `HttpOnly`, `Secure`, and `SameSite=Strict`, rendering Cross-Site Request Forgery impossible.
 
+## Supply Chain Security
+
+Dependencies are scanned daily by Snyk and GitHub Dependabot; any 'Critical' CVE immediately halts the deployment pipeline.
+
