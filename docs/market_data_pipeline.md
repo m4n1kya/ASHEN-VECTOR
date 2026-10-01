@@ -14,3 +14,7 @@ A mathematical synthetic data generator guarantees 100% uptime for the UI by gen
 
 The core of the generator uses GBM with drift and volatility parameters calibrated to historical S&P 500 averages.
 
+### Jump Diffusion Model
+
+Merton's Jump Diffusion is layered over the GBM to simulate sudden macroeconomic shocks (fat tails) seen in real equities.
+
