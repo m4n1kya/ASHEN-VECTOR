@@ -78,3 +78,7 @@ The perimeter undergoes continuous automated pentesting, augmented by a private 
 
 A formalized 4-stage playbook (Identification, Containment, Eradication, Recovery) dictates the engineering response to suspected breaches.
 
+### Intrusion Detection Part 21
+
+Incremental optimization to the network heuristic analysis and packet inspection ruleset.
+
