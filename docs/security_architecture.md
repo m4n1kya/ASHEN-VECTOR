@@ -34,3 +34,7 @@ API endpoints are protected by a distributed Redis token-bucket algorithm, stric
 
 Repeated failed login attempts trigger an exponential backoff lock, ultimately resulting in a 24-hour IP ban via `fail2ban`.
 
+## Authorization (RBAC)
+
+A granular RBAC matrix ensures analysts can view models but cannot trigger live executions without 'Portfolio Manager' privileges.
+
