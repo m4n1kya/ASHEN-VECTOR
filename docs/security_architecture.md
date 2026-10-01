@@ -10,3 +10,7 @@ All internal microservices strictly authenticate via mTLS; no internal network s
 
 User sessions are maintained via short-lived JWTs (15 min expiry) signed with RS256, utilizing an asymmetric public/private key pair.
 
+### Refresh Token Rotation
+
+Refresh tokens are strictly single-use and cryptographically bound to the device fingerprint to prevent session hijacking.
+
