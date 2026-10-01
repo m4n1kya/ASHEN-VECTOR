@@ -10,3 +10,7 @@ The reliance on `yfinance` has been fully deprecated due to unacceptable rate-li
 
 A mathematical synthetic data generator guarantees 100% uptime for the UI by generating realistic market data when live endpoints fail.
 
+### Geometric Brownian Motion
+
+The core of the generator uses GBM with drift and volatility parameters calibrated to historical S&P 500 averages.
+
