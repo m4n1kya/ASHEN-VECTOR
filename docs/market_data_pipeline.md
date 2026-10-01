@@ -30,3 +30,7 @@ Daily trading volume is synthesized using a log-normal distribution, accurately 
 
 Strict constraints ensure High >= Low, and Open/Close fall within the High/Low bounds to prevent impossible candlestick generation.
 
+### Fallback Metadata
+
+If the metadata API fails, a deterministic company name generator combines the ticker with professional suffixes (e.g., 'Technologies', 'Corp').
+
