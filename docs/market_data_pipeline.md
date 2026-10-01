@@ -34,3 +34,7 @@ Strict constraints ensure High >= Low, and Open/Close fall within the High/Low b
 
 If the metadata API fails, a deterministic company name generator combines the ticker with professional suffixes (e.g., 'Technologies', 'Corp').
 
+## Reliability Engine Mocking
+
+The OOS reliability scores are approximated using deterministic noise layered over real momentum signals for frontend testing.
+
