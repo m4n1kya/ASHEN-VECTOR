@@ -58,3 +58,7 @@ Authentication cookies are flagged `HttpOnly`, `Secure`, and `SameSite=Strict`, 
 
 Dependencies are scanned daily by Snyk and GitHub Dependabot; any 'Critical' CVE immediately halts the deployment pipeline.
 
+### Container Hardening
+
+Microservices run on Google Distroless base images with no shell access, running strictly as a non-root `appuser`.
+
