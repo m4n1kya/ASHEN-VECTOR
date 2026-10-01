@@ -14,3 +14,7 @@ User sessions are maintained via short-lived JWTs (15 min expiry) signed with RS
 
 Refresh tokens are strictly single-use and cryptographically bound to the device fingerprint to prevent session hijacking.
 
+## Data at Rest
+
+All PostgreSQL volumes and S3 buckets are encrypted at rest using AES-256-GCM with keys managed by AWS KMS.
+
