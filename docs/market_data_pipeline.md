@@ -22,3 +22,7 @@ Merton's Jump Diffusion is layered over the GBM to simulate sudden macroeconomic
 
 Random number generators are seeded using the ASCII hash of the ticker symbol, ensuring `AAPL` always returns the exact same historical path.
 
+### Volume Profiling
+
+Daily trading volume is synthesized using a log-normal distribution, accurately reflecting the positive skew of real market participation.
+
