@@ -30,3 +30,7 @@ Cloudflare WAF is configured with OWASP Top 10 managed rulesets to automatically
 
 API endpoints are protected by a distributed Redis token-bucket algorithm, strictly limiting users to 100 requests per minute.
 
+### Brute Force Protection
+
+Repeated failed login attempts trigger an exponential backoff lock, ultimately resulting in a 24-hour IP ban via `fail2ban`.
+
