@@ -66,3 +66,7 @@ Microservices run on Google Distroless base images with no shell access, running
 
 Environment variables never contain secrets. Applications authenticate with HashiCorp Vault at startup to retrieve ephemeral database credentials.
 
+### Cryptographic Memory
+
+C++ risk engine modules actively wipe private keys from RAM immediately after signing transactions using `SecureZeroMemory`.
+
