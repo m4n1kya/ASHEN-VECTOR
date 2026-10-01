@@ -70,3 +70,7 @@ Environment variables never contain secrets. Applications authenticate with Hash
 
 C++ risk engine modules actively wipe private keys from RAM immediately after signing transactions using `SecureZeroMemory`.
 
+## Offensive Security
+
+The perimeter undergoes continuous automated pentesting, augmented by a private HackerOne bug bounty program.
+
