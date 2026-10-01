@@ -26,3 +26,7 @@ The API Gateway strictly enforces TLS 1.3, dropping older protocols and weak cip
 
 Cloudflare WAF is configured with OWASP Top 10 managed rulesets to automatically block SQLi, XSS, and LFI attempts at the edge.
 
+### Rate Limiting
+
+API endpoints are protected by a distributed Redis token-bucket algorithm, strictly limiting users to 100 requests per minute.
+
