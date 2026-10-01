@@ -62,3 +62,7 @@ Dependencies are scanned daily by Snyk and GitHub Dependabot; any 'Critical' CVE
 
 Microservices run on Google Distroless base images with no shell access, running strictly as a non-root `appuser`.
 
+### Secrets Management
+
+Environment variables never contain secrets. Applications authenticate with HashiCorp Vault at startup to retrieve ephemeral database credentials.
+
