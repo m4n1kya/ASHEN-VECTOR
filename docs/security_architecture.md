@@ -42,3 +42,7 @@ A granular RBAC matrix ensures analysts can view models but cannot trigger live 
 
 Corporate authentication leverages OpenID Connect (OIDC) linked to Azure Active Directory, enforcing hardware MFA.
 
+## Audit & Compliance
+
+All logs stream to Datadog; sensitive PII (emails, names, IP addresses) is automatically hashed/redacted before leaving the VPC.
+
