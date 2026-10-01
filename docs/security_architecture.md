@@ -74,3 +74,7 @@ C++ risk engine modules actively wipe private keys from RAM immediately after si
 
 The perimeter undergoes continuous automated pentesting, augmented by a private HackerOne bug bounty program.
 
+### Incident Response
+
+A formalized 4-stage playbook (Identification, Containment, Eradication, Recovery) dictates the engineering response to suspected breaches.
+
