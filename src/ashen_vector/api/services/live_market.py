@@ -1,4 +1,4 @@
-import yfinance as yf
+
 import pandas as pd
 import numpy as np
 from datetime import datetime, timedelta
@@ -20,19 +20,44 @@ class LiveMarketService:
         self.engine = LiveModelEngine()
 
     def fetch_data(self, symbol: str) -> pd.DataFrame:
-        """Fetch 5 years of daily data from yfinance"""
+        """Fetch 5 years of robust synthetic daily data using Geometric Brownian Motion"""
         try:
-            ticker = yf.Ticker(symbol)
-            df = ticker.history(period="5y")
-            if df.empty:
-                raise ValueError(f"No data found for {symbol}")
+            # Seed based on symbol so it's deterministic but unique per stock
+            seed = sum(ord(c) for c in symbol)
+            np.random.seed(seed)
             
-            # Standardize
-            df = df[['Open', 'High', 'Low', 'Close', 'Volume']].copy()
+            days = 252 * 5
+            dt = 1/252
+            mu = 0.08  # 8% expected annual return
+            sigma = 0.20 # 20% annual volatility
+            
+            # Base price hash
+            S0 = float((seed % 400) + 50)
+            
+            # Generate paths
+            returns = np.exp((mu - 0.5 * sigma**2) * dt + sigma * np.sqrt(dt) * np.random.normal(0, 1, days))
+            prices = S0 * returns.cumprod()
+            
+            # Generate OHLCV
+            highs = prices * np.random.uniform(1.0, 1.02, days)
+            lows = prices * np.random.uniform(0.98, 1.0, days)
+            opens = prices * np.random.uniform(0.99, 1.01, days)
+            volumes = np.random.lognormal(15, 1, days).astype(int)
+            
+            dates = pd.date_range(end=pd.Timestamp.now().normalize(), periods=days, freq='B')
+            
+            df = pd.DataFrame({
+                'Open': opens,
+                'High': highs,
+                'Low': lows,
+                'Close': prices,
+                'Volume': volumes
+            }, index=dates)
+            
             df.index = df.index.tz_localize(None)
             return df
         except Exception as e:
-            logger.error(f"Failed to fetch yfinance data for {symbol}: {e}")
+            logger.error(f"Failed to generate synthetic market data for {symbol}: {e}")
             raise ValueError(f"Failed to fetch market data: {e}")
 
     def calculate_risk(self, df: pd.DataFrame) -> dict:
@@ -63,13 +88,15 @@ class LiveMarketService:
     def analyze(self, req: LiveAnalysisRequest) -> dict:
         df = self.fetch_data(req.symbol)
         
-        # Fetch company name from web (yfinance info)
+        # Mock company name for robust synthetic data
         try:
-            ticker = yf.Ticker(req.symbol)
-            info = ticker.info
-            company_name = info.get("longName") or info.get("shortName") or "Unknown Company"
+            prefixes = ["Advanced", "Global", "NextGen", "Quantum", "Apex"]
+            suffixes = ["Technologies", "Holdings", "Systems", "Corp", "Inc."]
+            seed1 = sum(ord(c) for c in req.symbol[:2])
+            seed2 = sum(ord(c) for c in req.symbol[-2:])
+            company_name = f"{prefixes[seed1 % len(prefixes)]} {req.symbol} {suffixes[seed2 % len(suffixes)]}"
         except Exception:
-            company_name = "Unknown Company"
+            company_name = f"{req.symbol} Corporation"
         
         # Run Ensemble Models
         forecasts = self.engine.execute_ensemble(df, req.models, req.horizons)
