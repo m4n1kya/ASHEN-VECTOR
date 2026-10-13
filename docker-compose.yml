@@ -1,0 +1,32 @@
+version: "3.9"
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ashen-vector-api
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env.example
+    environment:
+      - API_HOST=0.0.0.0
+      - API_PORT=8000
+      - PYTHONPATH=/app/src
+    restart: unless-stopped
+
+  frontend:
+    image: node:20-alpine
+    container_name: ashen-vector-web
+    working_dir: /app
+    volumes:
+      - ./frontend:/app
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:8000
+    command: sh -c "npm install && npm run dev"
+    depends_on:
+      - backend
+    restart: unless-stopped
