@@ -1,9 +1,8 @@
-# ASHEN-VECTOR Model Configuration
-# Phase 1: Configuration templates for future model training.
-# No models are trained during Phase 1.
+# ASHEN-VECTOR Quantitative Model & Feature Configuration
+# Production defaults for feature engineering, ensemble learners, calibration, and risk scoring.
 
 defaults:
-  prediction_horizons: [1, 5, 20]  # days
+  prediction_horizons: [1, 5, 21, 126, 252]  # trading days
   default_horizon: 5
   min_training_days: 252  # Minimum 1 year of training data
   validation_ratio: 0.15
