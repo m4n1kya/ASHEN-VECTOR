@@ -9,6 +9,7 @@ Inspects the configured Qlib dataset and reports:
 
 Usage:
     python scripts/inspect_data.py
+    python scripts/inspect_data.py --symbol AAPL
     python scripts/inspect_data.py --symbol SH600000
 """
 
