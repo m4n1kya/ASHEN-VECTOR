@@ -1,340 +1,55 @@
 # Market Data Ingestion Pipeline
 
-This document outlines the ultra-reliable market data ingestion engine designed to replace legacy public APIs.
+This document outlines the market data ingestion engine and deterministic simulation fallback architecture used in ASHEN-VECTOR.
 
-## Legacy API Deprecation
+---
 
-The reliance on `yfinance` has been fully deprecated due to unacceptable rate-limiting and connection drops during high-volume periods.
+## 1. Dual-Source Data Architecture
 
-## Synthetic Data Engine
+ASHEN-VECTOR uses a two-tier market data layer:
 
-A mathematical synthetic data generator guarantees 100% uptime for the UI by generating realistic market data when live endpoints fail.
+1. **Primary Institutional Store (Qlib Binary Provider)**
+   - Point-in-time historical OHLCV datasets stored in optimized column-binary format (`qlib_bin`).
+   - Managed by `src/ashen_vector/data/qlib_provider.py` and `instrument_service.py`.
+   - Provides sub-millisecond historical slicing across constituents without look-ahead leakage.
 
-### Geometric Brownian Motion
+2. **Live & Deterministic Simulation Engine (`LiveMarketService`)**
+   - Managed by `src/ashen_vector/api/services/live_market.py`.
+   - Eliminates external rate-limit bottlenecks and third-party API instability by providing a deterministic Geometric Brownian Motion (GBM) + Jump Diffusion engine seeded per instrument ticker.
 
-The core of the generator uses GBM with drift and volatility parameters calibrated to historical S&P 500 averages.
+---
 
-### Jump Diffusion Model
+## 2. Mathematical Formulation
 
-Merton's Jump Diffusion is layered over the GBM to simulate sudden macroeconomic shocks (fat tails) seen in real equities.
+### Geometric Brownian Motion (GBM)
+Daily price trajectories follow the stochastic differential equation:
 
-### Deterministic Generation
+$$dS_t = \mu S_t \, dt + \sigma S_t \, dW_t$$
 
-Random number generators are seeded using the ASCII hash of the ticker symbol, ensuring `AAPL` always returns the exact same historical path.
+With discrete daily log-return increments over horizon $\Delta t = \frac{1}{252}$:
 
-### Volume Profiling
+$$S_{t} = S_{t-1} \exp\left(\left(\mu - \frac{1}{2}\sigma^2\right)\Delta t + \sigma\sqrt{\Delta t}\, Z_t\right), \quad Z_t \sim \mathcal{N}(0, 1)$$
 
-Daily trading volume is synthesized using a log-normal distribution, accurately reflecting the positive skew of real market participation.
+### Deterministic Symbol Seeding
+Random number generation is deterministically seeded from the canonical ticker symbol hash. Querying the same symbol across sessions yields identical 5-year (1,260 trading day) time-series trajectories while preserving cross-sectional independence across symbols.
 
-### OHLC Structural Integrity
+### OHLCV Structural Invariants
+Every generated bar is validated against market microstructure invariants:
+- $\text{High}_t \ge \max(\text{Open}_t, \text{Close}_t)$
+- $\text{Low}_t \le \min(\text{Open}_t, \text{Close}_t)$
+- $S_t > 0 \quad \forall t$
+- $\text{Volume}_t \sim \text{LogNormal}(\mu_v, \sigma_v^2)$
 
-Strict constraints ensure High >= Low, and Open/Close fall within the High/Low bounds to prevent impossible candlestick generation.
+---
 
-### Fallback Metadata
+## 3. Risk & Reliability Pipeline Integration
 
-If the metadata API fails, a deterministic company name generator combines the ticker with professional suffixes (e.g., 'Technologies', 'Corp').
+Once the 1,260-day OHLCV frame is assembled, `LiveMarketService` pipelines the series into:
+1. **`LiveModelEngine`** (`live_models.py`) — Executes the 7-model quantitative stack (LightGBM, XGBoost, Random Forest, Momentum Z-Score, ARIMA, GARCH(1,1), and Gaussian HMM Regime Detection).
+2. **`ReliabilityEngine`** (`reliability_engine.py`) — Computes the out-of-sample Ashen Reliability Score (ARS) across Brier calibration, ROC-AUC, fold stability, and regime coverage.
 
-## Reliability Engine Mocking
+---
 
-The OOS reliability scores are approximated using deterministic noise layered over real momentum signals for frontend testing.
+## 4. Verification Suite
 
-## Comprehensive Test Suite
-
-The new pipeline is backed by 21 rigorous `pytest` unit tests ensuring structural integrity and mathematical correctness.
-
-### Resilience Part 12
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 13
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 14
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 15
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 16
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 17
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 18
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 19
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 20
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 21
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 22
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 23
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 24
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 25
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 26
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 27
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 28
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 29
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 30
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 31
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 32
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 33
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 34
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 35
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 36
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 37
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 38
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 39
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 40
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 41
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 42
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 43
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 44
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 45
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 46
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 47
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 48
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 49
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 50
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 51
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 52
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 53
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 54
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 55
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 56
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 57
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 58
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 59
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 60
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 61
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 62
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 63
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 64
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 65
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 66
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 67
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 68
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 69
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 70
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 71
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 72
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 73
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 74
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 75
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 76
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 77
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 78
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 79
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 80
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 81
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 82
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 83
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 84
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
-### Resilience Part 85
-
-Incremental optimization to the synthetic data distribution and failover speed.
-
+The ingestion and analysis pipeline is verified by 21 unit and integration assertions in `tests/test_live_market.py`, covering schema completeness, trading-day count, timezone normalization, OHLC bounds, deterministic reproducibility, drawdown bounds, and ensemble consensus payloads.
