@@ -72,3 +72,10 @@ out/
 # Database
 *.db
 *.sqlite3
+
+# Internal scratch & agent files
+scratch/
+request.txt
+task.md
+AGENTS.md
+CLAUDE.md
